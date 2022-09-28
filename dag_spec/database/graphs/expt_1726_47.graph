@@ -1,0 +1,348 @@
+150
+transpose_naive_8192
+uncoalesced_copy_8192
+reduce_8192
+2DConvul_8192
+uncoalesced_copy_8192
+2DConvul_8192
+transpose_naive_8192
+transpose_naive_8192
+shared_copy_8192
+uncoalesced_copy_8192
+reduce_8192
+uncoalesced_copy_8192
+reduce_8192
+gesummv_8192
+mean_8192
+gesummv_8192
+gesummv_8192
+2DConvul_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+std_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+vecadd_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+reduce_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+gesummv_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+reduce_8192
+VectorAdd_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+bicg2_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gemm_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+transpose_naive_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+2DConvul_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+reduce_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+VectorAdd_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+shared_copy_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+reduce6_8192
+reduce_8192
+reduce_8192
+gesummv_8192
+DotProduct_8192
+reduce_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+reduce_8192
+DotProduct_8192
+reduce_8192
+gesummv_8192
+gesummv_8192
+atax2_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+reduce_8192
+reduce_8192
+vecadd_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+reduce5_8192
+reduce_8192
+reduce_8192
+reduce_8192
+shared_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+0 13
+1 16
+1 14
+1 15
+2 17
+2 18
+2 19
+2 20
+3 21
+3 22
+3 23
+4 16
+4 13
+4 15
+5 21
+5 22
+6 23
+13 24
+13 25
+13 26
+14 27
+14 28
+15 29
+15 30
+15 31
+16 32
+16 33
+17 24
+17 34
+17 35
+18 32
+20 28
+21 25
+21 26
+21 29
+22 30
+22 31
+23 33
+23 34
+24 36
+24 37
+24 38
+24 39
+25 40
+25 41
+26 42
+27 43
+27 44
+28 45
+28 46
+29 41
+32 36
+32 37
+32 38
+32 39
+36 47
+37 48
+37 49
+37 50
+37 51
+38 52
+38 53
+38 54
+38 55
+39 56
+39 57
+39 58
+40 51
+40 59
+40 53
+41 57
+41 59
+47 60
+48 61
+48 62
+48 63
+49 64
+50 65
+51 66
+51 67
+51 68
+52 60
+53 64
+53 67
+53 68
+53 63
+58 65
+60 69
+60 70
+61 72
+61 71
+62 73
+63 74
+63 75
+63 76
+63 77
+64 78
+65 79
+66 73
+67 72
+67 71
+68 75
+68 76
+68 79
+69 80
+69 81
+70 82
+70 83
+70 84
+71 85
+72 88
+72 86
+72 87
+73 89
+73 87
+73 81
+80 90
+80 91
+80 92
+81 93
+81 94
+82 96
+82 95
+83 96
+83 97
+83 98
+83 92
+84 90
+85 98
+85 93
+86 95
+88 97
+90 99
+90 100
+90 101
+91 102
+91 103
+92 104
+92 105
+93 106
+93 107
+93 108
+93 109
+94 110
+95 99
+99 112
+99 111
+100 113
+100 114
+100 115
+100 116
+101 117
+102 120
+102 121
+102 118
+102 119
+103 114
+104 121
+104 116
+104 117
+107 112
+111 122
+111 123
+111 124
+112 125
+112 126
+113 127
+114 128
+114 129
+114 130
+115 123
+115 127
+122 131
+122 132
+123 133
+123 134
+123 135
+124 136
+124 137
+124 138
+124 139
+125 131
+125 140
+125 141
+125 142
+126 139
+127 135
+131 144
+131 145
+131 146
+131 143
+132 147
+132 148
+133 149
+135 144
+135 145
+135 146

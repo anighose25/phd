@@ -1,0 +1,6 @@
+KernelName=softmax_8
+KernelSource=edlenet_8_S_1_1.cl
+workDimension=1
+globalWorkSize=16,1,1
+inputBuffers=float,16,0,0
+outputBuffers=float,16,1,0

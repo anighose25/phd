@@ -1,0 +1,279 @@
+150
+transpose_naive_1024
+reduce_1024
+mm21_1024
+mm22_1024
+reduce_1024
+uncoalesced_copy_1024
+transpose_naive_1024
+reduce_1024
+mm21_1024
+reduce_1024
+transpose_naive_1024
+uncoalesced_copy_1024
+shared_copy_1024
+2DConvul_1024
+mm21_1024
+mm21_1024
+uncoalesced_copy_1024
+shared_copy_1024
+mm21_1024
+mm22_1024
+uncoalesced_copy_1024
+uncoalesced_copy_1024
+shared_copy_1024
+transpose_naive_1024
+mm21_1024
+2DConvul_1024
+uncoalesced_copy_1024
+shared_copy_1024
+transpose_naive_1024
+uncoalesced_copy_1024
+2DConvul_1024
+mm22_1024
+2DConvul_1024
+uncoalesced_copy_1024
+reduce_1024
+mm22_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+corr_1024
+covar_1024
+gesummv_1024
+atax1_1024
+sgemm_1024
+gesummv_1024
+atax1_1024
+gesummv_1024
+atax1_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+bicg1_1024
+corr_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+gesummv_1024
+gesummv_1024
+covar_1024
+bicg1_1024
+covar_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+2DConvul_1024
+covar_1024
+gesummv_1024
+bicg1_1024
+MatVecMulCoalesced2_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+uncoalesced_copy_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+sgemm_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+reduce0_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+VectorAdd_1024
+bicg1_1024
+bicg1_1024
+2DConvul_1024
+shared_copy_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+corr_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+VectorAdd_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+std_1024
+bicg1_1024
+VectorAdd_1024
+VectorAdd_1024
+bicg1_1024
+atax1_1024
+DotProduct_1024
+reduce4_1024
+VectorAdd_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+0 36
+0 37
+1 40
+1 38
+1 39
+2 41
+2 42
+2 43
+2 44
+3 45
+3 46
+4 48
+4 47
+5 49
+5 50
+5 51
+5 44
+6 36
+6 38
+36 52
+37 53
+38 56
+38 54
+38 55
+39 57
+40 58
+40 59
+40 60
+40 61
+41 64
+41 65
+41 62
+41 63
+42 66
+42 67
+43 68
+44 69
+44 70
+44 71
+45 72
+45 73
+46 74
+46 75
+47 76
+47 77
+47 78
+47 79
+48 80
+49 81
+49 82
+50 83
+50 84
+50 85
+50 86
+50 87
+51 88
+52 91
+53 92
+53 93
+53 94
+54 96
+54 97
+54 98
+54 95
+55 99
+56 100
+56 101
+56 102
+56 103
+57 104
+57 105
+57 106
+57 107
+58 108
+59 91
+59 109
+60 92
+61 93
+62 94
+72 95
+73 96
+73 97
+90 98
+90 99
+90 100
+90 101
+91 110
+91 111
+92 112
+92 113
+92 114
+92 115
+93 116
+93 117
+94 118
+95 120
+95 121
+95 119
+96 122
+97 123
+98 124
+98 125
+98 126
+99 128
+99 129
+99 130
+99 127
+100 131
+100 132
+100 133
+101 134
+102 136
+102 135
+103 137
+104 138
+104 139
+104 140
+104 141
+105 142
+106 143
+107 118
+109 135
+110 144
+110 145
+110 146
+110 147
+111 148
+111 149

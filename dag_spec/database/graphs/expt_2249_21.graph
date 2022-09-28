@@ -1,0 +1,378 @@
+192
+shared_copy_1024
+uncoalesced_copy_1024
+transpose_naive_1024
+mm21_1024
+uncoalesced_copy_1024
+uncoalesced_copy_1024
+2DConvul_1024
+mm22_1024
+uncoalesced_copy_1024
+mm22_1024
+transpose_naive_1024
+mm22_1024
+mm22_1024
+mm22_1024
+transpose_naive_1024
+shared_copy_1024
+reduce_1024
+mm22_1024
+corr_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+corr_1024
+gesummv_1024
+gesummv_1024
+atax1_1024
+bicg1_1024
+vecadd_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+DotProduct_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+covar_1024
+gesummv_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+vecadd_1024
+sgemm_1024
+atax1_1024
+reduce3_1024
+bicg1_1024
+MatVecMulCoalesced0_1024
+atax2_1024
+reduce0_1024
+atax2_1024
+reduce6_1024
+reduce6_1024
+bicg1_1024
+reduce1_1024
+reduce0_1024
+atax1_1024
+VectorAdd_1024
+atax1_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+reduce5_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+vecadd_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+vecadd_1024
+atax1_1024
+reduce_1024
+bicg2_1024
+vecadd_1024
+reduce4_1024
+reduce5_1024
+atax1_1024
+reduce1_1024
+atax1_1024
+reduce_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+mm21_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+covar_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+std_1024
+reduce3_1024
+vecadd_1024
+reduce4_1024
+reduce2_1024
+VectorAdd_1024
+bicg1_1024
+VectorAdd_1024
+bicg1_1024
+reduce_1024
+bicg1_1024
+reduce5_1024
+atax1_1024
+vecadd_1024
+mm22_1024
+MatVecMulUncoalesced0_1024
+vecadd_1024
+VectorAdd_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+vecadd_1024
+atax1_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+MatVecMulCoalesced1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+std_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+std_1024
+reduce2_1024
+vecadd_1024
+bicg1_1024
+vecadd_1024
+reduce0_1024
+bicg2_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+reduce5_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+0 18
+0 19
+1 20
+1 21
+2 22
+2 23
+3 24
+4 25
+5 26
+6 27
+6 28
+18 29
+18 30
+19 31
+20 32
+20 33
+21 34
+21 35
+22 36
+23 37
+24 38
+24 39
+25 40
+25 41
+26 42
+26 43
+27 44
+29 45
+29 46
+30 48
+30 47
+31 49
+31 50
+32 51
+33 52
+33 53
+34 54
+34 55
+35 56
+35 57
+36 58
+37 59
+38 60
+39 60
+45 61
+45 62
+46 64
+46 63
+47 65
+48 66
+49 67
+50 68
+51 69
+52 70
+52 71
+53 72
+54 73
+54 74
+55 75
+55 76
+56 66
+60 62
+61 77
+61 78
+62 80
+62 79
+63 81
+63 82
+64 83
+65 84
+65 85
+66 86
+67 88
+67 87
+68 89
+68 77
+77 90
+78 91
+78 92
+79 93
+80 94
+80 95
+81 96
+81 97
+82 98
+83 99
+83 100
+90 101
+90 102
+91 104
+91 103
+92 105
+93 106
+94 107
+95 108
+96 109
+96 110
+97 112
+97 111
+98 113
+98 114
+99 105
+99 103
+101 115
+102 116
+103 117
+104 118
+105 119
+106 120
+106 121
+107 122
+108 123
+108 124
+109 125
+113 115
+113 116
+115 126
+115 127
+116 128
+117 129
+118 130
+119 131
+120 132
+120 133
+121 134
+122 135
+123 136
+123 137
+124 138
+124 139
+124 140
+126 141
+126 142
+127 144
+127 143
+128 145
+128 146
+129 147
+129 148
+130 149
+131 150
+131 151
+132 152
+133 153
+134 141
+135 143
+141 154
+141 155
+142 156
+143 157
+143 158
+144 159
+145 160
+145 161
+146 162
+146 163
+147 164
+147 165
+148 166
+150 154
+154 168
+154 167
+155 169
+156 170
+157 171
+157 172
+158 173
+158 174
+167 175
+168 176
+169 177
+170 178
+170 179
+171 180
+172 181
+173 182
+175 183
+176 184
+176 185
+177 186
+178 187
+178 188
+179 189
+179 190
+180 191

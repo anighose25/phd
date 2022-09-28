@@ -1,0 +1,44 @@
+{
+    "ecos": {
+        "128": 61.0, 
+        "256": 61.0, 
+        "512": 61.0, 
+        "1024": 61.0, 
+        "2048": 61.0, 
+        "4096": 61.0, 
+        "8192": 61.0
+    }, 
+    "globalWorkSize": "[dataset,dataset]", 
+    "inputBuffers": [
+        {
+            "break": 1, 
+            "pos": 0, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "name": "Convolution2D_kernel", 
+    "outputBuffers": [
+        {
+            "break": 1, 
+            "pos": 1, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "partition": 8, 
+    "src": "convol2.cl", 
+    "varArguments": [
+        {
+            "pos": 2, 
+            "type": "int", 
+            "value": "partition_round(dataset, size_percent)"
+        }, 
+        {
+            "pos": 3, 
+            "type": "int", 
+            "value": "dataset"
+        }
+    ], 
+    "workDimension": 2
+}

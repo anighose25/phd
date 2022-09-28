@@ -1,0 +1,31 @@
+{
+ "name": "linear_9",
+ "src": "nameplatemini_9_L_1_16.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[0,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "32",
+    "pos": 0,
+    "persistence": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "128",
+    "pos": 1,
+    "persistence": 1
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "4",
+    "pos": 2,
+    "persistence": 0
+  }
+ ]
+}

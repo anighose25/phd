@@ -1,0 +1,7 @@
+KernelName=convolution_2
+KernelSource=edlenet_2_C_1_1.cl
+workDimension=1
+globalWorkSize=1048576,1,1
+inputBuffers=float,524288,0,0,float,18432,1,1,float,64,2,1
+outputBuffers=float,1048576,3,0
+data_outflow=3,0,0

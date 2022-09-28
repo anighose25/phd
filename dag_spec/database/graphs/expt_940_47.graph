@@ -1,0 +1,229 @@
+100
+transpose_naive_4096
+uncoalesced_copy_4096
+2DConvul_4096
+transpose_naive_4096
+2DConvul_4096
+2DConvul_4096
+gesummv_4096
+transpose_naive_4096
+shared_copy_4096
+mean_4096
+gesummv_4096
+MatVecMulCoalesced0_4096
+std_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+gesummv_4096
+uncoalesced_copy_4096
+std_4096
+gesummv_4096
+gemm_4096
+shared_copy_4096
+MatVecMulUncoalesced0_4096
+gemm_4096
+MatVecMulCoalesced1_4096
+std_4096
+reduce_4096
+MatVecMulCoalesced1_4096
+transpose_naive_4096
+atax1_4096
+reduce_4096
+mean_4096
+MatVecMulCoalesced2_4096
+bicg2_4096
+atax2_4096
+shared_copy_4096
+MatVecMulCoalesced0_4096
+reduce_4096
+reduce_4096
+reduce5_4096
+atax1_4096
+reduce1_4096
+MatVecMulUncoalesced0_4096
+mean_4096
+MatVecMulCoalesced0_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+reduce_4096
+bicg2_4096
+bicg1_4096
+mean_4096
+MatVecMulCoalesced2_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced0_4096
+bicg1_4096
+bicg2_4096
+reduce_4096
+atax1_4096
+reduce0_4096
+vecadd_4096
+VectorAdd_4096
+reduce5_4096
+bicg1_4096
+reduce5_4096
+reduce2_4096
+reduce6_4096
+reduce3_4096
+reduce4_4096
+VectorAdd_4096
+bicg2_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+reduce4_4096
+DotProduct_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+VectorAdd_4096
+VectorAdd_4096
+reduce1_4096
+reduce_4096
+VectorAdd_4096
+bicg1_4096
+std_4096
+MatVecMulCoalesced0_4096
+MatVecMulCoalesced2_4096
+VectorAdd_4096
+std_4096
+reduce0_4096
+reduce2_4096
+bicg2_4096
+reduce_4096
+reduce4_4096
+reduce_4096
+reduce1_4096
+reduce_4096
+reduce1_4096
+reduce6_4096
+VectorAdd_4096
+0 8
+0 9
+0 6
+0 7
+1 10
+1 11
+1 12
+2 13
+2 14
+3 16
+3 17
+3 15
+4 10
+4 6
+5 11
+5 13
+5 15
+6 18
+7 19
+7 20
+7 21
+7 22
+8 24
+8 23
+9 25
+10 26
+10 27
+10 28
+11 24
+11 28
+11 29
+15 26
+15 19
+15 22
+15 23
+18 32
+18 33
+18 30
+18 31
+19 34
+20 35
+21 32
+21 33
+22 31
+30 36
+31 37
+32 38
+32 39
+33 40
+34 41
+34 42
+34 43
+34 44
+34 45
+35 46
+35 47
+36 48
+36 49
+36 50
+36 51
+37 52
+37 53
+38 56
+38 54
+38 55
+39 48
+39 57
+39 58
+46 50
+46 53
+46 54
+48 59
+49 60
+49 61
+49 62
+49 63
+50 64
+50 65
+50 66
+50 59
+51 62
+52 60
+59 67
+59 68
+60 69
+61 70
+61 71
+62 72
+62 73
+62 74
+63 68
+63 75
+63 76
+64 70
+65 72
+66 75
+67 77
+67 78
+67 79
+68 80
+68 81
+68 82
+69 83
+69 78
+69 79
+70 83
+71 82
+77 84
+77 85
+77 86
+78 88
+78 89
+78 90
+78 87
+79 91
+80 84
+84 92
+84 93
+85 94
+85 95
+86 96
+86 97
+86 98
+86 99
+87 99
+87 92
+88 94
+89 96

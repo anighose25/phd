@@ -1,0 +1,38 @@
+{
+ "name": "convolution_0",
+ "src": "edlenet_0_C_16_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[2097152,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "1048576",
+    "pos": 0,
+    "persistence": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "288",
+    "pos": 1,
+    "persistence": 1
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "32",
+    "pos": 2,
+    "persistence": 1
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "33554432",
+    "pos": 3,
+    "persistence": 0
+  }
+ ]
+}

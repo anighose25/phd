@@ -1,0 +1,204 @@
+100
+reduce_8192
+shared_copy_8192
+reduce_8192
+reduce_8192
+2DConvul_8192
+transpose_naive_8192
+shared_copy_8192
+2DConvul_8192
+uncoalesced_copy_8192
+2DConvul_8192
+2DConvul_8192
+reduce_8192
+transpose_naive_8192
+transpose_naive_8192
+shared_copy_8192
+reduce_8192
+uncoalesced_copy_8192
+transpose_naive_8192
+shared_copy_8192
+transpose_naive_8192
+shared_copy_8192
+uncoalesced_copy_8192
+2DConvul_8192
+bicg2_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+std_8192
+uncoalesced_copy_8192
+gesummv_8192
+atax2_8192
+gemm_8192
+gesummv_8192
+uncoalesced_copy_8192
+gemm_8192
+gesummv_8192
+uncoalesced_copy_8192
+reduce2_8192
+reduce_8192
+reduce_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced2_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+2DConvul_8192
+reduce_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+reduce_8192
+reduce_8192
+VectorAdd_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+shared_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+reduce_8192
+gesummv_8192
+std_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+vecadd_8192
+reduce_8192
+gesummv_8192
+gesummv_8192
+std_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+reduce_8192
+reduce_8192
+reduce_8192
+bicg2_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced2_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+reduce3_8192
+0 24
+0 23
+1 25
+1 26
+1 27
+2 28
+2 29
+2 30
+2 31
+3 32
+3 33
+3 34
+3 35
+4 36
+4 37
+5 24
+5 27
+6 33
+6 36
+6 30
+23 40
+23 38
+23 39
+24 41
+24 42
+24 43
+24 44
+25 45
+25 46
+26 47
+27 48
+27 49
+28 50
+28 51
+28 52
+29 56
+29 53
+29 54
+29 55
+30 57
+31 58
+31 59
+31 60
+32 64
+32 61
+32 62
+32 63
+33 65
+33 66
+33 67
+34 41
+34 43
+34 47
+35 56
+36 61
+36 62
+36 63
+37 66
+37 67
+38 68
+38 69
+39 72
+39 73
+39 70
+39 71
+40 74
+41 75
+41 76
+42 80
+42 77
+42 78
+42 79
+43 81
+44 82
+44 83
+45 84
+45 85
+45 86
+46 88
+46 89
+46 87
+47 90
+47 91
+47 92
+48 93
+48 70
+49 72
+50 74
+50 77
+51 82
+51 78
+52 88
+60 68
+60 69
+68 94
+69 96
+69 97
+69 95
+70 98
+71 99
+72 97
+72 98
+72 94

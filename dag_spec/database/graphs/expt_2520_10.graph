@@ -1,0 +1,341 @@
+187
+mm21_1024
+transpose_naive_1024
+2DConvul_1024
+transpose_naive_1024
+mm21_1024
+uncoalesced_copy_1024
+shared_copy_1024
+reduce_1024
+uncoalesced_copy_1024
+uncoalesced_copy_1024
+mm22_1024
+mm22_1024
+2DConvul_1024
+shared_copy_1024
+uncoalesced_copy_1024
+mm21_1024
+mm22_1024
+mm21_1024
+2DConvul_1024
+shared_copy_1024
+reduce_1024
+reduce_1024
+uncoalesced_copy_1024
+reduce_1024
+uncoalesced_copy_1024
+2DConvul_1024
+2DConvul_1024
+2DConvul_1024
+mm22_1024
+2DConvul_1024
+reduce_1024
+mm21_1024
+shared_copy_1024
+2DConvul_1024
+uncoalesced_copy_1024
+shared_copy_1024
+mm22_1024
+reduce_1024
+mm22_1024
+reduce_1024
+mm22_1024
+mm22_1024
+reduce_1024
+mm21_1024
+2DConvul_1024
+corr_1024
+corr_1024
+gesummv_1024
+covar_1024
+gesummv_1024
+covar_1024
+gesummv_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+bicg1_1024
+gesummv_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+atax1_1024
+gesummv_1024
+covar_1024
+gesummv_1024
+covar_1024
+bicg1_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+MatVecMulUncoalesced0_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+gesummv_1024
+atax1_1024
+corr_1024
+gesummv_1024
+gesummv_1024
+corr_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+atax1_1024
+MatVecMulCoalesced0_1024
+transpose_naive_1024
+2DConvul_1024
+2DConvul_1024
+atax2_1024
+mm22_1024
+mm22_1024
+reduce0_1024
+reduce2_1024
+gemm_1024
+DotProduct_1024
+MatVecMulCoalesced0_1024
+reduce_1024
+VectorAdd_1024
+DotProduct_1024
+bicg2_1024
+transpose_naive_1024
+MatVecMulCoalesced1_1024
+mm22_1024
+reduce_1024
+MatVecMulCoalesced0_1024
+reduce1_1024
+vecadd_1024
+reduce_1024
+std_1024
+atax2_1024
+MatVecMulCoalesced1_1024
+reduce5_1024
+reduce0_1024
+std_1024
+reduce6_1024
+transpose_naive_1024
+sgemm_1024
+MatVecMulCoalesced0_1024
+mm22_1024
+gemm_1024
+reduce4_1024
+mm21_1024
+VectorAdd_1024
+MatVecMulCoalesced0_1024
+MatVecMulCoalesced1_1024
+VectorAdd_1024
+gemm_1024
+mean_1024
+MatVecMulCoalesced2_1024
+VectorAdd_1024
+transpose_naive_1024
+mm22_1024
+reduce4_1024
+reduce5_1024
+mean_1024
+reduce3_1024
+VectorAdd_1024
+MatVecMulCoalesced2_1024
+bicg2_1024
+reduce1_1024
+reduce0_1024
+MatVecMulCoalesced0_1024
+reduce5_1024
+gemm_1024
+MatVecMulCoalesced0_1024
+reduce_1024
+atax2_1024
+reduce_1024
+mm22_1024
+reduce2_1024
+reduce_1024
+vecadd_1024
+DotProduct_1024
+vecadd_1024
+reduce6_1024
+reduce2_1024
+MatVecMulCoalesced0_1024
+reduce1_1024
+transpose_naive_1024
+bicg1_1024
+bicg2_1024
+reduce1_1024
+gesummv_1024
+gemm_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+reduce4_1024
+DotProduct_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+corr_1024
+atax1_1024
+gesummv_1024
+bicg1_1024
+gesummv_1024
+gesummv_1024
+bicg1_1024
+covar_1024
+atax1_1024
+bicg1_1024
+0 45
+1 46
+2 47
+3 48
+4 49
+5 50
+6 51
+7 52
+8 53
+9 54
+10 55
+11 56
+12 57
+13 58
+14 59
+15 60
+16 61
+17 62
+18 63
+19 64
+20 65
+21 66
+22 67
+23 68
+24 69
+25 70
+26 71
+27 72
+28 73
+29 74
+30 75
+31 76
+32 77
+33 78
+34 79
+35 80
+36 81
+37 82
+38 83
+39 84
+40 85
+41 47
+42 49
+43 51
+45 86
+46 87
+47 88
+48 89
+49 90
+50 91
+51 92
+52 93
+53 94
+54 95
+55 96
+56 97
+57 98
+58 99
+59 100
+60 101
+61 102
+62 103
+63 104
+64 105
+65 106
+66 107
+67 108
+68 109
+69 110
+70 111
+71 112
+72 113
+73 114
+74 115
+75 116
+76 117
+77 118
+78 119
+79 120
+80 121
+81 122
+82 123
+83 124
+84 125
+84 126
+85 90
+86 127
+87 128
+88 129
+89 130
+90 131
+91 132
+92 133
+93 134
+94 135
+95 136
+96 137
+97 138
+98 139
+99 140
+100 141
+101 142
+102 143
+103 144
+104 145
+105 146
+106 147
+107 148
+108 149
+109 150
+110 151
+111 152
+112 153
+113 154
+114 155
+115 156
+116 157
+117 158
+118 128
+119 127
+120 130
+121 133
+122 131
+123 139
+124 138
+127 159
+128 160
+129 161
+130 162
+131 163
+132 164
+133 165
+134 166
+135 167
+136 168
+137 169
+138 170
+139 171
+140 172
+141 173
+142 174
+143 175
+144 176
+145 177
+146 178
+147 179
+148 180
+149 181
+150 182
+151 183
+152 184
+153 185
+154 186

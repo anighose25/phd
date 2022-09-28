@@ -1,0 +1,49 @@
+{
+    "ecos": {
+        "128": 908.0, 
+        "256": 1804.0, 
+        "512": 3596.0, 
+        "1024": 7180.0, 
+        "2048": 14348.0, 
+        "4096": 28684.0000001, 
+        "8192": 57356.0000001
+    }, 
+    "globalWorkSize": "[dataset]", 
+    "inputBuffers": [
+        {
+            "break": 0, 
+            "pos": 0, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "name": "mean_kernel", 
+    "outputBuffers": [
+        {
+            "break": 1, 
+            "pos": 1, 
+            "size": "dataset", 
+            "type": "float"
+        }
+    ], 
+    "partition": 8, 
+    "src": "correlation.cl", 
+    "varArguments": [
+        {
+            "pos": 2, 
+            "type": "float", 
+            "value": "3214212.01"
+        }, 
+        {
+            "pos": 3, 
+            "type": "int", 
+            "value": "partition_round(dataset, size_percent)"
+        }, 
+        {
+            "pos": 4, 
+            "type": "int", 
+            "value": "dataset"
+        }
+    ], 
+    "workDimension": 1
+}

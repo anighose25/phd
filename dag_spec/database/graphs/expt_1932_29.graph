@@ -1,0 +1,340 @@
+150
+reduce_4096
+uncoalesced_copy_4096
+2DConvul_4096
+reduce_4096
+reduce_4096
+2DConvul_4096
+transpose_naive_4096
+shared_copy_4096
+uncoalesced_copy_4096
+transpose_naive_4096
+reduce_4096
+uncoalesced_copy_4096
+transpose_naive_4096
+reduce_4096
+reduce_4096
+shared_copy_4096
+transpose_naive_4096
+transpose_naive_4096
+uncoalesced_copy_4096
+uncoalesced_copy_4096
+shared_copy_4096
+2DConvul_4096
+uncoalesced_copy_4096
+shared_copy_4096
+2DConvul_4096
+2DConvul_4096
+2DConvul_4096
+shared_copy_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+uncoalesced_copy_4096
+2DConvul_4096
+gemm_4096
+MatVecMulUncoalesced0_4096
+gemm_4096
+MatVecMulCoalesced0_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+gesummv_4096
+atax1_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+gesummv_4096
+std_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+gesummv_4096
+gemm_4096
+gesummv_4096
+transpose_naive_4096
+2DConvul_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+bicg2_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+uncoalesced_copy_4096
+gesummv_4096
+transpose_naive_4096
+gesummv_4096
+reduce_4096
+reduce_4096
+std_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+MatVecMulCoalesced1_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+transpose_naive_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+reduce_4096
+DotProduct_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+reduce0_4096
+reduce_4096
+reduce4_4096
+reduce_4096
+vecadd_4096
+gesummv_4096
+atax1_4096
+reduce_4096
+std_4096
+gesummv_4096
+gemm_4096
+gesummv_4096
+gesummv_4096
+vecadd_4096
+reduce_4096
+gesummv_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+gesummv_4096
+gesummv_4096
+bicg2_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+reduce2_4096
+reduce_4096
+reduce6_4096
+reduce_4096
+DotProduct_4096
+reduce_4096
+reduce6_4096
+reduce_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+VectorAdd_4096
+reduce_4096
+vecadd_4096
+reduce_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+atax1_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced0_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+gesummv_4096
+vecadd_4096
+gesummv_4096
+MatVecMulCoalesced2_4096
+gesummv_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+2DConvul_4096
+reduce_4096
+std_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+reduce5_4096
+MatVecMulUncoalesced0_4096
+mean_4096
+gesummv_4096
+VectorAdd_4096
+gesummv_4096
+bicg2_4096
+gesummv_4096
+uncoalesced_copy_4096
+0 27
+1 28
+2 29
+2 30
+3 32
+3 33
+3 31
+4 34
+4 35
+5 36
+5 37
+5 38
+6 39
+7 40
+7 41
+8 42
+8 43
+8 44
+9 45
+9 46
+9 47
+10 48
+10 49
+11 50
+12 51
+12 52
+12 53
+13 56
+13 54
+13 55
+14 57
+14 58
+14 59
+15 60
+15 61
+16 62
+17 28
+17 29
+18 33
+19 36
+19 38
+19 39
+20 40
+21 42
+21 44
+21 45
+22 50
+22 47
+23 56
+23 51
+23 53
+24 59
+24 60
+25 62
+27 64
+27 63
+28 65
+28 66
+28 67
+29 68
+29 69
+29 70
+30 71
+31 72
+31 73
+31 74
+32 75
+32 76
+32 77
+33 80
+33 78
+33 79
+34 81
+35 82
+35 83
+35 84
+36 85
+36 86
+37 88
+37 87
+38 89
+38 90
+39 91
+39 92
+40 93
+40 94
+41 96
+41 95
+42 65
+43 80
+43 66
+43 78
+44 89
+44 83
+44 85
+45 96
+47 64
+47 68
+47 70
+50 72
+50 74
+50 76
+51 81
+51 87
+52 91
+52 93
+52 94
+63 97
+63 98
+63 99
+64 100
+64 101
+64 102
+65 104
+65 103
+66 105
+66 106
+67 107
+67 108
+68 109
+68 110
+68 111
+69 112
+69 113
+69 114
+70 115
+70 116
+71 117
+71 118
+72 119
+73 120
+74 121
+75 97
+75 122
+75 123
+76 108
+76 110
+77 98
+78 99
+78 100
+78 101
+79 112
+80 104
+80 102
+81 114
+81 118
+82 120
+83 106
+85 122
+85 116
+97 124
+97 125
+97 126
+98 128
+98 127
+99 129
+100 130
+100 131
+100 132
+101 133
+102 134
+102 135
+103 136
+104 137
+104 138
+105 139
+105 140
+105 141
+106 144
+106 142
+106 143
+107 145
+108 146
+109 147
+110 124
+110 148
+110 149
+111 136
+112 126
+113 138
+113 140
+114 128
+114 130
+114 132
+116 144
+116 142
+116 134
+118 146
+118 148

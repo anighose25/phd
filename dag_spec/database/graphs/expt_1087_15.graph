@@ -1,0 +1,201 @@
+100
+transpose_naive_8192
+shared_copy_8192
+shared_copy_8192
+2DConvul_8192
+reduce_8192
+2DConvul_8192
+reduce_8192
+reduce_8192
+shared_copy_8192
+transpose_naive_8192
+transpose_naive_8192
+2DConvul_8192
+reduce_8192
+uncoalesced_copy_8192
+reduce_8192
+shared_copy_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+shared_copy_8192
+uncoalesced_copy_8192
+gemm_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced1_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+MatVecMulUncoalesced0_8192
+std_8192
+transpose_naive_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+transpose_naive_8192
+shared_copy_8192
+shared_copy_8192
+gemm_8192
+MatVecMulCoalesced0_8192
+bicg2_8192
+2DConvul_8192
+std_8192
+MatVecMulCoalesced1_8192
+atax2_8192
+std_8192
+reduce_8192
+atax2_8192
+MatVecMulUncoalesced0_8192
+vecadd_8192
+bicg2_8192
+reduce3_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+std_8192
+std_8192
+MatVecMulCoalesced1_8192
+std_8192
+std_8192
+MatVecMulCoalesced1_8192
+bicg2_8192
+MatVecMulCoalesced0_8192
+MatVecMulCoalesced2_8192
+shared_copy_8192
+transpose_naive_8192
+MatVecMulCoalesced1_8192
+reduce0_8192
+vecadd_8192
+std_8192
+MatVecMulCoalesced1_8192
+DotProduct_8192
+VectorAdd_8192
+bicg2_8192
+reduce3_8192
+atax2_8192
+bicg2_8192
+transpose_naive_8192
+reduce_8192
+reduce_8192
+reduce_8192
+VectorAdd_8192
+reduce_8192
+VectorAdd_8192
+reduce_8192
+DotProduct_8192
+reduce_8192
+reduce1_8192
+reduce1_8192
+reduce_8192
+reduce3_8192
+reduce1_8192
+bicg2_8192
+reduce_8192
+vecadd_8192
+reduce_8192
+VectorAdd_8192
+reduce_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+0 19
+0 20
+1 21
+2 22
+3 23
+4 24
+4 25
+5 26
+5 27
+6 28
+6 29
+7 30
+8 31
+9 32
+9 33
+10 34
+11 35
+11 36
+12 37
+13 38
+14 20
+15 24
+15 22
+16 32
+16 25
+17 27
+18 35
+19 39
+20 40
+21 41
+21 42
+22 43
+23 44
+24 45
+24 46
+25 47
+26 48
+26 49
+27 50
+28 51
+28 52
+29 53
+29 54
+30 55
+31 56
+31 57
+32 58
+33 59
+34 60
+35 61
+35 62
+36 63
+37 64
+37 65
+38 39
+39 66
+40 67
+41 68
+42 69
+42 70
+43 72
+43 71
+44 73
+45 74
+45 75
+46 76
+47 77
+48 78
+48 79
+49 80
+49 78
+50 68
+51 69
+52 71
+53 72
+53 79
+54 66
+64 70
+66 81
+67 82
+68 83
+68 84
+69 85
+70 86
+71 88
+71 87
+72 89
+72 90
+73 91
+73 92
+74 93
+74 94
+75 96
+75 95
+76 97
+77 98
+77 99
+78 98
+78 92
+79 99

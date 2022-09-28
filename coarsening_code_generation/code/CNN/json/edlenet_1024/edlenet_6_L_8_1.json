@@ -1,0 +1,31 @@
+{
+ "name": "linear_6",
+ "src": "edlenet_6_L_8_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[16,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2097152",
+    "pos": 0,
+    "persistence": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "268435456",
+    "pos": 1,
+    "persistence": 1
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "128",
+    "pos": 2,
+    "persistence": 0
+  }
+ ]
+}

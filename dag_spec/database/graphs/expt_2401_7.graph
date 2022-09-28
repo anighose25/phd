@@ -1,0 +1,348 @@
+200
+transpose_naive_1024
+mm21_1024
+shared_copy_1024
+reduce_1024
+shared_copy_1024
+uncoalesced_copy_1024
+mm22_1024
+2DConvul_1024
+mm22_1024
+transpose_naive_1024
+mm22_1024
+uncoalesced_copy_1024
+mm22_1024
+transpose_naive_1024
+mm22_1024
+2DConvul_1024
+reduce_1024
+reduce_1024
+uncoalesced_copy_1024
+reduce_1024
+mm22_1024
+2DConvul_1024
+transpose_naive_1024
+2DConvul_1024
+reduce_1024
+mm21_1024
+shared_copy_1024
+reduce_1024
+reduce_1024
+shared_copy_1024
+mm21_1024
+mm22_1024
+reduce_1024
+reduce_1024
+transpose_naive_1024
+reduce_1024
+reduce_1024
+transpose_naive_1024
+transpose_naive_1024
+mm22_1024
+transpose_naive_1024
+transpose_naive_1024
+mm22_1024
+mm22_1024
+uncoalesced_copy_1024
+mm21_1024
+shared_copy_1024
+mm22_1024
+mm21_1024
+shared_copy_1024
+reduce_1024
+mm22_1024
+uncoalesced_copy_1024
+mm22_1024
+gesummv_1024
+gesummv_1024
+gesummv_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+gesummv_1024
+atax1_1024
+gesummv_1024
+covar_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+covar_1024
+bicg1_1024
+gesummv_1024
+gesummv_1024
+covar_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+corr_1024
+gesummv_1024
+gesummv_1024
+corr_1024
+corr_1024
+corr_1024
+corr_1024
+bicg1_1024
+gesummv_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+atax1_1024
+gesummv_1024
+gesummv_1024
+gesummv_1024
+gesummv_1024
+bicg1_1024
+bicg1_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+mm22_1024
+gemm_1024
+MatVecMulCoalesced0_1024
+mm22_1024
+DotProduct_1024
+mm21_1024
+mm22_1024
+reduce_1024
+shared_copy_1024
+mm22_1024
+reduce3_1024
+shared_copy_1024
+atax2_1024
+reduce0_1024
+MatVecMulCoalesced0_1024
+shared_copy_1024
+sgemm_1024
+bicg2_1024
+MatVecMulCoalesced1_1024
+vecadd_1024
+reduce_1024
+MatVecMulCoalesced0_1024
+mm21_1024
+shared_copy_1024
+2DConvul_1024
+sgemm_1024
+uncoalesced_copy_1024
+sgemm_1024
+sgemm_1024
+reduce1_1024
+2DConvul_1024
+reduce_1024
+reduce2_1024
+reduce3_1024
+atax2_1024
+MatVecMulCoalesced2_1024
+bicg2_1024
+mean_1024
+reduce_1024
+MatVecMulCoalesced0_1024
+mm21_1024
+mean_1024
+sgemm_1024
+reduce_1024
+reduce5_1024
+atax2_1024
+reduce4_1024
+gemm_1024
+MatVecMulCoalesced0_1024
+reduce0_1024
+uncoalesced_copy_1024
+2DConvul_1024
+mm22_1024
+mm21_1024
+reduce_1024
+uncoalesced_copy_1024
+shared_copy_1024
+VectorAdd_1024
+2DConvul_1024
+reduce5_1024
+mean_1024
+mm22_1024
+mm21_1024
+sgemm_1024
+mm22_1024
+reduce4_1024
+shared_copy_1024
+reduce2_1024
+reduce_1024
+reduce_1024
+gemm_1024
+mm22_1024
+DotProduct_1024
+reduce2_1024
+DotProduct_1024
+mm22_1024
+reduce5_1024
+bicg2_1024
+sgemm_1024
+MatVecMulCoalesced0_1024
+mm21_1024
+uncoalesced_copy_1024
+MatVecMulCoalesced2_1024
+atax2_1024
+reduce1_1024
+mm21_1024
+mm21_1024
+reduce0_1024
+reduce0_1024
+vecadd_1024
+reduce4_1024
+reduce0_1024
+reduce4_1024
+shared_copy_1024
+std_1024
+mm21_1024
+reduce0_1024
+0 54
+1 55
+2 56
+3 57
+4 58
+5 59
+6 60
+7 61
+8 62
+9 63
+10 64
+11 65
+12 66
+13 67
+14 68
+15 69
+16 70
+17 71
+18 72
+19 73
+20 74
+21 75
+22 76
+23 77
+24 78
+25 79
+26 80
+27 81
+28 82
+29 83
+30 84
+31 85
+32 86
+33 87
+34 88
+35 89
+36 90
+37 91
+38 92
+39 93
+40 94
+41 95
+42 96
+43 97
+44 98
+45 99
+46 100
+47 101
+48 102
+49 54
+50 55
+51 56
+52 57
+53 58
+54 103
+55 104
+56 105
+57 106
+58 107
+59 108
+60 109
+61 110
+62 111
+63 112
+64 113
+65 114
+66 115
+67 116
+68 117
+69 118
+70 119
+71 120
+72 121
+73 122
+74 123
+75 124
+76 125
+77 126
+78 127
+79 128
+80 129
+81 130
+82 131
+83 132
+84 133
+85 134
+86 135
+87 136
+88 137
+89 138
+90 139
+91 140
+92 141
+93 142
+94 143
+95 144
+96 145
+97 146
+98 147
+99 148
+100 149
+101 150
+101 151
+102 152
+103 158
+104 159
+105 160
+106 161
+107 162
+108 163
+109 164
+110 165
+111 166
+112 167
+113 168
+114 169
+115 170
+116 171
+117 172
+118 173
+119 174
+120 175
+121 176
+122 177
+123 178
+124 179
+125 180
+126 181
+127 182
+128 183
+129 184
+130 185
+131 186
+132 187
+133 188
+134 189
+135 190
+136 191
+137 192
+138 193
+139 194
+140 195
+141 196
+142 197
+143 198
+144 199
+145 164

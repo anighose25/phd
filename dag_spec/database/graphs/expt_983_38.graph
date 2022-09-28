@@ -1,0 +1,225 @@
+100
+transpose_naive_8192
+reduce_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+shared_copy_8192
+2DConvul_8192
+shared_copy_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+reduce_8192
+reduce_8192
+reduce_8192
+reduce0_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+std_8192
+reduce_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gemm_8192
+2DConvul_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+transpose_naive_8192
+gesummv_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced2_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+reduce1_8192
+reduce_8192
+gesummv_8192
+reduce_8192
+std_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+reduce_8192
+reduce_8192
+reduce_8192
+transpose_naive_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+shared_copy_8192
+MatVecMulCoalesced2_8192
+0 7
+1 8
+1 9
+1 10
+1 11
+2 12
+2 13
+2 14
+3 15
+4 16
+4 17
+4 7
+5 17
+5 13
+5 14
+7 18
+7 19
+7 20
+8 24
+8 21
+8 22
+8 23
+9 25
+9 26
+9 27
+9 28
+10 18
+10 20
+10 26
+11 21
+11 22
+12 27
+15 23
+18 32
+18 29
+18 30
+18 31
+19 33
+20 34
+20 35
+21 36
+29 37
+29 38
+29 39
+30 40
+30 41
+30 42
+31 43
+31 44
+32 40
+32 45
+32 38
+33 42
+34 43
+34 44
+37 46
+38 48
+38 49
+38 47
+39 50
+39 51
+39 52
+39 53
+40 56
+40 57
+40 54
+40 55
+41 46
+42 48
+42 49
+46 58
+47 59
+47 60
+48 64
+48 61
+48 62
+48 63
+49 65
+49 66
+50 67
+50 68
+50 61
+51 58
+52 67
+58 69
+59 72
+59 70
+59 71
+60 73
+60 74
+61 74
+61 75
+61 76
+62 75
+62 76
+69 77
+69 78
+69 79
+70 80
+71 81
+71 82
+72 83
+72 84
+72 85
+72 86
+73 80
+73 83
+73 84
+73 85
+77 88
+77 89
+77 90
+77 87
+78 91
+78 92
+78 93
+79 94
+79 95
+80 96
+80 97
+80 90
+87 98
+88 99
+89 99

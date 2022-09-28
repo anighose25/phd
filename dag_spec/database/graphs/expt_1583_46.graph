@@ -1,0 +1,344 @@
+150
+2DConvul_8192
+shared_copy_8192
+transpose_naive_8192
+2DConvul_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+shared_copy_8192
+reduce_8192
+2DConvul_8192
+uncoalesced_copy_8192
+2DConvul_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gemm_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+transpose_naive_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+shared_copy_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gemm_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+reduce_8192
+VectorAdd_8192
+reduce_8192
+reduce_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+2DConvul_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+bicg2_8192
+reduce_8192
+reduce_8192
+gesummv_8192
+shared_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+gemm_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+atax2_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+transpose_naive_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+shared_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+MatVecMulCoalesced1_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+atax2_8192
+uncoalesced_copy_8192
+reduce_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced1_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+2DConvul_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+reduce_8192
+reduce_8192
+reduce_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+uncoalesced_copy_8192
+0 14
+1 16
+1 17
+1 18
+1 15
+2 19
+2 20
+3 16
+3 17
+3 19
+3 15
+5 18
+14 21
+15 22
+15 23
+16 24
+16 25
+16 26
+16 27
+21 28
+21 29
+21 30
+22 32
+22 31
+23 33
+24 34
+24 35
+24 36
+25 40
+25 37
+25 38
+25 39
+26 41
+26 42
+26 43
+26 44
+26 45
+27 32
+27 33
+27 34
+27 36
+28 46
+29 48
+29 49
+29 50
+29 47
+30 51
+30 52
+31 53
+31 54
+32 56
+32 57
+32 55
+33 58
+33 51
+33 53
+34 55
+35 56
+43 47
+46 59
+46 60
+46 61
+46 62
+47 63
+48 64
+48 65
+48 66
+48 67
+49 59
+49 60
+49 62
+49 63
+52 64
+52 66
+52 67
+59 68
+59 69
+59 70
+59 71
+60 72
+60 73
+60 74
+61 75
+62 76
+62 77
+62 78
+63 80
+63 81
+63 68
+63 79
+64 71
+66 74
+66 75
+66 76
+67 80
+67 79
+68 82
+68 83
+68 84
+69 85
+70 88
+70 86
+70 87
+71 89
+72 90
+73 91
+73 92
+74 93
+75 82
+75 94
+75 95
+76 83
+76 84
+82 96
+82 97
+82 98
+83 99
+84 100
+84 101
+85 104
+85 105
+85 102
+85 103
+86 106
+87 107
+87 108
+87 109
+87 110
+88 97
+88 111
+89 100
+90 105
+90 98
+90 101
+91 104
+91 106
+91 108
+91 109
+92 107
+93 110
+96 112
+96 113
+96 114
+97 115
+97 116
+97 117
+98 118
+99 120
+99 119
+100 121
+101 122
+102 123
+102 124
+103 125
+104 116
+104 118
+104 126
+104 127
+105 121
+108 125
+108 126
+112 128
+112 129
+113 130
+113 131
+113 132
+114 133
+115 134
+115 135
+116 136
+116 128
+116 130
+116 129
+117 136
+128 137
+128 138
+129 139
+129 140
+130 141
+130 142
+130 143
+131 144
+131 145
+131 146
+132 147
+133 148
+134 137
+134 138
+134 140
+134 149
+135 144
+135 145
+135 146

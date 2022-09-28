@@ -1,0 +1,445 @@
+200
+reduce_4096
+reduce_4096
+uncoalesced_copy_4096
+2DConvul_4096
+shared_copy_4096
+2DConvul_4096
+2DConvul_4096
+shared_copy_4096
+uncoalesced_copy_4096
+2DConvul_4096
+reduce_4096
+2DConvul_4096
+2DConvul_4096
+transpose_naive_4096
+transpose_naive_4096
+transpose_naive_4096
+shared_copy_4096
+shared_copy_4096
+2DConvul_4096
+2DConvul_4096
+MatVecMulCoalesced0_4096
+std_4096
+gemm_4096
+gesummv_4096
+gesummv_4096
+gemm_4096
+MatVecMulCoalesced1_4096
+MatVecMulCoalesced1_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+gesummv_4096
+atax1_4096
+gesummv_4096
+gemm_4096
+gesummv_4096
+gesummv_4096
+MatVecMulCoalesced1_4096
+2DConvul_4096
+MatVecMulCoalesced1_4096
+DotProduct_4096
+reduce1_4096
+std_4096
+atax2_4096
+MatVecMulCoalesced0_4096
+MatVecMulCoalesced1_4096
+atax1_4096
+MatVecMulUncoalesced0_4096
+atax2_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced2_4096
+gemm_4096
+MatVecMulCoalesced1_4096
+MatVecMulUncoalesced0_4096
+reduce1_4096
+reduce1_4096
+reduce1_4096
+reduce6_4096
+bicg2_4096
+reduce_4096
+bicg2_4096
+reduce5_4096
+reduce2_4096
+reduce_4096
+vecadd_4096
+reduce3_4096
+DotProduct_4096
+reduce_4096
+reduce1_4096
+reduce4_4096
+bicg1_4096
+reduce_4096
+std_4096
+bicg2_4096
+atax2_4096
+reduce_4096
+VectorAdd_4096
+vecadd_4096
+VectorAdd_4096
+reduce_4096
+reduce2_4096
+reduce1_4096
+vecadd_4096
+MatVecMulUncoalesced0_4096
+gemm_4096
+transpose_naive_4096
+MatVecMulCoalesced1_4096
+reduce_4096
+vecadd_4096
+atax2_4096
+DotProduct_4096
+MatVecMulUncoalesced0_4096
+bicg1_4096
+reduce1_4096
+DotProduct_4096
+reduce_4096
+reduce2_4096
+vecadd_4096
+reduce2_4096
+reduce_4096
+reduce1_4096
+transpose_naive_4096
+shared_copy_4096
+MatVecMulUncoalesced0_4096
+bicg2_4096
+reduce2_4096
+std_4096
+bicg1_4096
+reduce1_4096
+bicg1_4096
+MatVecMulCoalesced0_4096
+atax1_4096
+reduce0_4096
+reduce6_4096
+bicg1_4096
+DotProduct_4096
+reduce4_4096
+reduce_4096
+reduce1_4096
+reduce_4096
+reduce0_4096
+reduce3_4096
+vecadd_4096
+DotProduct_4096
+reduce_4096
+reduce0_4096
+reduce_4096
+reduce_4096
+reduce_4096
+atax1_4096
+reduce_4096
+vecadd_4096
+reduce_4096
+VectorAdd_4096
+atax1_4096
+bicg2_4096
+reduce_4096
+std_4096
+transpose_naive_4096
+reduce0_4096
+DotProduct_4096
+MatVecMulUncoalesced0_4096
+reduce2_4096
+bicg1_4096
+reduce3_4096
+reduce_4096
+vecadd_4096
+reduce6_4096
+bicg2_4096
+reduce_4096
+reduce6_4096
+reduce0_4096
+bicg1_4096
+MatVecMulUncoalesced0_4096
+reduce1_4096
+reduce5_4096
+atax2_4096
+gesummv_4096
+std_4096
+2DConvul_4096
+reduce2_4096
+vecadd_4096
+DotProduct_4096
+reduce_4096
+VectorAdd_4096
+bicg1_4096
+reduce0_4096
+reduce_4096
+reduce1_4096
+vecadd_4096
+VectorAdd_4096
+reduce_4096
+reduce4_4096
+DotProduct_4096
+reduce1_4096
+reduce_4096
+atax2_4096
+MatVecMulCoalesced1_4096
+reduce5_4096
+reduce_4096
+bicg1_4096
+atax2_4096
+bicg1_4096
+gesummv_4096
+bicg1_4096
+MatVecMulCoalesced2_4096
+reduce1_4096
+reduce_4096
+reduce1_4096
+reduce1_4096
+reduce3_4096
+reduce_4096
+std_4096
+std_4096
+MatVecMulCoalesced0_4096
+reduce_4096
+atax1_4096
+VectorAdd_4096
+reduce1_4096
+gesummv_4096
+0 20
+0 21
+1 22
+2 23
+3 24
+3 25
+3 26
+3 27
+4 28
+5 29
+5 30
+6 32
+6 31
+7 33
+7 34
+8 35
+9 36
+10 37
+10 38
+10 39
+11 20
+11 23
+12 24
+12 28
+13 29
+14 31
+15 33
+16 35
+17 36
+20 40
+21 41
+21 42
+21 43
+22 44
+22 45
+22 46
+22 47
+23 48
+24 49
+25 50
+25 51
+25 52
+25 53
+26 40
+28 42
+28 43
+29 48
+29 46
+30 44
+31 50
+31 45
+33 51
+33 52
+40 54
+41 55
+42 56
+42 57
+42 58
+42 59
+43 60
+43 61
+43 62
+44 63
+45 64
+45 65
+45 66
+45 67
+46 68
+46 69
+51 58
+54 70
+54 71
+55 72
+55 73
+55 74
+56 75
+57 76
+57 77
+57 78
+58 75
+58 71
+70 80
+70 81
+70 82
+70 79
+71 83
+71 84
+71 85
+71 86
+72 88
+72 87
+73 89
+73 90
+73 79
+74 87
+75 83
+79 91
+80 92
+81 93
+81 94
+81 95
+82 96
+82 97
+83 98
+83 99
+83 100
+84 92
+84 101
+84 102
+84 103
+86 97
+86 94
+91 104
+91 105
+91 106
+92 107
+93 108
+94 109
+95 110
+96 112
+96 113
+96 114
+96 111
+97 115
+97 116
+99 104
+101 106
+101 107
+104 117
+104 118
+105 120
+105 121
+105 119
+106 122
+107 123
+107 124
+107 125
+108 126
+109 127
+110 128
+110 129
+111 130
+111 131
+112 132
+112 133
+112 134
+112 135
+113 136
+113 137
+113 122
+114 117
+115 123
+115 124
+115 119
+116 126
+117 138
+118 139
+118 140
+119 141
+120 144
+120 142
+120 143
+121 145
+122 146
+122 147
+122 148
+122 149
+123 152
+123 150
+123 151
+124 153
+125 154
+125 155
+126 156
+126 157
+126 143
+127 148
+128 152
+129 146
+129 140
+131 156
+132 141
+138 158
+138 159
+139 160
+139 161
+140 162
+140 163
+140 164
+141 165
+141 166
+142 168
+142 169
+142 170
+142 167
+143 171
+143 172
+144 176
+144 173
+144 174
+144 175
+145 177
+146 161
+146 158
+147 162
+147 164
+149 176
+149 177
+149 165
+150 169
+150 170
+150 173
+158 178
+158 179
+158 180
+158 181
+159 184
+159 185
+159 182
+159 183
+160 186
+160 187
+160 188
+160 189
+161 190
+162 192
+162 191
+163 193
+163 194
+164 195
+164 196
+164 197
+167 180
+167 181
+168 184
+168 182
+171 192
+171 185
+172 193
+175 194
+175 196
+176 197
+178 198
+179 199

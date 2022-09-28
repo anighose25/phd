@@ -1,0 +1,208 @@
+100
+shared_copy_4096
+shared_copy_4096
+transpose_naive_4096
+uncoalesced_copy_4096
+gesummv_4096
+shared_copy_4096
+gemm_4096
+gesummv_4096
+atax2_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+gemm_4096
+MatVecMulCoalesced0_4096
+reduce4_4096
+reduce_4096
+MatVecMulCoalesced2_4096
+transpose_naive_4096
+uncoalesced_copy_4096
+reduce_4096
+DotProduct_4096
+MatVecMulUncoalesced0_4096
+VectorAdd_4096
+VectorAdd_4096
+reduce3_4096
+reduce_4096
+atax1_4096
+reduce6_4096
+gesummv_4096
+MatVecMulCoalesced1_4096
+MatVecMulCoalesced2_4096
+atax2_4096
+reduce_4096
+reduce0_4096
+MatVecMulCoalesced1_4096
+MatVecMulCoalesced0_4096
+MatVecMulUncoalesced0_4096
+vecadd_4096
+VectorAdd_4096
+DotProduct_4096
+reduce_4096
+bicg2_4096
+std_4096
+vecadd_4096
+bicg2_4096
+shared_copy_4096
+2DConvul_4096
+reduce_4096
+reduce3_4096
+reduce3_4096
+reduce_4096
+atax1_4096
+reduce_4096
+std_4096
+reduce6_4096
+reduce4_4096
+reduce_4096
+VectorAdd_4096
+atax1_4096
+uncoalesced_copy_4096
+reduce_4096
+vecadd_4096
+bicg2_4096
+reduce3_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+gesummv_4096
+reduce_4096
+reduce_4096
+reduce6_4096
+reduce0_4096
+atax1_4096
+2DConvul_4096
+atax1_4096
+reduce_4096
+bicg1_4096
+bicg2_4096
+reduce5_4096
+MatVecMulUncoalesced0_4096
+atax2_4096
+VectorAdd_4096
+reduce5_4096
+reduce_4096
+atax1_4096
+MatVecMulCoalesced2_4096
+reduce_4096
+atax1_4096
+reduce_4096
+shared_copy_4096
+MatVecMulCoalesced2_4096
+MatVecMulCoalesced0_4096
+MatVecMulCoalesced0_4096
+reduce5_4096
+bicg1_4096
+vecadd_4096
+reduce_4096
+atax2_4096
+VectorAdd_4096
+VectorAdd_4096
+reduce_4096
+std_4096
+0 4
+0 5
+0 6
+1 8
+1 7
+2 4
+2 7
+4 9
+4 10
+5 11
+6 12
+7 9
+7 11
+7 12
+9 13
+13 14
+14 15
+15 19
+16 20
+17 20
+19 21
+19 22
+20 21
+21 24
+21 25
+21 23
+22 24
+23 26
+24 27
+24 28
+24 29
+24 30
+26 32
+26 31
+27 33
+27 34
+28 31
+31 35
+32 36
+33 36
+35 40
+35 37
+35 38
+35 39
+36 37
+36 38
+37 41
+39 41
+41 42
+41 43
+42 48
+42 46
+42 47
+43 49
+46 50
+47 51
+48 50
+50 52
+50 53
+51 52
+52 56
+52 54
+52 55
+53 56
+54 57
+55 58
+57 59
+57 60
+57 61
+57 62
+59 64
+59 65
+59 63
+60 66
+60 67
+63 68
+68 69
+68 70
+69 72
+69 73
+69 74
+70 75
+72 76
+73 77
+74 80
+74 78
+74 79
+76 81
+81 82
+81 83
+82 85
+85 86
+86 88
+86 89
+86 90
+87 88
+88 91
+88 92
+88 93
+89 94
+91 95
+92 96
+92 97
+92 98
+93 99
+94 99
+94 95

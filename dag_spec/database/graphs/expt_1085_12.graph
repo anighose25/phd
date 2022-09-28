@@ -1,0 +1,198 @@
+100
+transpose_naive_4096
+2DConvul_4096
+transpose_naive_4096
+2DConvul_4096
+shared_copy_4096
+shared_copy_4096
+transpose_naive_4096
+uncoalesced_copy_4096
+reduce_4096
+transpose_naive_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+MatVecMulCoalesced1_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+atax1_4096
+MatVecMulUncoalesced0_4096
+atax2_4096
+MatVecMulUncoalesced0_4096
+atax1_4096
+gesummv_4096
+MatVecMulCoalesced2_4096
+shared_copy_4096
+shared_copy_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+2DConvul_4096
+uncoalesced_copy_4096
+uncoalesced_copy_4096
+uncoalesced_copy_4096
+transpose_naive_4096
+reduce_4096
+uncoalesced_copy_4096
+uncoalesced_copy_4096
+shared_copy_4096
+reduce_4096
+reduce_4096
+transpose_naive_4096
+DotProduct_4096
+reduce2_4096
+gemm_4096
+shared_copy_4096
+reduce_4096
+mean_4096
+std_4096
+VectorAdd_4096
+vecadd_4096
+mean_4096
+reduce1_4096
+reduce_4096
+vecadd_4096
+DotProduct_4096
+reduce_4096
+reduce2_4096
+reduce6_4096
+reduce_4096
+MatVecMulCoalesced2_4096
+atax1_4096
+reduce_4096
+MatVecMulCoalesced0_4096
+MatVecMulUncoalesced0_4096
+VectorAdd_4096
+reduce2_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+gesummv_4096
+gesummv_4096
+gesummv_4096
+transpose_naive_4096
+gesummv_4096
+MatVecMulCoalesced1_4096
+gemm_4096
+gesummv_4096
+mean_4096
+reduce3_4096
+bicg2_4096
+reduce4_4096
+atax2_4096
+transpose_naive_4096
+MatVecMulCoalesced0_4096
+shared_copy_4096
+atax2_4096
+2DConvul_4096
+reduce_4096
+reduce_4096
+reduce4_4096
+reduce1_4096
+vecadd_4096
+reduce2_4096
+VectorAdd_4096
+reduce4_4096
+MatVecMulCoalesced0_4096
+2DConvul_4096
+vecadd_4096
+VectorAdd_4096
+atax1_4096
+DotProduct_4096
+0 10
+1 11
+1 12
+2 13
+2 14
+3 15
+4 16
+4 17
+5 18
+5 19
+6 20
+6 21
+7 22
+7 23
+8 24
+8 25
+8 26
+9 27
+10 40
+10 41
+11 42
+11 43
+12 44
+13 45
+14 46
+15 48
+15 47
+16 49
+17 50
+17 51
+18 52
+19 53
+19 54
+20 56
+20 55
+21 57
+22 58
+23 59
+23 60
+24 61
+25 62
+26 63
+27 64
+28 65
+29 66
+29 67
+30 68
+31 69
+32 70
+32 71
+33 72
+34 73
+34 74
+35 75
+35 76
+36 42
+36 62
+37 66
+37 46
+38 58
+39 59
+39 61
+40 77
+40 78
+41 80
+41 79
+42 81
+42 82
+43 83
+44 84
+44 85
+45 86
+46 87
+47 88
+47 89
+48 90
+48 91
+49 92
+50 93
+51 94
+51 95
+52 96
+52 97
+53 98
+53 99
+54 78
+57 80
+57 82
+58 90
+58 84
+59 96
+59 92
+60 98
+60 94
+61 97
+62 99
+66 86

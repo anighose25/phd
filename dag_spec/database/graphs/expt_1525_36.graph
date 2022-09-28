@@ -1,0 +1,341 @@
+150
+uncoalesced_copy_4096
+transpose_naive_4096
+transpose_naive_4096
+2DConvul_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+gesummv_4096
+bicg2_4096
+MatVecMulUncoalesced0_4096
+uncoalesced_copy_4096
+reduce_4096
+reduce_4096
+std_4096
+gesummv_4096
+transpose_naive_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced0_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+MatVecMulCoalesced2_4096
+2DConvul_4096
+MatVecMulCoalesced2_4096
+uncoalesced_copy_4096
+shared_copy_4096
+reduce5_4096
+reduce_4096
+reduce0_4096
+reduce_4096
+gesummv_4096
+reduce_4096
+reduce3_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+bicg1_4096
+MatVecMulUncoalesced0_4096
+std_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+transpose_naive_4096
+gesummv_4096
+atax1_4096
+reduce_4096
+reduce2_4096
+reduce_4096
+bicg2_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+gesummv_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+reduce_4096
+reduce_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+reduce0_4096
+reduce_4096
+reduce5_4096
+reduce_4096
+MatVecMulCoalesced1_4096
+transpose_naive_4096
+2DConvul_4096
+MatVecMulUncoalesced0_4096
+bicg2_4096
+reduce3_4096
+reduce_4096
+reduce3_4096
+reduce_4096
+bicg2_4096
+atax2_4096
+atax2_4096
+transpose_naive_4096
+reduce5_4096
+reduce0_4096
+reduce_4096
+reduce_4096
+reduce4_4096
+reduce_4096
+reduce5_4096
+MatVecMulUncoalesced0_4096
+reduce_4096
+reduce2_4096
+reduce_4096
+reduce5_4096
+reduce_4096
+reduce_4096
+reduce4_4096
+atax1_4096
+MatVecMulUncoalesced0_4096
+2DConvul_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+bicg2_4096
+reduce_4096
+uncoalesced_copy_4096
+gesummv_4096
+MatVecMulCoalesced0_4096
+MatVecMulUncoalesced0_4096
+bicg1_4096
+reduce5_4096
+reduce_4096
+reduce_4096
+reduce_4096
+reduce_4096
+reduce_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+reduce_4096
+reduce_4096
+reduce_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+gemm_4096
+MatVecMulCoalesced1_4096
+gemm_4096
+MatVecMulCoalesced0_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+uncoalesced_copy_4096
+gemm_4096
+MatVecMulCoalesced1_4096
+MatVecMulUncoalesced0_4096
+reduce1_4096
+atax1_4096
+MatVecMulCoalesced0_4096
+uncoalesced_copy_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+DotProduct_4096
+reduce3_4096
+reduce_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+gesummv_4096
+gesummv_4096
+0 4
+1 5
+2 8
+2 9
+2 6
+2 7
+3 4
+3 5
+3 6
+4 10
+4 11
+4 12
+5 13
+5 14
+5 15
+6 16
+6 17
+6 18
+7 19
+7 20
+7 21
+9 16
+9 12
+10 22
+11 24
+11 25
+11 26
+11 23
+12 27
+13 22
+22 28
+22 29
+22 30
+23 31
+24 32
+24 33
+24 34
+25 35
+26 40
+26 36
+26 37
+26 38
+26 39
+27 32
+27 28
+27 30
+28 41
+28 42
+28 43
+28 44
+29 45
+29 46
+29 47
+30 48
+31 49
+31 50
+32 41
+32 43
+33 45
+33 47
+34 50
+35 44
+36 48
+41 51
+41 52
+42 53
+43 56
+43 57
+43 54
+43 55
+44 58
+44 59
+44 60
+45 51
+45 61
+45 62
+51 64
+51 65
+51 66
+51 63
+52 67
+53 68
+53 69
+53 70
+53 71
+54 67
+55 71
+63 72
+63 73
+63 74
+63 75
+64 76
+65 73
+65 75
+67 76
+72 77
+72 78
+73 79
+74 80
+74 81
+75 77
+77 82
+78 83
+78 84
+78 85
+78 86
+79 87
+80 88
+80 89
+80 90
+80 91
+80 92
+81 93
+81 94
+82 96
+82 97
+82 98
+82 95
+83 99
+84 100
+84 101
+85 104
+85 105
+85 102
+85 103
+86 106
+87 107
+87 101
+89 95
+90 96
+90 100
+92 105
+92 98
+92 99
+92 103
+95 108
+95 109
+95 110
+95 111
+96 112
+97 113
+97 114
+97 115
+97 116
+98 117
+98 118
+99 120
+99 119
+100 121
+100 122
+101 113
+101 114
+101 123
+101 124
+108 125
+109 126
+109 127
+110 128
+110 129
+110 130
+111 131
+112 132
+112 133
+113 134
+113 135
+114 136
+116 125
+118 128
+118 126
+118 127
+119 129
+120 131
+120 133
+120 134
+125 137
+126 138
+126 139
+127 140
+127 141
+127 142
+127 143
+129 140
+129 142
+137 144
+138 145
+138 146
+139 147
+139 148
+140 147
+140 149

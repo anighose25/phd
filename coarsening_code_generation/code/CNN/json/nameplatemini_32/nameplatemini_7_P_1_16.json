@@ -1,0 +1,24 @@
+{
+ "name": "pooling_7",
+ "src": "nameplatemini_7_P_1_16.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[32,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2048",
+    "pos": 0,
+    "persistence": 0
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "512",
+    "pos": 1,
+    "persistence": 0
+  }
+ ]
+}

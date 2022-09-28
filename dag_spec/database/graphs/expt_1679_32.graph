@@ -1,0 +1,341 @@
+150
+reduce_8192
+shared_copy_8192
+2DConvul_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+reduce_8192
+uncoalesced_copy_8192
+reduce_8192
+transpose_naive_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+transpose_naive_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+mean_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+transpose_naive_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced1_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+transpose_naive_8192
+reduce_8192
+reduce_8192
+reduce_8192
+reduce_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+bicg2_8192
+bicg2_8192
+gemm_8192
+gesummv_8192
+gesummv_8192
+gemm_8192
+gesummv_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+uncoalesced_copy_8192
+2DConvul_8192
+atax2_8192
+reduce4_8192
+reduce_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+gesummv_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+reduce_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+shared_copy_8192
+gesummv_8192
+gesummv_8192
+std_8192
+2DConvul_8192
+uncoalesced_copy_8192
+gesummv_8192
+shared_copy_8192
+gesummv_8192
+MatVecMulCoalesced0_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulCoalesced2_8192
+uncoalesced_copy_8192
+gesummv_8192
+reduce5_8192
+gesummv_8192
+gemm_8192
+gesummv_8192
+gesummv_8192
+uncoalesced_copy_8192
+gesummv_8192
+uncoalesced_copy_8192
+uncoalesced_copy_8192
+gesummv_8192
+reduce_8192
+reduce_8192
+uncoalesced_copy_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+gesummv_8192
+reduce_8192
+MatVecMulUncoalesced0_8192
+gesummv_8192
+gemm_8192
+gesummv_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+gesummv_8192
+MatVecMulUncoalesced0_8192
+uncoalesced_copy_8192
+0 12
+1 13
+1 14
+1 15
+2 16
+3 17
+3 18
+3 19
+4 20
+4 13
+4 14
+5 20
+9 17
+9 18
+9 15
+12 21
+12 22
+13 23
+14 24
+14 25
+14 26
+15 27
+15 28
+16 29
+16 22
+16 21
+17 24
+17 26
+18 28
+18 29
+21 30
+22 32
+22 33
+22 31
+23 34
+23 35
+24 36
+24 37
+24 38
+25 30
+26 31
+28 32
+30 40
+30 41
+30 39
+31 42
+31 43
+32 44
+32 45
+32 46
+33 48
+33 42
+33 47
+34 43
+35 47
+39 49
+40 50
+40 51
+40 52
+41 53
+41 54
+42 56
+42 55
+43 57
+43 58
+44 50
+45 51
+45 53
+47 58
+49 59
+49 60
+50 61
+50 62
+50 63
+51 64
+52 65
+53 66
+53 67
+54 68
+54 69
+55 61
+55 70
+59 71
+60 72
+61 73
+61 74
+61 75
+62 76
+62 77
+62 78
+63 80
+63 81
+63 79
+64 82
+64 74
+71 83
+71 84
+72 85
+73 86
+73 87
+74 88
+74 89
+75 90
+75 91
+76 92
+76 93
+77 83
+77 94
+77 95
+78 86
+80 88
+80 89
+80 90
+81 91
+81 93
+82 94
+83 96
+84 97
+84 98
+85 99
+85 100
+86 101
+87 104
+87 102
+87 103
+88 105
+88 100
+89 96
+90 101
+96 106
+96 107
+96 108
+97 109
+98 112
+98 110
+98 111
+99 113
+100 114
+100 115
+101 108
+101 107
+101 116
+102 112
+106 117
+106 118
+106 119
+107 120
+108 121
+109 122
+110 123
+111 124
+111 125
+112 126
+113 118
+114 121
+114 123
+114 125
+116 126
+117 128
+117 129
+117 127
+118 130
+118 131
+119 132
+119 133
+120 134
+120 135
+121 136
+121 137
+121 138
+122 139
+122 132
+123 128
+124 131
+125 135
+127 140
+127 141
+128 144
+128 142
+128 143
+129 145
+129 146
+129 147
+130 148
+131 149
+132 140
+132 141
+133 145
+133 142
+134 148

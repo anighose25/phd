@@ -1,0 +1,7 @@
+KernelName=convolution_4
+KernelSource=nameplate_4_C_16_1.cl
+workDimension=1
+globalWorkSize=8192,1,1
+inputBuffers=float,65536,0,0,float,18432,1,1,float,64,2,1
+outputBuffers=float,131072,3,0
+data_outflow=5,0,0

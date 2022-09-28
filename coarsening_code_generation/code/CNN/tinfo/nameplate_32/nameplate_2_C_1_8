@@ -1,0 +1,7 @@
+KernelName=convolution_2
+KernelSource=nameplate_2_C_1_8.cl
+workDimension=1
+globalWorkSize=1024,1,1
+inputBuffers=float,4096,0,0,float,4608,1,1,float,32,2,1
+outputBuffers=float,8192,3,0
+data_outflow=3,0,0

@@ -1,0 +1,310 @@
+150
+transpose_naive_2048
+mm21_2048
+shared_copy_2048
+shared_copy_2048
+2DConvul_2048
+shared_copy_2048
+uncoalesced_copy_2048
+2DConvul_2048
+2DConvul_2048
+shared_copy_2048
+shared_copy_2048
+shared_copy_2048
+reduce_2048
+uncoalesced_copy_2048
+gesummv_2048
+gesummv_2048
+bicg1_2048
+bicg1_2048
+MatVecMulUncoalesced0_2048
+gesummv_2048
+MatVecMulUncoalesced0_2048
+atax1_2048
+atax1_2048
+reduce_2048
+bicg1_2048
+reduce_2048
+VectorAdd_2048
+bicg1_2048
+reduce_2048
+reduce_2048
+atax1_2048
+MatVecMulUncoalesced0_2048
+reduce_2048
+reduce_2048
+atax1_2048
+reduce_2048
+MatVecMulUncoalesced0_2048
+reduce_2048
+bicg1_2048
+reduce_2048
+bicg1_2048
+atax1_2048
+MatVecMulUncoalesced0_2048
+bicg1_2048
+MatVecMulUncoalesced0_2048
+reduce_2048
+gesummv_2048
+gesummv_2048
+bicg1_2048
+atax1_2048
+atax1_2048
+MatVecMulUncoalesced0_2048
+uncoalesced_copy_2048
+shared_copy_2048
+bicg1_2048
+reduce_2048
+MatVecMulUncoalesced0_2048
+atax1_2048
+bicg1_2048
+atax1_2048
+bicg1_2048
+reduce_2048
+atax1_2048
+reduce_2048
+bicg1_2048
+reduce6_2048
+atax1_2048
+gesummv_2048
+reduce_2048
+reduce4_2048
+bicg1_2048
+reduce_2048
+reduce_2048
+vecadd_2048
+bicg1_2048
+reduce_2048
+mm21_2048
+reduce2_2048
+atax1_2048
+reduce_2048
+reduce6_2048
+MatVecMulUncoalesced0_2048
+MatVecMulUncoalesced0_2048
+bicg1_2048
+reduce4_2048
+reduce_2048
+bicg1_2048
+reduce_2048
+reduce_2048
+mm21_2048
+gesummv_2048
+atax1_2048
+reduce_2048
+vecadd_2048
+reduce_2048
+atax1_2048
+reduce_2048
+vecadd_2048
+bicg1_2048
+MatVecMulUncoalesced0_2048
+bicg1_2048
+gemm_2048
+bicg1_2048
+atax1_2048
+gesummv_2048
+sgemm_2048
+MatVecMulUncoalesced0_2048
+bicg1_2048
+reduce_2048
+gemm_2048
+atax1_2048
+reduce_2048
+bicg1_2048
+vecadd_2048
+reduce_2048
+reduce_2048
+reduce_2048
+bicg1_2048
+MatVecMulUncoalesced0_2048
+gemm_2048
+gemm_2048
+atax1_2048
+mm22_2048
+atax1_2048
+bicg1_2048
+reduce_2048
+gesummv_2048
+MatVecMulUncoalesced0_2048
+atax1_2048
+mm21_2048
+reduce_2048
+reduce_2048
+atax1_2048
+reduce5_2048
+atax1_2048
+reduce_2048
+transpose_naive_2048
+2DConvul_2048
+2DConvul_2048
+shared_copy_2048
+mm22_2048
+MatVecMulUncoalesced0_2048
+atax1_2048
+reduce2_2048
+bicg1_2048
+bicg1_2048
+MatVecMulUncoalesced0_2048
+mm22_2048
+gesummv_2048
+MatVecMulUncoalesced0_2048
+0 14
+0 15
+1 16
+2 17
+3 18
+4 14
+5 15
+14 19
+14 20
+15 21
+16 22
+16 23
+17 24
+17 25
+17 26
+18 27
+18 28
+19 30
+19 31
+20 32
+21 33
+22 34
+22 35
+23 36
+24 37
+26 30
+30 38
+30 39
+31 40
+31 41
+32 42
+32 43
+33 44
+34 45
+35 46
+35 47
+36 48
+36 49
+36 50
+37 51
+38 54
+38 55
+39 56
+40 57
+40 58
+41 59
+41 60
+42 61
+42 62
+43 63
+44 64
+45 56
+45 54
+46 57
+46 58
+47 59
+48 55
+53 60
+54 65
+54 66
+55 67
+56 68
+56 69
+57 70
+58 72
+58 71
+59 73
+59 74
+60 75
+61 76
+62 77
+63 66
+63 76
+64 73
+65 78
+66 80
+66 79
+67 81
+68 82
+68 83
+69 84
+70 85
+70 86
+71 78
+72 81
+72 82
+73 83
+73 79
+74 85
+75 86
+78 88
+78 87
+79 89
+79 90
+80 91
+81 92
+82 93
+82 94
+83 96
+83 95
+84 97
+84 98
+85 99
+85 100
+85 101
+86 87
+87 102
+88 103
+89 104
+90 105
+90 106
+91 107
+91 108
+92 109
+93 110
+93 111
+94 112
+95 113
+95 102
+97 103
+101 104
+102 114
+102 115
+103 116
+103 117
+104 117
+104 118
+105 118
+106 114
+114 119
+115 120
+115 121
+116 122
+116 123
+117 124
+117 125
+118 121
+118 123
+119 126
+120 127
+121 128
+122 129
+123 130
+124 131
+124 132
+124 133
+125 134
+126 141
+126 142
+127 144
+127 143
+128 145
+129 146
+130 147
+130 148
+131 149
+131 141
+132 142
+135 147

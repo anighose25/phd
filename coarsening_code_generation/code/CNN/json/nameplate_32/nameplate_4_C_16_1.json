@@ -1,0 +1,38 @@
+{
+ "name": "convolution_4",
+ "src": "nameplate_4_C_16_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[256,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2048",
+    "pos": 0,
+    "persistence": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "18432",
+    "pos": 1,
+    "persistence": 1
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "64",
+    "pos": 2,
+    "persistence": 1
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "4096",
+    "pos": 3,
+    "persistence": 0
+  }
+ ]
+}

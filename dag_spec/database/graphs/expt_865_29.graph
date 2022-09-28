@@ -1,0 +1,213 @@
+100
+shared_copy_1024
+mm21_1024
+uncoalesced_copy_1024
+transpose_naive_1024
+2DConvul_1024
+transpose_naive_1024
+corr_1024
+sgemm_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+MatVecMulCoalesced1_1024
+gemm_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+MatVecMulCoalesced0_1024
+gemm_1024
+mm22_1024
+reduce4_1024
+reduce0_1024
+mm21_1024
+MatVecMulUncoalesced0_1024
+reduce5_1024
+MatVecMulCoalesced0_1024
+transpose_naive_1024
+bicg2_1024
+reduce3_1024
+reduce4_1024
+atax1_1024
+reduce_1024
+MatVecMulUncoalesced0_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+covar_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+covar_1024
+atax1_1024
+DotProduct_1024
+bicg2_1024
+gemm_1024
+MatVecMulCoalesced2_1024
+MatVecMulCoalesced1_1024
+MatVecMulCoalesced1_1024
+DotProduct_1024
+vecadd_1024
+reduce5_1024
+reduce1_1024
+reduce0_1024
+reduce_1024
+reduce2_1024
+reduce2_1024
+reduce3_1024
+vecadd_1024
+bicg2_1024
+reduce3_1024
+VectorAdd_1024
+reduce3_1024
+bicg2_1024
+reduce3_1024
+reduce6_1024
+reduce_1024
+reduce_1024
+vecadd_1024
+reduce0_1024
+atax2_1024
+DotProduct_1024
+VectorAdd_1024
+reduce1_1024
+reduce1_1024
+reduce_1024
+vecadd_1024
+reduce4_1024
+reduce2_1024
+atax1_1024
+bicg1_1024
+reduce6_1024
+DotProduct_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+reduce0_1024
+atax1_1024
+reduce4_1024
+vecadd_1024
+VectorAdd_1024
+DotProduct_1024
+vecadd_1024
+vecadd_1024
+reduce1_1024
+bicg2_1024
+reduce2_1024
+reduce4_1024
+vecadd_1024
+reduce3_1024
+DotProduct_1024
+reduce2_1024
+0 6
+0 7
+1 8
+2 9
+2 10
+2 11
+3 12
+4 13
+4 14
+5 8
+6 15
+7 16
+8 17
+8 18
+9 19
+9 20
+10 21
+11 22
+11 23
+12 24
+13 25
+13 26
+13 27
+13 28
+15 29
+15 30
+15 31
+16 32
+17 33
+17 34
+17 35
+18 36
+18 37
+19 40
+19 38
+19 39
+29 41
+30 42
+31 43
+32 44
+32 45
+32 46
+33 48
+33 49
+33 47
+34 50
+35 41
+35 51
+35 52
+39 42
+39 43
+39 44
+40 48
+40 52
+40 47
+41 53
+41 54
+42 56
+42 55
+43 57
+44 58
+45 59
+45 60
+46 56
+46 57
+47 59
+53 61
+53 62
+53 63
+54 64
+55 65
+55 66
+56 67
+56 68
+56 69
+57 70
+58 72
+58 71
+59 73
+61 74
+61 75
+61 76
+62 77
+63 80
+63 78
+63 79
+64 81
+65 82
+66 83
+66 84
+67 85
+67 86
+73 77
+73 78
+74 88
+74 89
+74 87
+75 90
+76 91
+82 88
+82 87
+83 89
+84 90
+84 91
+87 92
+87 93
+87 94
+88 96
+88 97
+88 95
+89 98
+90 99

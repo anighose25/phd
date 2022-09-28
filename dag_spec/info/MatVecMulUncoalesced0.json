@@ -1,0 +1,50 @@
+{
+    "ecos": {
+        "128": 518.0, 
+        "256": 1030.0, 
+        "512": 2054.0, 
+        "1024": 4102.0, 
+        "2048": 8198.00000001, 
+        "4096": 16390.0, 
+        "8192": 32774.0
+    }, 
+    "globalWorkSize": "[dataset]", 
+    "inputBuffers": [
+        {
+            "break": 1, 
+            "pos": 0, 
+            "size": "dataset**2", 
+            "type": "float"
+        }, 
+        {
+            "break": 1, 
+            "pos": 1, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "name": "MatVecMulUncoalesced0", 
+    "outputBuffers": [
+        {
+            "break": 1, 
+            "pos": 4, 
+            "size": "dataset", 
+            "type": "float"
+        }
+    ], 
+    "partition": 10, 
+    "src": "oclMatVecMul.cl", 
+    "varArguments": [
+        {
+            "pos": 2, 
+            "type": "uint", 
+            "value": "dataset"
+        }, 
+        {
+            "pos": 3, 
+            "type": "uint", 
+            "value": "partition_round(dataset, size_percent)"
+        }
+    ], 
+    "workDimension": 1
+}

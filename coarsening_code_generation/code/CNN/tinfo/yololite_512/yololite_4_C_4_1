@@ -1,0 +1,7 @@
+KernelName=convolution_4
+KernelSource=yololite_4_C_4_1.cl
+workDimension=1
+globalWorkSize=262144,1,1
+inputBuffers=float,524288,0,0,float,18432,1,1,float,64,2,1
+outputBuffers=float,1048576,3,0
+data_outflow=5,0,0

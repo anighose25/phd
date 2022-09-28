@@ -1,0 +1,350 @@
+150
+reduce_4096
+2DConvul_4096
+transpose_naive_4096
+2DConvul_4096
+reduce_4096
+transpose_naive_4096
+transpose_naive_4096
+uncoalesced_copy_4096
+uncoalesced_copy_4096
+uncoalesced_copy_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+MatVecMulUncoalesced0_4096
+uncoalesced_copy_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+MatVecMulCoalesced2_4096
+MatVecMulCoalesced2_4096
+MatVecMulUncoalesced0_4096
+bicg2_4096
+gesummv_4096
+reduce_4096
+reduce_4096
+MatVecMulCoalesced0_4096
+gesummv_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+reduce_4096
+std_4096
+reduce6_4096
+vecadd_4096
+reduce_4096
+reduce3_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+bicg1_4096
+reduce_4096
+reduce2_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+mean_4096
+MatVecMulUncoalesced0_4096
+atax2_4096
+reduce_4096
+bicg1_4096
+MatVecMulUncoalesced0_4096
+MatVecMulCoalesced1_4096
+gesummv_4096
+DotProduct_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+reduce5_4096
+MatVecMulUncoalesced0_4096
+bicg1_4096
+reduce_4096
+reduce5_4096
+gesummv_4096
+atax2_4096
+reduce_4096
+atax1_4096
+reduce_4096
+MatVecMulCoalesced2_4096
+gesummv_4096
+VectorAdd_4096
+reduce_4096
+reduce0_4096
+reduce_4096
+bicg2_4096
+reduce_4096
+atax2_4096
+reduce_4096
+atax1_4096
+reduce_4096
+MatVecMulCoalesced2_4096
+reduce_4096
+atax1_4096
+MatVecMulUncoalesced0_4096
+VectorAdd_4096
+gemm_4096
+DotProduct_4096
+MatVecMulCoalesced2_4096
+reduce5_4096
+reduce1_4096
+MatVecMulCoalesced2_4096
+atax2_4096
+DotProduct_4096
+DotProduct_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+mean_4096
+reduce_4096
+bicg1_4096
+reduce_4096
+reduce_4096
+reduce_4096
+reduce3_4096
+reduce_4096
+reduce_4096
+VectorAdd_4096
+MatVecMulUncoalesced0_4096
+reduce_4096
+reduce1_4096
+reduce_4096
+DotProduct_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+DotProduct_4096
+MatVecMulUncoalesced0_4096
+mean_4096
+gesummv_4096
+reduce_4096
+MatVecMulUncoalesced0_4096
+MatVecMulUncoalesced0_4096
+VectorAdd_4096
+MatVecMulUncoalesced0_4096
+reduce2_4096
+reduce_4096
+DotProduct_4096
+reduce_4096
+reduce2_4096
+reduce_4096
+vecadd_4096
+reduce_4096
+DotProduct_4096
+gesummv_4096
+reduce1_4096
+reduce_4096
+bicg1_4096
+reduce_4096
+VectorAdd_4096
+reduce_4096
+atax2_4096
+MatVecMulUncoalesced0_4096
+transpose_naive_4096
+reduce_4096
+atax2_4096
+reduce_4096
+shared_copy_4096
+MatVecMulUncoalesced0_4096
+reduce1_4096
+reduce_4096
+MatVecMulCoalesced1_4096
+reduce_4096
+reduce4_4096
+MatVecMulUncoalesced0_4096
+0 8
+0 9
+1 10
+1 11
+2 12
+2 13
+3 14
+3 15
+4 16
+4 17
+4 10
+5 12
+5 14
+8 18
+9 19
+9 20
+10 21
+10 22
+11 24
+11 23
+12 25
+13 26
+14 27
+15 28
+16 29
+17 25
+17 21
+17 22
+18 30
+19 32
+19 31
+20 33
+20 34
+20 35
+21 36
+22 37
+22 38
+23 40
+23 31
+23 39
+24 33
+24 35
+24 36
+25 37
+26 39
+30 41
+30 42
+30 43
+31 44
+31 45
+32 46
+33 48
+33 47
+34 49
+34 50
+34 51
+35 52
+36 53
+36 54
+36 55
+37 56
+37 41
+38 43
+38 53
+38 47
+39 45
+40 55
+41 57
+41 58
+42 59
+42 60
+43 61
+44 62
+44 63
+45 64
+46 65
+47 66
+47 67
+48 68
+48 69
+49 58
+49 70
+49 71
+51 64
+51 66
+51 62
+52 68
+57 72
+57 73
+57 74
+58 75
+58 76
+58 77
+59 78
+60 79
+61 80
+61 81
+61 72
+63 74
+65 76
+65 78
+66 80
+72 82
+73 83
+74 84
+75 85
+76 86
+76 87
+77 88
+77 89
+78 90
+78 91
+79 83
+82 92
+83 93
+83 94
+84 96
+84 95
+85 97
+86 98
+87 99
+87 100
+87 101
+88 102
+88 103
+89 92
+90 97
+90 98
+90 95
+91 99
+91 101
+91 102
+92 104
+93 105
+93 106
+93 107
+94 108
+95 109
+95 110
+96 111
+97 112
+98 113
+98 114
+99 104
+99 109
+100 105
+100 107
+101 112
+101 110
+102 114
+104 115
+105 116
+105 117
+106 118
+107 119
+108 120
+108 121
+108 122
+109 123
+110 124
+110 125
+111 128
+111 126
+111 127
+112 115
+113 121
+114 116
+114 117
+114 119
+115 129
+116 130
+117 131
+118 132
+119 133
+119 134
+119 135
+120 136
+120 131
+120 133
+121 129
+122 135
+129 137
+129 138
+130 139
+130 140
+130 141
+131 142
+131 143
+132 144
+132 145
+133 137
+133 146
+133 143
+134 145
+134 139
+134 141
+137 147
+137 148
+138 149

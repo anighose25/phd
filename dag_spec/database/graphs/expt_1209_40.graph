@@ -1,0 +1,202 @@
+100
+2DConvul_1024
+transpose_naive_1024
+mm21_1024
+reduce_1024
+shared_copy_1024
+2DConvul_1024
+transpose_naive_1024
+shared_copy_1024
+mm21_1024
+uncoalesced_copy_1024
+2DConvul_1024
+reduce_1024
+mm22_1024
+shared_copy_1024
+uncoalesced_copy_1024
+mm22_1024
+2DConvul_1024
+shared_copy_1024
+reduce_1024
+mm21_1024
+shared_copy_1024
+covar_1024
+mm21_1024
+MatVecMulUncoalesced0_1024
+mean_1024
+covar_1024
+gemm_1024
+covar_1024
+MatVecMulCoalesced1_1024
+covar_1024
+gemm_1024
+MatVecMulUncoalesced0_1024
+shared_copy_1024
+covar_1024
+MatVecMulCoalesced2_1024
+gesummv_1024
+gesummv_1024
+covar_1024
+sgemm_1024
+MatVecMulUncoalesced0_1024
+bicg2_1024
+MatVecMulUncoalesced0_1024
+atax2_1024
+atax1_1024
+MatVecMulCoalesced1_1024
+bicg1_1024
+gemm_1024
+bicg1_1024
+atax1_1024
+gesummv_1024
+2DConvul_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+mm22_1024
+atax1_1024
+atax1_1024
+gesummv_1024
+atax2_1024
+gesummv_1024
+sgemm_1024
+bicg1_1024
+vecadd_1024
+bicg1_1024
+VectorAdd_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+shared_copy_1024
+gesummv_1024
+mm21_1024
+gesummv_1024
+transpose_naive_1024
+MatVecMulUncoalesced0_1024
+MatVecMulCoalesced1_1024
+corr_1024
+std_1024
+covar_1024
+covar_1024
+mm22_1024
+gesummv_1024
+bicg2_1024
+bicg1_1024
+reduce6_1024
+gesummv_1024
+uncoalesced_copy_1024
+bicg1_1024
+mm22_1024
+MatVecMulUncoalesced0_1024
+MatVecMulCoalesced1_1024
+gesummv_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+gesummv_1024
+bicg1_1024
+atax1_1024
+corr_1024
+gesummv_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+0 24
+0 21
+0 22
+0 23
+1 25
+1 26
+1 27
+1 28
+2 32
+2 29
+2 30
+2 31
+3 33
+3 34
+3 35
+4 36
+5 40
+5 37
+5 38
+5 39
+6 41
+6 42
+7 43
+7 44
+7 45
+7 46
+8 47
+9 48
+10 49
+10 50
+10 51
+11 22
+11 52
+11 53
+11 54
+12 23
+13 35
+13 36
+13 31
+14 41
+14 39
+21 56
+21 57
+21 55
+22 58
+22 59
+23 60
+23 61
+23 62
+24 64
+24 63
+25 65
+25 66
+25 67
+26 68
+26 69
+26 70
+26 71
+27 72
+27 73
+28 74
+29 75
+29 76
+29 77
+29 78
+30 79
+31 80
+31 81
+32 82
+33 83
+34 84
+35 85
+35 86
+35 87
+36 88
+39 55
+46 56
+46 58
+46 60
+47 57
+48 61
+49 59
+50 64
+50 65
+50 62
+52 67
+52 69
+52 78
+52 71
+53 80
+55 89
+56 90
+56 91
+56 92
+57 93
+57 94
+58 96
+58 97
+58 95
+59 98
+59 99

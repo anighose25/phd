@@ -1,0 +1,31 @@
+{
+ "name": "linear_8",
+ "src": "nameplatemini_8_L_1_16.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[2,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "512",
+    "pos": 0,
+    "persistence": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "16384",
+    "pos": 1,
+    "persistence": 1
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "32",
+    "pos": 2,
+    "persistence": 0
+  }
+ ]
+}

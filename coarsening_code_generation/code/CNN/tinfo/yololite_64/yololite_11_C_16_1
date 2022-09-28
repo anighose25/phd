@@ -1,0 +1,7 @@
+KernelName=convolution_11
+KernelSource=yololite_11_C_16_1.cl
+workDimension=1
+globalWorkSize=31,1,1
+inputBuffers=float,1024,0,0,float,288000,1,1,float,125,2,1
+outputBuffers=float,500,3,0
+data_outflow=2,0,0

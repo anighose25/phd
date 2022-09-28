@@ -1,0 +1,99 @@
+50
+2DConvul_1024
+transpose_naive_1024
+shared_copy_1024
+2DConvul_1024
+reduce_1024
+transpose_naive_1024
+mm22_1024
+reduce_1024
+mm21_1024
+transpose_naive_1024
+reduce_1024
+mm22_1024
+2DConvul_1024
+uncoalesced_copy_1024
+transpose_naive_1024
+uncoalesced_copy_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+mean_1024
+gesummv_1024
+MatVecMulCoalesced0_1024
+2DConvul_1024
+corr_1024
+atax2_1024
+mm22_1024
+mm22_1024
+corr_1024
+uncoalesced_copy_1024
+transpose_naive_1024
+gesummv_1024
+gesummv_1024
+corr_1024
+gesummv_1024
+shared_copy_1024
+mm21_1024
+mm22_1024
+VectorAdd_1024
+atax1_1024
+reduce6_1024
+bicg2_1024
+atax2_1024
+atax1_1024
+vecadd_1024
+gesummv_1024
+uncoalesced_copy_1024
+reduce4_1024
+bicg2_1024
+bicg1_1024
+mm21_1024
+MatVecMulCoalesced2_1024
+0 16
+1 17
+1 18
+2 19
+2 20
+2 21
+3 24
+3 25
+3 22
+3 23
+4 26
+4 27
+4 28
+5 29
+6 30
+7 31
+8 32
+8 20
+9 16
+10 17
+11 19
+12 29
+13 30
+14 32
+16 33
+16 34
+16 35
+17 36
+17 37
+17 38
+17 39
+18 40
+18 41
+18 42
+19 43
+19 44
+20 45
+20 46
+20 47
+21 48
+22 40
+22 34
+22 35
+22 39
+23 36
+24 48
+24 46
+33 49

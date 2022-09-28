@@ -1,0 +1,370 @@
+189
+transpose_naive_1024
+reduce_1024
+mm21_1024
+mm22_1024
+reduce_1024
+2DConvul_1024
+uncoalesced_copy_1024
+mm21_1024
+reduce_1024
+shared_copy_1024
+shared_copy_1024
+shared_copy_1024
+2DConvul_1024
+2DConvul_1024
+reduce_1024
+transpose_naive_1024
+mm21_1024
+uncoalesced_copy_1024
+shared_copy_1024
+reduce_1024
+mm22_1024
+shared_copy_1024
+mm21_1024
+reduce_1024
+uncoalesced_copy_1024
+2DConvul_1024
+2DConvul_1024
+mm22_1024
+reduce_1024
+2DConvul_1024
+reduce_1024
+2DConvul_1024
+shared_copy_1024
+shared_copy_1024
+2DConvul_1024
+mm22_1024
+shared_copy_1024
+uncoalesced_copy_1024
+2DConvul_1024
+transpose_naive_1024
+reduce_1024
+uncoalesced_copy_1024
+reduce_1024
+mm22_1024
+shared_copy_1024
+mm22_1024
+uncoalesced_copy_1024
+shared_copy_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+MatVecMulUncoalesced0_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+atax1_1024
+atax1_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+gesummv_1024
+corr_1024
+gesummv_1024
+corr_1024
+atax1_1024
+MatVecMulUncoalesced0_1024
+corr_1024
+corr_1024
+covar_1024
+gesummv_1024
+gesummv_1024
+gesummv_1024
+gesummv_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+gesummv_1024
+gesummv_1024
+atax1_1024
+atax1_1024
+covar_1024
+covar_1024
+bicg1_1024
+corr_1024
+gesummv_1024
+atax1_1024
+corr_1024
+MatVecMulUncoalesced0_1024
+covar_1024
+MatVecMulUncoalesced0_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+corr_1024
+corr_1024
+gesummv_1024
+gesummv_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+sgemm_1024
+atax1_1024
+atax1_1024
+atax1_1024
+reduce4_1024
+atax1_1024
+atax1_1024
+covar_1024
+gesummv_1024
+bicg1_1024
+covar_1024
+mm21_1024
+gesummv_1024
+covar_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+gesummv_1024
+atax1_1024
+vecadd_1024
+bicg1_1024
+atax1_1024
+gesummv_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+mm21_1024
+MatVecMulUncoalesced0_1024
+gesummv_1024
+MatVecMulUncoalesced0_1024
+covar_1024
+corr_1024
+mm21_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+MatVecMulUncoalesced0_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+bicg1_1024
+atax1_1024
+bicg1_1024
+atax1_1024
+atax1_1024
+atax1_1024
+bicg1_1024
+bicg1_1024
+0 48
+1 49
+1 50
+2 51
+3 52
+4 53
+4 54
+5 56
+5 55
+6 57
+7 58
+8 59
+9 60
+9 61
+10 62
+11 63
+12 64
+13 65
+13 66
+14 67
+15 68
+16 69
+16 70
+17 71
+18 72
+19 73
+19 74
+20 75
+21 76
+21 77
+22 78
+22 79
+23 80
+23 81
+24 82
+25 83
+26 84
+26 85
+27 86
+28 88
+28 87
+29 89
+30 90
+31 91
+32 92
+33 93
+33 94
+34 96
+34 95
+35 48
+35 49
+36 50
+48 97
+48 98
+49 99
+50 100
+50 101
+51 102
+52 104
+52 103
+53 105
+53 106
+54 107
+54 108
+55 109
+56 110
+56 111
+57 112
+58 113
+58 114
+59 115
+60 116
+61 117
+62 118
+62 119
+63 120
+64 121
+64 122
+65 123
+65 124
+66 125
+66 126
+67 127
+68 128
+69 129
+70 130
+70 131
+71 132
+71 133
+72 134
+73 136
+73 135
+75 97
+76 98
+77 99
+77 100
+78 101
+81 102
+81 103
+82 104
+83 105
+84 107
+85 108
+85 109
+87 111
+89 112
+89 114
+92 115
+93 118
+94 120
+95 121
+96 122
+97 137
+97 138
+98 139
+98 140
+99 141
+100 142
+100 143
+101 144
+101 145
+102 146
+102 147
+103 148
+103 149
+104 150
+105 152
+105 151
+106 153
+107 154
+108 155
+108 156
+109 157
+109 158
+110 159
+111 160
+111 161
+112 162
+112 163
+113 164
+113 165
+114 137
+116 138
+117 139
+117 140
+118 141
+119 142
+119 143
+121 144
+121 145
+122 146
+122 147
+127 148
+130 149
+134 150
+135 151
+136 152
+137 166
+137 167
+138 168
+139 169
+140 170
+140 171
+141 172
+142 173
+142 174
+143 176
+143 175
+144 177
+144 178
+145 179
+146 180
+147 181
+147 182
+148 183
+149 184
+149 185
+150 186
+150 187
+151 188
