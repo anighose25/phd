@@ -1,0 +1,45 @@
+{
+    "ecos": {
+        "128": 15.0, 
+        "256": 15.0, 
+        "512": 15.0, 
+        "1024": 15.0, 
+        "2048": 15.0, 
+        "4096": 15.0, 
+        "8192": 15.0
+    }, 
+    "globalWorkSize": "[dataset]", 
+    "inputBuffers": [
+        {
+            "break": 1, 
+            "pos": 0, 
+            "size": "dataset", 
+            "type": "float"
+        }, 
+        {
+            "break": 1, 
+            "pos": 1, 
+            "size": "dataset", 
+            "type": "float"
+        }
+    ], 
+    "name": "DotProduct", 
+    "outputBuffers": [
+        {
+            "break": 1, 
+            "pos": 2, 
+            "size": "dataset", 
+            "type": "float"
+        }
+    ], 
+    "partition": 10, 
+    "src": "DotProduct.cl", 
+    "varArguments": [
+        {
+            "pos": 3, 
+            "type": "int", 
+            "value": "partition_round(dataset, size_percent)"
+        }
+    ], 
+    "workDimension": 1
+}

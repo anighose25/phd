@@ -1,0 +1,41 @@
+{
+    "src": "gaussianElim_kernels.cl", 
+    "name": "Fan2", 
+    "ioBuffers": [
+        {
+            "break": 0, 
+            "type": "float", 
+            "pos": 1, 
+            "size": "dataset**2"
+        }, 
+        {
+            "break": 0, 
+            "type": "float", 
+            "pos": 2, 
+            "size": "dataset"
+        }
+    ], 
+    "partition": 10, 
+    "varArguments": [
+        {
+            "value": "partition_round(dataset, size_percent)", 
+            "type": "int", 
+            "pos": 3
+        }, 
+        {
+            "value": "0", 
+            "type": "int", 
+            "pos": 4
+        }
+    ], 
+    "workDimension": 2, 
+    "globalWorkSize": "[dataset, dataset]", 
+    "inputBuffers": [
+        {
+            "break": 1, 
+            "type": "float", 
+            "pos": 0, 
+            "size": "dataset**2"
+        }
+    ]
+}

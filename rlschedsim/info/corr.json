@@ -1,0 +1,41 @@
+{
+    "ecos": {
+        "128": 232336.0, 
+        "256": 923408.0, 
+        "512": 3681808.0, 
+        "1024": 14703632.0
+    }, 
+    "globalWorkSize": "[dataset]", 
+    "inputBuffers": [
+        {
+            "break": 0, 
+            "pos": 0, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "name": "corr_kernel", 
+    "outputBuffers": [
+        {
+            "break": 0, 
+            "pos": 1, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "partition": 8, 
+    "src": "correlation.cl", 
+    "varArguments": [
+        {
+            "pos": 3, 
+            "type": "int", 
+            "value": "partition_round(dataset, size_percent)"
+        }, 
+        {
+            "pos": 2, 
+            "type": "int", 
+            "value": "dataset"
+        }
+    ], 
+    "workDimension": 1
+}

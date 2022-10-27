@@ -1,0 +1,40 @@
+{
+    "src": "transpose.cl", 
+    "name": "simple_copy", 
+    "inputBuffers": [
+        {
+            "break": 1, 
+            "type": "float", 
+            "pos": 1, 
+            "size": "dataset**2"
+        }
+    ], 
+    "partition": 10, 
+    "varArguments": [
+        {
+            "value": "0", 
+            "type": "int", 
+            "pos": 2
+        }, 
+        {
+            "value": "dataset", 
+            "type": "int", 
+            "pos": 3
+        }, 
+        {
+            "value": "partition_round(dataset,size_percent)", 
+            "type": "int", 
+            "pos": 4
+        }
+    ], 
+    "workDimension": 2, 
+    "globalWorkSize": "[dataset,dataset]", 
+    "outputBuffers": [
+        {
+            "break": 1, 
+            "type": "float", 
+            "pos": 0, 
+            "size": "dataset**2"
+        }
+    ]
+}

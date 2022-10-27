@@ -1,0 +1,49 @@
+{
+    "ecos": {
+        "128": 8.0, 
+        "256": 8.0, 
+        "512": 8.0, 
+        "1024": 8.0, 
+        "2048": 8.0, 
+        "4096": 8.0, 
+        "8192": 8.0
+    }, 
+    "globalWorkSize": "[dataset,dataset]", 
+    "inputBuffers": [
+        {
+            "break": 1, 
+            "pos": 1, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "name": "transpose_naive", 
+    "outputBuffers": [
+        {
+            "break": 0, 
+            "pos": 0, 
+            "size": "dataset**2", 
+            "type": "float"
+        }
+    ], 
+    "partition": 10, 
+    "src": "transpose.cl", 
+    "varArguments": [
+        {
+            "pos": 2, 
+            "type": "int", 
+            "value": "partition_round(dataset, offset_percent)"
+        }, 
+        {
+            "pos": 3, 
+            "type": "int", 
+            "value": "dataset"
+        }, 
+        {
+            "pos": 4, 
+            "type": "int", 
+            "value": "dataset"
+        }
+    ], 
+    "workDimension": 2
+}
