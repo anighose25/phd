@@ -1,0 +1,52 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "256"
+    }
+  ], 
+  "partition": 1, 
+  "name": "syr2k_kernel", 
+  "src": "syr2k.cl", 
+  "globalWorkSize": "[16, 16]", 
+  "outputBuffers": [], 
+  "workDimension": 2, 
+  "ioBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "256"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "float", 
+      "pos": 3, 
+      "value": "0.1"
+    }, 
+    {
+      "type": "float", 
+      "pos": 4, 
+      "value": "0.1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 6, 
+      "value": "16"
+    }
+  ]
+}

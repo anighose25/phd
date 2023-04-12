@@ -1,0 +1,202 @@
+Instatiating ScheduleEngine
+0 3-->1 0
+1 1-->2 0
+2 3-->3 0
+3 1-->4 0
+4 3-->5 0
+5 1-->6 0
+6 2-->7 0
+7 2-->8 0
+0: 
+1: 0 
+2: 1 
+3: 2 
+4: 3 
+5: 4 
+6: 5 
+7: 6 
+8: 7 
+Setting up interference kernel
+Building kernels of all DAGs
+Setting up DAGs
+Copying persistent buffers
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component0
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 0.248046 ms
+Created task component 0
+Running scheduler thread 1191076928 on core 3 
+Dispatch single called for0
+Processing local frontier of task component 0
+Adding kernel 1 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 0
+Adding kernel 2 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 0
+Adding kernel 3 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 0
+Adding kernel 4 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 0
+Adding kernel 5 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 0
+Adding kernel 6 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 0
+Adding kernel 7 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 0
+Adding kernel 8 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 0
+TASKDAG CALLBACK initiated for kernel 8of task component 0
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 9
+DAG Finished!
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Running callback thread 2108671040 on core 3 
+Kernel Callback initiated
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467032 End: 1606374128467042
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459908357754 End: 1160459912254545
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_0 Execute:0-->3896791: 3896791
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467268 End: 1606374128467271
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459912568795 End: 1160459913012587
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_1 Execute:4211041-->4654833: 443792
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467319 End: 1606374128467324
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459913279337 End: 1160459938493587
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_2 Execute:4921583-->30135833: 25214250
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467386 End: 1606374128467388
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459938830212 End: 1160459939012420
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_3 Execute:30472458-->30654666: 182208
+  4 : convolution_4 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467432 End: 1606374128467436
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459939279254 End: 1160459960560337
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_4 Execute:30921500-->52202583: 21281083
+  5 : pooling_5 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467482 End: 1606374128467485
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459960869129 End: 1160459960994129
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_5 Execute:52511375-->52636375: 125000
+  6 : linear_6 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467651 End: 1606374128467654
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459961254587 End: 1160459964957545
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_6 Execute:52896833-->56599791: 3702958
+  7 : linear_7 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467731 End: 1606374128467735
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459965353045 End: 1160459965428129
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_7 Execute:56995291-->57070375: 75084
+  8 : softmax_8 executing on platform 1 and device 0
+    host queued events --> Start: 1606374128467781 End: 1606374128467784
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1160459965658087 End: 1160459965726837
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_8 Execute:57300333-->57369083: 68750
+Main finished

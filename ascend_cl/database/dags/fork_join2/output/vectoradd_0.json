@@ -1,0 +1,39 @@
+{
+  "cpu_profile":{"dev_type":1,"device_id":0,"ndrange":{"device_end":17209646449843,"device_start":17209646283593},"read":{"device_end":0,"device_start":0},"write":{"device_end":0,"device_queued":0,"device_start":0,"host_queued_end":1602253849085959,"host_queued_start":1602253849085955}},
+  "gpu_profile":{"dev_type":0,"device_id":0,"ndrange":{"device_end":17080022241768,"device_start":17080022233611},"read":{"device_end":17080022589244,"device_start":17080022582119},"write":{"device_end":17080021773786,"device_queued":17080020781161,"device_start":17080021662744,"host_queued_end":1602253720059440,"host_queued_start":1602253720059208}},
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "256"
+    }
+  ], 
+  "partition": 0, 
+  "name": "vectoradd", 
+  "src": "vectoradd.cl", 
+  "globalWorkSize": "[256]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "256"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "256"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+    "fire0": 
+    [
+      {
+        "name": "conv0",
+        "input_channels": 3, 
+        "output_channels": 96, 
+        "kernel_size": 3, 
+        "stride": 1,
+        "padding": 1
+      },
+      {
+        "name": "relu0",
+        "slope": 0.1
+      },
+      {
+        "name": "conv1",
+        "input_channels": 3, 
+        "output_channels": 96, 
+        "kernel_size": 3, 
+        "stride": 1,
+        "padding": 1
+      },
+      {
+        "name": "conv2",
+        "input_channels": 3, 
+        "output_channels": 96, 
+        "kernel_size": 3, 
+        "stride": 1,
+        "padding": 1
+      },
+      {
+        "name": "concat0"
+      },
+      {
+        "name": "relu1",
+        "slope": 0.1
+      }
+    ]
+}

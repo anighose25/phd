@@ -1,0 +1,106 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 1,
+      "size": "3072",
+      "file_name" : "weights/img1.txt"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 5,
+      "size": "2592",
+      "file_name" : "weights/conv1.txt"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 6,
+      "size": "96",
+      "file_name" : "weights/bias1.txt"
+    }
+  ],
+  "name": "dm_conv_local",
+  "src": "convolution.cl",
+  "globalWorkSize": "[1024, 96]",
+  "localWorkSize": "[128]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 14,
+      "size": "98304"
+    }
+  ],
+  "workDimension": 2,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 0,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "32"
+    },
+    {
+      "type": "int",
+      "pos": 3,
+      "value": "32"
+    },
+    {
+      "type": "int",
+      "pos": 4,
+      "value": "3"
+    },
+    {
+      "type": "int",
+      "pos": 7,
+      "value": "3"
+    },
+    {
+      "type": "int",
+      "pos": 8,
+      "value": "3"
+    },
+    {
+      "type": "int",
+      "pos": 9,
+      "value": "96"
+    },
+    {
+      "type": "int",
+      "pos": 10,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 11,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 12,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 13,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 15,
+      "value": "32"
+    },
+    {
+      "type": "int",
+      "pos": 16,
+      "value": "32"
+    }
+  ]
+}

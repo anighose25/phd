@@ -1,0 +1,52 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "65536"
+    }
+  ], 
+  "partition": 1, 
+  "name": "std_kernel", 
+  "src": "correlation.cl", 
+  "globalWorkSize": "[256]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "256"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "float", 
+      "pos": 3, 
+      "value": "255"
+    }, 
+    {
+      "type": "float", 
+      "pos": 4, 
+      "value": "1e-08"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "255"
+    }, 
+    {
+      "type": "int", 
+      "pos": 6, 
+      "value": "255"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "src": "yololite_5_P_1_1.cl", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 148478191122949, 
+      "device_end": 148478191283366
+    }, 
+    "write": {
+      "host_queued_start": 1616582347546065, 
+      "device_start": 0, 
+      "host_queued_end": 1616582347546088, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "name": "pooling_5", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "persistence": 0, 
+      "size": "262144"
+    }
+  ], 
+  "globalWorkSize": "[65536,1,1]", 
+  "workDimension": 1, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "persistence": 0, 
+      "size": "65536"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 148476793587033, 
+      "device_end": 148476794603658
+    }, 
+    "ndrange": {
+      "device_start": 148476792443779, 
+      "device_end": 148476792564146
+    }, 
+    "write": {
+      "host_queued_start": 1616582346089182, 
+      "device_start": 148476779680741, 
+      "host_queued_end": 1616582346089793, 
+      "device_end": 148476786050949, 
+      "device_queued": 148476733806866
+    }, 
+    "device_id": 0
+  }
+}

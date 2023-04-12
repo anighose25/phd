@@ -1,0 +1,22 @@
+{
+ "name": "pooling_5",
+ "src": "yololite_5_P_1_2.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[512,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "4096",
+    "pos": 0
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "1024",
+    "pos": 1
+  }
+ ]
+}

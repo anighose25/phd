@@ -1,0 +1,61 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "int", 
+      "pos": 2, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "int", 
+      "pos": 3, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 4, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "int", 
+      "pos": 6, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "int", 
+      "pos": 7, 
+      "size": "256"
+    }
+  ], 
+  "partition": 1, 
+  "name": "spmv_jds_naive", 
+  "src": "spmv.cl", 
+  "globalWorkSize": "[256]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "256"
+    }
+  ]
+}

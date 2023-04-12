@@ -1,0 +1,105 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 1,
+      "size": "6144"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 5,
+      "size": "1327104",
+      "file_name": "alexnet_weights/conv3.txt"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 6,
+      "size": "384",
+      "file_name": "alexnet_weights/bias3.txt"
+    }
+  ],
+  "name": "dm_conv_local",
+  "src": "convolution.cl",
+  "globalWorkSize": "[128, 384]",
+  "localWorkSize": "[128]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 14,
+      "size": "6144"
+    }
+  ],
+  "workDimension": 2,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 0,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 3,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 4,
+      "value": "384"
+    },
+    {
+      "type": "int",
+      "pos": 7,
+      "value": "3"
+    },
+    {
+      "type": "int",
+      "pos": 8,
+      "value": "3"
+    },
+    {
+      "type": "int",
+      "pos": 9,
+      "value": "384"
+    },
+    {
+      "type": "int",
+      "pos": 10,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 11,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 12,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 13,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 15,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 16,
+      "value": "4"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+0 FFC_sans_bias.json {"m1":16,"p1":16,"n1":16,"TS":32,"wpt":1,"n_chunks":1,"partition":10}
+1 FFC_sans_bias.json {"m1":16,"p1":16,"n1":16,"TS":32,"wpt":1,"n_chunks":1,"partition":10}
+2 FFC_sans_bias.json {"m1":16,"p1":16,"n1":16,"TS":32,"wpt":1,"n_chunks":1,"partition":10}
+3 coalesced_transpose.json {"m1":16,"n1":16,"n_chunks":1,"partition":10}
+4 FFC_sans_bias.json {"m1":16,"p1":16,"n1":16,"TS":32,"wpt":1,"n_chunks":1,"partition":10}
+5 softmax.json {"r1":16,"c1":16,"n_chunks":1,"partition":10}
+6 FFC_sans_bias.json {"m1":16,"p1":16,"n1":16,"TS":32,"wpt":1,"n_chunks":1,"partition":10}
+7 FFC_sans_bias.json {"m1":16,"p1":16,"n1":16,"TS":32,"wpt":1,"n_chunks":1,"partition":10}
+8 empty.json {"n1":16,"w1":16,"q1":16,"n_chunks":1,"partition":10}
+---
+0 2-4 0
+1 2-3 0
+3 1-4 1
+4 2-5 0
+2 2-6 1
+5 1-6 0
+6 2-7 0
+8 0-0 0
+8 0-1 0
+8 0-2 0
+---

@@ -1,0 +1,35 @@
+{
+    "inputBuffers": [
+      {
+        "break": 1, 
+        "type": "float", 
+        "pos": 1, 
+        "size": "I_height*I_width*I_channel"
+      }
+    ], 
+    "name": "activate_relu", 
+    "src": "activation.cl", 
+    "globalWorkSize": "[I_height*I_width*I_channel]", 
+    "outputBuffers": [
+      {
+        "break": 0, 
+        "type": "float", 
+        "pos": 2, 
+        "size": "I_height*I_width*I_channel"
+      }
+    ], 
+    "workDimension": 1, 
+    "ioBuffers": [], 
+    "varArguments": [
+      {
+        "type": "int", 
+        "pos": 0, 
+        "value": "I_height*I_width*I_channel"
+      },
+      {
+        "type": "int", 
+        "pos": 3, 
+        "value": "0"
+      }
+    ]
+  }

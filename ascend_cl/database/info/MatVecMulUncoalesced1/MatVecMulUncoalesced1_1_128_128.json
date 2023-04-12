@@ -1,0 +1,41 @@
+{
+  "src": "oclMatVecMul.cl", 
+  "name": "MatVecMulUncoalesced1", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "16384"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "16384"
+    }
+  ], 
+  "partition": 1, 
+  "varArguments": [
+    {
+      "type": "uint", 
+      "pos": 2, 
+      "value": "128"
+    }, 
+    {
+      "type": "uint", 
+      "pos": 3, 
+      "value": "128"
+    }
+  ], 
+  "workDimension": 1, 
+  "globalWorkSize": "[128]", 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 4, 
+      "size": "128"
+    }
+  ]
+}

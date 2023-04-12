@@ -1,0 +1,44 @@
+{
+  "cpu_profile":{"dev_type":1,"device_id":0,"ndrange":{"device_end":17374253499571,"device_start":17374253013696},"read":{"device_end":0,"device_start":0},"write":{"device_end":0,"device_queued":0,"device_start":0,"host_queued_end":1602254014295132,"host_queued_start":1602254014295128}},
+  "gpu_profile":{"dev_type":0,"device_id":0,"ndrange":{"device_end":17403777512143,"device_start":17403777400922},"read":{"device_end":17403778197199,"device_start":17403778186657},"write":{"device_end":17403776769866,"device_queued":17403775216574,"device_start":17403776196116,"host_queued_end":1602254043820543,"host_queued_start":1602254043820207}},
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "16384"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "128"
+    }
+  ], 
+  "partition": 10, 
+  "name": "atax_kernel1", 
+  "src": "atax.cl", 
+  "globalWorkSize": "[128]", 
+  "outputBuffers": [], 
+  "workDimension": 1, 
+  "ioBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "128"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "128"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "128"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "(1024)*"
+    }
+  ], 
+  "partition": 1, 
+  "name": "mean_kernel", 
+  "src": "covariance.cl", 
+  "globalWorkSize": "[1024]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "1024"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "float", 
+      "pos": 2, 
+      "value": "1023"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "1023"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "1023"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "r1*c1"
+    }
+  ], 
+  "partition": 10, 
+  "name": "softmax", 
+  "src": "softmax.cl", 
+  "globalWorkSize": "[r1]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "r1*c1"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "c1"
+    }
+  ]
+}

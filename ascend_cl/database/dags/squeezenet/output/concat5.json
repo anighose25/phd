@@ -1,0 +1,84 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "12288"
+    }, 
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "12288"
+    }
+  ], 
+  "name": "concat", 
+  "globalWorkSize": "[64]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 62987845653175, 
+      "device_end": 62987845832717
+    }, 
+    "write": {
+      "host_queued_start": 1614056386955695, 
+      "device_start": 0, 
+      "host_queued_end": 1614056386955719, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "192"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "8"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "8"
+    }
+  ], 
+  "workDimension": 1, 
+  "src": "concat.cl", 
+  "ioBuffers": [], 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 3, 
+      "size": "24576"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 62987465263550, 
+      "device_end": 62987465315341
+    }, 
+    "ndrange": {
+      "device_start": 62987464675397, 
+      "device_end": 62987464990926
+    }, 
+    "write": {
+      "host_queued_start": 1614056386573604, 
+      "device_start": 62987464059300, 
+      "host_queued_end": 1614056386574569, 
+      "device_end": 62987464247383, 
+      "device_queued": 62987462840300
+    }, 
+    "device_id": 0
+  }
+}

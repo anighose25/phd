@@ -1,0 +1,41 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "int", 
+      "pos": 2, 
+      "size": "1024"
+    }
+  ], 
+  "partition": 10, 
+  "name": "mm2metersKernel", 
+  "src": "mm2metersKernel.cl", 
+  "globalWorkSize": "[32, 32]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "1024"
+    }
+  ], 
+  "workDimension": 2, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 1, 
+      "value": "32"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "32"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "1"
+    }
+  ]
+}

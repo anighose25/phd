@@ -1,0 +1,24 @@
+{
+ "name": "pooling_9",
+ "src": "yololite_9_P_16_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[128,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "8192",
+    "pos": 0,
+    "persistence": 0
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2048",
+    "pos": 1,
+    "persistence": 0
+  }
+ ]
+}

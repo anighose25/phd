@@ -1,0 +1,62 @@
+{
+  "src": "edlenet_3_P_1_1.cl", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 53008813536527, 
+      "device_end": 53008814165110
+    }, 
+    "write": {
+      "host_queued_start": 1624423394896858, 
+      "device_start": 0, 
+      "host_queued_end": 1624423394896890, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "name": "pooling_3", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "persistence": 0, 
+      "size": "1048576"
+    }
+  ], 
+  "globalWorkSize": "[262144,1,1]", 
+  "workDimension": 1, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "persistence": 0, 
+      "size": "262144"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 53006458241152, 
+      "device_end": 53006458725735
+    }, 
+    "ndrange": {
+      "device_start": 53006457677468, 
+      "device_end": 53006457965909
+    }, 
+    "write": {
+      "host_queued_start": 1624423393294996, 
+      "device_start": 53006444119443, 
+      "host_queued_end": 1624423393295491, 
+      "device_end": 53006453341068, 
+      "device_queued": 53006433915277
+    }, 
+    "device_id": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+    "inputBuffers": [
+      {
+        "break": 1, 
+        "type": "float", 
+        "pos": 0, 
+        "size": "I_height*I_width*I_channel",
+        "read": "0"
+      }
+    ], 
+    "name": "dm_maxpool", 
+    "src": "pooling.cl", 
+    "globalWorkSize": "[O_height,O_width,I_channel]", 
+    "outputBuffers": [
+      {
+        "break": 0, 
+        "type": "float", 
+        "pos": 10, 
+        "size": "O_height*O_width*I_channel"
+      }
+    ], 
+    "workDimension": 3, 
+    "ioBuffers": [], 
+    "varArguments": [
+      {
+        "type": "int", 
+        "pos": 1, 
+        "value": "I_width"
+      }, 
+      {
+        "type": "int", 
+        "pos": 2, 
+        "value": "I_height"
+      }, 
+      {
+        "type": "int", 
+        "pos": 3, 
+        "value": "I_channel"
+      }, 
+      {
+        "type": "int", 
+        "pos": 4, 
+        "value": "K_width"
+      }, 
+      {
+        "type": "int", 
+        "pos": 5, 
+        "value": "K_height"
+      }, 
+      {
+        "type": "int", 
+        "pos": 6, 
+        "value": "stride_w"
+      }, 
+      {
+        "type": "int", 
+        "pos": 7, 
+        "value": "stride_h"
+      }, 
+      {
+        "type": "int", 
+        "pos": 8, 
+        "value": "pad_w"
+      }, 
+      {
+        "type": "int", 
+        "pos": 9, 
+        "value": "pad_h"
+      }, 
+      {
+        "type": "int", 
+        "pos": 11, 
+        "value": "O_width"
+      }, 
+      {
+        "type": "int", 
+        "pos": 12, 
+        "value": "O_height"
+      }, 
+      {
+        "type": "int", 
+        "pos": 13, 
+        "value": "1"
+      }
+    ]
+  }

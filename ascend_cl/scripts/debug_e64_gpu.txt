@@ -1,0 +1,3924 @@
+Instatiating ScheduleEngine
+0 3-->1 0
+1 1-->2 0
+2 3-->3 0
+3 1-->4 0
+4 3-->5 0
+5 1-->6 0
+6 2-->7 0
+7 2-->8 0
+0: 
+1: 0 
+2: 1 
+3: 2 
+4: 3 
+5: 4 
+6: 5 
+7: 6 
+8: 7 
+Setting up interference kernel
+Building kernels of all DAGs
+Setting up DAGs
+Copying persistent buffers
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component0
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+TIMER: Function Task Component Creation took 2.192750 ms
+Created task component 0
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for0
+Processing local frontier of task component 0
+Adding kernel 1 to local frontier for task component0
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 0
+Setting callback for kernel 1 of task component 0
+TASKDAG CALLBACK initiated for kernel 1of task component 0
+Updating number of completed kernels for kernel 1: pooling_1
+Updating number of finished parents for successors of current kernel  1: pooling_1
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 1: pooling_1
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)1: pooling_1
+Updated frontier with successors of current kernel 1: pooling_1
+Number of completed kernels: 2
+Updating Ready queue for kernel 1: pooling_1
+Updated Ready queue for kernel 1: pooling_1
+DAG CALLBACK finished for kernel 1: pooling_1
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374895387344 End: 1606374895387698
+    write events --> Start: 1161226878321928 End: 1161226878460053
+    ndrange events --> Start: 1161226879736215 End: 1161226880017946
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1_0 Write: 0-->138125: 138125
+PROFILE_TC 0,1_0 Read: 18445582846831229688-->18445582846831229688: 0
+PROFILE_TC 0,1_0 Execute:1414287-->1696018: 281731
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374895388218 End: 1606374895388228
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161226883206130 End: 1161226883900339
+    read Events --> Start: 1161226884889887 End: 1161226885163303
+PROFILE_TC 0,1_1 Write: 18445582846831229688-->18445582846831229688: 0
+PROFILE_TC 0,1_1 Read: 6567959-->6841375: 273416
+PROFILE_TC 0,1_1 Execute:4884202-->5578411: 694209
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component1
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+TIMER: Function Task Component Creation took 2.131791 ms
+Created task component 1
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for1
+Processing local frontier of task component 1
+Adding kernel 1 to local frontier for task component1
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 1
+Adding kernel 2 to local frontier for task component1
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 1
+Setting callback for kernel 2 of task component 1
+TASKDAG CALLBACK initiated for kernel 2of task component 1
+Updating number of completed kernels for kernel 2: convolution_2
+Updating number of finished parents for successors of current kernel  2: convolution_2
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 2: convolution_2
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)2: convolution_2
+Updated frontier with successors of current kernel 2: convolution_2
+Number of completed kernels: 5
+Updating Ready queue for kernel 2: convolution_2
+Updated Ready queue for kernel 2: convolution_2
+DAG CALLBACK finished for kernel 2: convolution_2
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374896514198 End: 1606374896514414
+    write events --> Start: 1161227942815262 End: 1161227942846970
+    ndrange events --> Start: 1161227943490808 End: 1161227943778020
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2_0 Write: 0-->31708: 31708
+PROFILE_TC 0,1,2_0 Read: 18445582845766736354-->18445582845766736354: 0
+PROFILE_TC 0,1,2_0 Execute:675546-->962758: 287212
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374896514823 End: 1606374896514834
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161227944109643 End: 1161227944790027
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2_1 Write: 18445582845766736354-->18445582845766736354: 0
+PROFILE_TC 0,1,2_1 Read: 18445582845766736354-->18445582845766736354: 0
+PROFILE_TC 0,1,2_1 Execute:1294381-->1974765: 680384
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374896515174 End: 1606374896515185
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161227945057957 End: 1161227948198085
+    read Events --> Start: 1161227948590720 End: 1161227948732470
+PROFILE_TC 0,1,2_2 Write: 18445582845766736354-->18445582845766736354: 0
+PROFILE_TC 0,1,2_2 Read: 5775458-->5917208: 141750
+PROFILE_TC 0,1,2_2 Execute:2242695-->5382823: 3140128
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component2
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+TIMER: Function Task Component Creation took 3.558026 ms
+Created task component 2
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for2
+Processing local frontier of task component 2
+Adding kernel 1 to local frontier for task component2
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 2
+Adding kernel 2 to local frontier for task component2
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 2
+Adding kernel 3 to local frontier for task component2
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 2
+Setting callback for kernel 3 of task component 2
+TASKDAG CALLBACK initiated for kernel 3of task component 2
+Updating number of completed kernels for kernel 3: pooling_3
+Updating number of finished parents for successors of current kernel  3: pooling_3
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 3: pooling_3
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)3: pooling_3
+Updated frontier with successors of current kernel 3: pooling_3
+Number of completed kernels: 9
+DAG Finished!
+Updating Ready queue for kernel 3: pooling_3
+Updated Ready queue for kernel 3: pooling_3
+DAG CALLBACK finished for kernel 3: pooling_3
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374897582982 End: 1606374897583202
+    write events --> Start: 1161229066691887 End: 1161229066828345
+    ndrange events --> Start: 1161229067415620 End: 1161229067699975
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3_0 Write: 0-->136458: 136458
+PROFILE_TC 0,1,2,3_0 Read: 18445582844642859729-->18445582844642859729: 0
+PROFILE_TC 0,1,2,3_0 Execute:723733-->1008088: 284355
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374897583563 End: 1606374897583572
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161229068397639 End: 1161229069088799
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3_1 Write: 18445582844642859729-->18445582844642859729: 0
+PROFILE_TC 0,1,2,3_1 Read: 18445582844642859729-->18445582844642859729: 0
+PROFILE_TC 0,1,2,3_1 Execute:1705752-->2396912: 691160
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374897583905 End: 1606374897583918
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161229069741070 End: 1161229072878289
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3_2 Write: 18445582844642859729-->18445582844642859729: 0
+PROFILE_TC 0,1,2,3_2 Read: 18445582844642859729-->18445582844642859729: 0
+PROFILE_TC 0,1,2,3_2 Execute:3049183-->6186402: 3137219
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374897584167 End: 1606374897584177
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161229073404701 End: 1161229073734604
+    read Events --> Start: 1161229074108804 End: 1161229074167970
+PROFILE_TC 0,1,2,3_3 Write: 18445582844642859729-->18445582844642859729: 0
+PROFILE_TC 0,1,2,3_3 Read: 7416917-->7476083: 59166
+PROFILE_TC 0,1,2,3_3 Execute:6712814-->7042717: 329903
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component3
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+TIMER: Function Task Component Creation took 2.844971 ms
+Created task component 3
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for3
+Processing local frontier of task component 3
+Adding kernel 1 to local frontier for task component3
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 3
+Adding kernel 2 to local frontier for task component3
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 3
+Adding kernel 3 to local frontier for task component3
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 3
+Adding kernel 4 to local frontier for task component3
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 3
+Setting callback for kernel 4 of task component 3
+TASKDAG CALLBACK initiated for kernel 4of task component 3
+Updating number of completed kernels for kernel 4: convolution_4
+Updating number of finished parents for successors of current kernel  4: convolution_4
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 4: convolution_4
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)4: convolution_4
+Updated frontier with successors of current kernel 4: convolution_4
+Number of completed kernels: 14
+Updating Ready queue for kernel 4: convolution_4
+Updated Ready queue for kernel 4: convolution_4
+DAG CALLBACK finished for kernel 4: convolution_4
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374898704632 End: 1606374898704935
+    write events --> Start: 1161230135371637 End: 1161230135405471
+    ndrange events --> Start: 1161230136232077 End: 1161230136511976
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4_0 Write: 0-->33834: 33834
+PROFILE_TC 0,1,2,3,4_0 Read: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_0 Execute:860440-->1140339: 279899
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374898705517 End: 1606374898705531
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161230136931958 End: 1161230137599032
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4_1 Write: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_1 Read: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_1 Execute:1560321-->2227395: 667074
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374898706138 End: 1606374898706154
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161230137967505 End: 1161230141089681
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4_2 Write: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_2 Read: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_2 Execute:2595868-->5718044: 3122176
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374898706515 End: 1606374898706530
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161230141501879 End: 1161230141841746
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4_3 Write: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_3 Read: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_3 Execute:6130242-->6470109: 339867
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374898706869 End: 1606374898706886
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161230142327121 End: 1161230147389595
+    read Events --> Start: 1161230147982012 End: 1161230148112221
+PROFILE_TC 0,1,2,3,4_4 Write: 18445582843574179979-->18445582843574179979: 0
+PROFILE_TC 0,1,2,3,4_4 Read: 12610375-->12740584: 130209
+PROFILE_TC 0,1,2,3,4_4 Execute:6955484-->12017958: 5062474
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component4
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+TIMER: Function Task Component Creation took 3.532525 ms
+Created task component 4
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for4
+Processing local frontier of task component 4
+Adding kernel 1 to local frontier for task component4
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 4
+Adding kernel 2 to local frontier for task component4
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 4
+Adding kernel 3 to local frontier for task component4
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 4
+Adding kernel 4 to local frontier for task component4
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 4
+Adding kernel 5 to local frontier for task component4
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 4
+Setting callback for kernel 5 of task component 4
+TASKDAG CALLBACK initiated for kernel 5of task component 4
+Updating number of completed kernels for kernel 5: pooling_5
+Updating number of finished parents for successors of current kernel  5: pooling_5
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 5: pooling_5
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)5: pooling_5
+Updated frontier with successors of current kernel 5: pooling_5
+Number of completed kernels: 20
+Updating Ready queue for kernel 5: pooling_5
+Updated Ready queue for kernel 5: pooling_5
+DAG CALLBACK finished for kernel 5: pooling_5
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374899776356 End: 1606374899776524
+    write events --> Start: 1161231273817804 End: 1161231273947846
+    ndrange events --> Start: 1161231274549109 End: 1161231274831213
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5_0 Write: 0-->130042: 130042
+PROFILE_TC 0,1,2,3,4,5_0 Read: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_0 Execute:731305-->1013409: 282104
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374899776813 End: 1606374899776821
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161231275516599 End: 1161231276184483
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5_1 Write: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_1 Read: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_1 Execute:1698795-->2366679: 667884
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374899777287 End: 1606374899777296
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161231276732688 End: 1161231279860619
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5_2 Write: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_2 Read: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_2 Execute:2914884-->6042815: 3127931
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374899777580 End: 1606374899777589
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161231280465373 End: 1161231280800730
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5_3 Write: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_3 Read: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_3 Execute:6647569-->6982926: 335357
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374899777867 End: 1606374899777877
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161231281128910 End: 1161231286146724
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5_4 Write: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_4 Read: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_4 Execute:7311106-->12328920: 5017814
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374899778189 End: 1606374899778197
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161231286471183 End: 1161231286608985
+    read Events --> Start: 1161231287203846 End: 1161231287259554
+PROFILE_TC 0,1,2,3,4,5_5 Write: 18445582842435733812-->18445582842435733812: 0
+PROFILE_TC 0,1,2,3,4,5_5 Read: 13386042-->13441750: 55708
+PROFILE_TC 0,1,2,3,4,5_5 Execute:12653379-->12791181: 137802
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component5
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+TIMER: Function Task Component Creation took 11.061253 ms
+Created task component 5
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for5
+Processing local frontier of task component 5
+Adding kernel 1 to local frontier for task component5
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 5
+Adding kernel 2 to local frontier for task component5
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 5
+Adding kernel 3 to local frontier for task component5
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 5
+Adding kernel 4 to local frontier for task component5
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 5
+Adding kernel 5 to local frontier for task component5
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 5
+Adding kernel 6 to local frontier for task component5
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 5
+Setting callback for kernel 6 of task component 5
+TASKDAG CALLBACK initiated for kernel 6of task component 5
+Updating number of completed kernels for kernel 6: linear_6
+Updating number of finished parents for successors of current kernel  6: linear_6
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 6: linear_6
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)6: linear_6
+Updated frontier with successors of current kernel 6: linear_6
+Number of completed kernels: 27
+Updating Ready queue for kernel 6: linear_6
+Updated Ready queue for kernel 6: linear_6
+DAG CALLBACK finished for kernel 6: linear_6
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900922098 End: 1606374900922311
+    write events --> Start: 1161232392649012 End: 1161232392784096
+    ndrange events --> Start: 1161232393335051 End: 1161232393622674
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6_0 Write: 0-->135084: 135084
+PROFILE_TC 0,1,2,3,4,5,6_0 Read: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_0 Execute:686039-->973662: 287623
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900922789 End: 1606374900922799
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161232394292104 End: 1161232394931922
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6_1 Write: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_1 Read: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_1 Execute:1643092-->2282910: 639818
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900923161 End: 1606374900923172
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161232395546819 End: 1161232398677835
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6_2 Write: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_2 Read: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_2 Execute:2897807-->6028823: 3131016
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900923419 End: 1606374900923431
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161232399193429 End: 1161232399526506
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6_3 Write: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_3 Read: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_3 Execute:6544417-->6877494: 333077
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900923709 End: 1606374900923722
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161232399835416 End: 1161232404914458
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6_4 Write: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_4 Read: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_4 Execute:7186404-->12265446: 5079042
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900923967 End: 1606374900923976
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161232405235173 End: 1161232405360272
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6_5 Write: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_5 Read: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_5 Execute:12586161-->12711260: 125099
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374900924206 End: 1606374900924216
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161232405681334 End: 1161232421765038
+    read Events --> Start: 1161232422270221 End: 1161232422278179
+PROFILE_TC 0,1,2,3,4,5,6_6 Write: 18445582841316902604-->18445582841316902604: 0
+PROFILE_TC 0,1,2,3,4,5,6_6 Read: 29621209-->29629167: 7958
+PROFILE_TC 0,1,2,3,4,5,6_6 Execute:13032322-->29116026: 16083704
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component6
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 12.847912 ms
+Created task component 6
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for6
+Processing local frontier of task component 6
+Adding kernel 1 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 6
+Adding kernel 2 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 6
+Adding kernel 3 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 6
+Adding kernel 4 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 6
+Adding kernel 5 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 6
+Adding kernel 6 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 6
+Adding kernel 7 to local frontier for task component6
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 6
+Setting callback for kernel 7 of task component 6
+TASKDAG CALLBACK initiated for kernel 7of task component 6
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 35
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902037871 End: 1606374902038445
+    write events --> Start: 1161233525127554 End: 1161233525222054
+    ndrange events --> Start: 1161233525698475 End: 1161233525977178
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_0 Write: 0-->94500: 94500
+PROFILE_TC 0,1,2,3,4,5,6,7_0 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_0 Execute:570921-->849624: 278703
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902038903 End: 1606374902038913
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233526488439 End: 1161233527175337
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_1 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_1 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_1 Execute:1360885-->2047783: 686898
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902039271 End: 1606374902039283
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233527638674 End: 1161233530769979
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_2 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_2 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_2 Execute:2511120-->5642425: 3131305
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902039530 End: 1606374902039541
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233531229803 End: 1161233531560541
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_3 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_3 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_3 Execute:6102249-->6432987: 330738
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902039775 End: 1606374902039787
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233531892676 End: 1161233536907934
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_4 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_4 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_4 Execute:6765122-->11780380: 5015258
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902040073 End: 1606374902040082
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233537234683 End: 1161233537368332
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_5 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_5 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_5 Execute:12107129-->12240778: 133649
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902040320 End: 1606374902040331
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233537739707 End: 1161233553838170
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_6 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_6 Read: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_6 Execute:12612153-->28710616: 16098463
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374902040568 End: 1606374902040578
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161233554210695 End: 1161233554295158
+    read Events --> Start: 1161233554858638 End: 1161233554868721
+PROFILE_TC 0,1,2,3,4,5,6,7_7 Write: 18445582840184424062-->18445582840184424062: 0
+PROFILE_TC 0,1,2,3,4,5,6,7_7 Read: 29731084-->29741167: 10083
+PROFILE_TC 0,1,2,3,4,5,6,7_7 Execute:29083141-->29167604: 84463
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 0
+ Preparing successor 1
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 0
+ Preparing successor 1
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 0 to local frontier for task component7
+setting arguments of kernel 0 convolution_0
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 10.801207 ms
+Created task component 7
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for7
+Processing local frontier of task component 7
+Adding kernel 1 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 0
+Processing local frontier of task component 7
+Adding kernel 2 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 7
+Adding kernel 3 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 7
+Adding kernel 4 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 7
+Adding kernel 5 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 7
+Adding kernel 6 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 7
+Adding kernel 7 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 7
+Adding kernel 8 to local frontier for task component7
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 7
+Setting callback for kernel 8 of task component 7
+TASKDAG CALLBACK initiated for kernel 8of task component 7
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 44
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  0 : convolution_0 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903171429 End: 1606374903171797
+    write events --> Start: 1161234646491679 End: 1161234646629679
+    ndrange events --> Start: 1161234647206758 End: 1161234647491659
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_0 Write: 0-->138000: 138000
+PROFILE_TC 0,1,2,3,4,5,6,7,8_0 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_0 Execute:715079-->999980: 284901
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903172203 End: 1606374903172214
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234648234825 End: 1161234648886023
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_1 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_1 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_1 Execute:1743146-->2394344: 651198
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903172669 End: 1606374903172680
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234649460659 End: 1161234652599523
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_2 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_2 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_2 Execute:2968980-->6107844: 3138864
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903172999 End: 1606374903173010
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234653098922 End: 1161234653432806
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_3 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_3 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_3 Execute:6607243-->6941127: 333884
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903173556 End: 1606374903173569
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234653752330 End: 1161234658852506
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_4 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_4 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_4 Execute:7260651-->12360827: 5100176
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903173827 End: 1606374903173837
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234659169530 End: 1161234659296186
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_5 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_5 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_5 Execute:12677851-->12804507: 126656
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903174227 End: 1606374903174239
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234659613706 End: 1161234675621005
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_6 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_6 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_6 Execute:13122027-->29129326: 16007299
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903174488 End: 1606374903174504
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234676021299 End: 1161234676106518
+    read Events --> Start: 0 End: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_7 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_7 Read: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_7 Execute:29529620-->29614839: 85219
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374903174748 End: 1606374903174757
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161234676504916 End: 1161234676564750
+    read Events --> Start: 1161234677012513 End: 1161234677021096
+PROFILE_TC 0,1,2,3,4,5,6,7,8_8 Write: 18445582839063059937-->18445582839063059937: 0
+PROFILE_TC 0,1,2,3,4,5,6,7,8_8 Read: 30520834-->30529417: 8583
+PROFILE_TC 0,1,2,3,4,5,6,7,8_8 Execute:30013237-->30073071: 59834
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component8
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+TIMER: Function Task Component Creation took 2.416379 ms
+Created task component 8
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for8
+Processing local frontier of task component 8
+Adding kernel 2 to local frontier for task component8
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 8
+Setting callback for kernel 2 of task component 8
+TASKDAG CALLBACK initiated for kernel 2of task component 8
+Updating number of completed kernels for kernel 2: convolution_2
+Updating number of finished parents for successors of current kernel  2: convolution_2
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 2: convolution_2
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)2: convolution_2
+Updated frontier with successors of current kernel 2: convolution_2
+Number of completed kernels: 46
+Updating Ready queue for kernel 2: convolution_2
+Updated Ready queue for kernel 2: convolution_2
+DAG CALLBACK finished for kernel 2: convolution_2
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374904285963 End: 1606374904286242
+    write events --> Start: 1161235713521221 End: 1161235714249971
+    ndrange events --> Start: 1161235715727251 End: 1161235716407390
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2_1 Write: 0-->728750: 728750
+PROFILE_TC 1,2_1 Read: 18445582837996030395-->18445582837996030395: 0
+PROFILE_TC 1,2_1 Execute:2206030-->2886169: 680139
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374904286619 End: 1606374904286630
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161235716729704 End: 1161235719856176
+    read Events --> Start: 1161235720313638 End: 1161235720463221
+PROFILE_TC 1,2_2 Write: 18445582837996030395-->18445582837996030395: 0
+PROFILE_TC 1,2_2 Read: 6792417-->6942000: 149583
+PROFILE_TC 1,2_2 Execute:3208483-->6334955: 3126472
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component9
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+TIMER: Function Task Component Creation took 2.449171 ms
+Created task component 9
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for9
+Processing local frontier of task component 9
+Adding kernel 2 to local frontier for task component9
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 9
+Adding kernel 3 to local frontier for task component9
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 9
+Setting callback for kernel 3 of task component 9
+TASKDAG CALLBACK initiated for kernel 3of task component 9
+Updating number of completed kernels for kernel 3: pooling_3
+Updating number of finished parents for successors of current kernel  3: pooling_3
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 3: pooling_3
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)3: pooling_3
+Updated frontier with successors of current kernel 3: pooling_3
+Number of completed kernels: 49
+Updating Ready queue for kernel 3: pooling_3
+Updated Ready queue for kernel 3: pooling_3
+DAG CALLBACK finished for kernel 3: pooling_3
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374905349797 End: 1606374905350076
+    write events --> Start: 1161236777530513 End: 1161236778267138
+    ndrange events --> Start: 1161236780706195 End: 1161236781364555
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3_1 Write: 0-->736625: 736625
+PROFILE_TC 1,2,3_1 Read: 18445582836932021103-->18445582836932021103: 0
+PROFILE_TC 1,2,3_1 Execute:3175682-->3834042: 658360
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374905350371 End: 1606374905350381
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161236781732791 End: 1161236784864501
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3_2 Write: 18445582836932021103-->18445582836932021103: 0
+PROFILE_TC 1,2,3_2 Read: 18445582836932021103-->18445582836932021103: 0
+PROFILE_TC 1,2,3_2 Execute:4202278-->7333988: 3131710
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374905350652 End: 1606374905350662
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161236785109563 End: 1161236785437261
+    read Events --> Start: 1161236785780263 End: 1161236785815763
+PROFILE_TC 1,2,3_3 Write: 18445582836932021103-->18445582836932021103: 0
+PROFILE_TC 1,2,3_3 Read: 8249750-->8285250: 35500
+PROFILE_TC 1,2,3_3 Execute:7579050-->7906748: 327698
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component10
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+TIMER: Function Task Component Creation took 3.629694 ms
+Created task component 10
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for10
+Processing local frontier of task component 10
+Adding kernel 2 to local frontier for task component10
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 10
+Adding kernel 3 to local frontier for task component10
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 10
+Adding kernel 4 to local frontier for task component10
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 10
+Setting callback for kernel 4 of task component 10
+TASKDAG CALLBACK initiated for kernel 4of task component 10
+Updating number of completed kernels for kernel 4: convolution_4
+Updating number of finished parents for successors of current kernel  4: convolution_4
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 4: convolution_4
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)4: convolution_4
+Updated frontier with successors of current kernel 4: convolution_4
+Number of completed kernels: 53
+Updating Ready queue for kernel 4: convolution_4
+Updated Ready queue for kernel 4: convolution_4
+DAG CALLBACK finished for kernel 4: convolution_4
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374906415436 End: 1606374906415795
+    write events --> Start: 1161237843837555 End: 1161237844606846
+    ndrange events --> Start: 1161237846042444 End: 1161237846718770
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4_1 Write: 0-->769291: 769291
+PROFILE_TC 1,2,3,4_1 Read: 18445582835865714061-->18445582835865714061: 0
+PROFILE_TC 1,2,3,4_1 Execute:2204889-->2881215: 676326
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374906416232 End: 1606374906416244
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161237847046250 End: 1161237850176166
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4_2 Write: 18445582835865714061-->18445582835865714061: 0
+PROFILE_TC 1,2,3,4_2 Read: 18445582835865714061-->18445582835865714061: 0
+PROFILE_TC 1,2,3,4_2 Execute:3208695-->6338611: 3129916
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374906416607 End: 1606374906416618
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161237850487062 End: 1161237850821405
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4_3 Write: 18445582835865714061-->18445582835865714061: 0
+PROFILE_TC 1,2,3,4_3 Read: 18445582835865714061-->18445582835865714061: 0
+PROFILE_TC 1,2,3,4_3 Execute:6649507-->6983850: 334343
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374906416856 End: 1606374906416869
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161237851099666 End: 1161237856249834
+    read Events --> Start: 1161237856680888 End: 1161237856762013
+PROFILE_TC 1,2,3,4_4 Write: 18445582835865714061-->18445582835865714061: 0
+PROFILE_TC 1,2,3,4_4 Read: 12843333-->12924458: 81125
+PROFILE_TC 1,2,3,4_4 Execute:7262111-->12412279: 5150168
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component11
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+TIMER: Function Task Component Creation took 4.473919 ms
+Created task component 11
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for11
+Processing local frontier of task component 11
+Adding kernel 2 to local frontier for task component11
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 11
+Adding kernel 3 to local frontier for task component11
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 11
+Adding kernel 4 to local frontier for task component11
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 11
+Adding kernel 5 to local frontier for task component11
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 11
+Setting callback for kernel 5 of task component 11
+TASKDAG CALLBACK initiated for kernel 5of task component 11
+Updating number of completed kernels for kernel 5: pooling_5
+Updating number of finished parents for successors of current kernel  5: pooling_5
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 5: pooling_5
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)5: pooling_5
+Updated frontier with successors of current kernel 5: pooling_5
+Number of completed kernels: 58
+Updating Ready queue for kernel 5: pooling_5
+Updated Ready queue for kernel 5: pooling_5
+DAG CALLBACK finished for kernel 5: pooling_5
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374907484269 End: 1606374907484460
+    write events --> Start: 1161238913379513 End: 1161238914117097
+    ndrange events --> Start: 1161238915585838 End: 1161238916238254
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5_1 Write: 0-->737584: 737584
+PROFILE_TC 1,2,3,4,5_1 Read: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_1 Execute:2206325-->2858741: 652416
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374907484770 End: 1606374907484781
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161238916563301 End: 1161238919703347
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5_2 Write: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_2 Read: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_2 Execute:3183788-->6323834: 3140046
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374907485302 End: 1606374907485315
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161238920080024 End: 1161238920380915
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5_3 Write: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_3 Read: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_3 Execute:6700511-->7001402: 300891
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374907485910 End: 1606374907485926
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161238920722544 End: 1161238925948991
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5_4 Write: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_4 Read: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_4 Execute:7343031-->12569478: 5226447
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374907486300 End: 1606374907486310
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161238926223248 End: 1161238926356245
+    read Events --> Start: 1161238926647013 End: 1161238926670555
+PROFILE_TC 1,2,3,4,5_5 Write: 18445582834796172103-->18445582834796172103: 0
+PROFILE_TC 1,2,3,4,5_5 Read: 13267500-->13291042: 23542
+PROFILE_TC 1,2,3,4,5_5 Execute:12843735-->12976732: 132997
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component12
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+TIMER: Function Task Component Creation took 11.367885 ms
+Created task component 12
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for12
+Processing local frontier of task component 12
+Adding kernel 2 to local frontier for task component12
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 12
+Adding kernel 3 to local frontier for task component12
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 12
+Adding kernel 4 to local frontier for task component12
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 12
+Adding kernel 5 to local frontier for task component12
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 12
+Adding kernel 6 to local frontier for task component12
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 12
+Setting callback for kernel 6 of task component 12
+TASKDAG CALLBACK initiated for kernel 6of task component 12
+Updating number of completed kernels for kernel 6: linear_6
+Updating number of finished parents for successors of current kernel  6: linear_6
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 6: linear_6
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)6: linear_6
+Updated frontier with successors of current kernel 6: linear_6
+Number of completed kernels: 64
+Updating Ready queue for kernel 6: linear_6
+Updated Ready queue for kernel 6: linear_6
+DAG CALLBACK finished for kernel 6: linear_6
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374908559281 End: 1606374908559512
+    write events --> Start: 1161239988425805 End: 1161239989174013
+    ndrange events --> Start: 1161239990654170 End: 1161239991330251
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6_1 Write: 0-->748208: 748208
+PROFILE_TC 1,2,3,4,5,6_1 Read: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_1 Execute:2228365-->2904446: 676081
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374908559953 End: 1606374908559965
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161239991693464 End: 1161239994830686
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6_2 Write: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_2 Read: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_2 Execute:3267659-->6404881: 3137222
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374908560333 End: 1606374908560343
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161239995098401 End: 1161239995438865
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6_3 Write: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_3 Read: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_3 Execute:6672596-->7013060: 340464
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374908560623 End: 1606374908560636
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161239995832337 End: 1161240000937194
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6_4 Write: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_4 Read: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_4 Execute:7406532-->12511389: 5104857
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374908560882 End: 1606374908560892
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161240001365634 End: 1161240001493555
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6_5 Write: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_5 Read: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_5 Execute:12939829-->13067750: 127921
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374908561120 End: 1606374908561131
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161240001930543 End: 1161240018274119
+    read Events --> Start: 1161240018790597 End: 1161240018804222
+PROFILE_TC 1,2,3,4,5,6_6 Write: 18445582833721125811-->18445582833721125811: 0
+PROFILE_TC 1,2,3,4,5,6_6 Read: 30364792-->30378417: 13625
+PROFILE_TC 1,2,3,4,5,6_6 Execute:13504738-->29848314: 16343576
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component13
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 10.443740 ms
+Created task component 13
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for13
+Processing local frontier of task component 13
+Adding kernel 2 to local frontier for task component13
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 13
+Adding kernel 3 to local frontier for task component13
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 13
+Adding kernel 4 to local frontier for task component13
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 13
+Adding kernel 5 to local frontier for task component13
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 13
+Adding kernel 6 to local frontier for task component13
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 13
+Adding kernel 7 to local frontier for task component13
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 13
+Setting callback for kernel 7 of task component 13
+TASKDAG CALLBACK initiated for kernel 7of task component 13
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 71
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909635044 End: 1606374909635254
+    write events --> Start: 1161241064454430 End: 1161241065085264
+    ndrange events --> Start: 1161241066141268 End: 1161241066788190
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7_1 Write: 0-->630834: 630834
+PROFILE_TC 1,2,3,4,5,6,7_1 Read: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_1 Execute:1686838-->2333760: 646922
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909635723 End: 1606374909635734
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161241067048031 End: 1161241070184192
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7_2 Write: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_2 Read: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_2 Execute:2593601-->5729762: 3136161
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909636101 End: 1606374909636111
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161241070414769 End: 1161241070746208
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7_3 Write: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_3 Read: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_3 Execute:5960339-->6291778: 331439
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909636350 End: 1606374909636363
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161241070964749 End: 1161241076051462
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7_4 Write: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_4 Read: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_4 Execute:6510319-->11597032: 5086713
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909636608 End: 1606374909636639
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161241076430368 End: 1161241076564671
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7_5 Write: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_5 Read: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_5 Execute:11975938-->12110241: 134303
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909636945 End: 1606374909636956
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161241076918166 End: 1161241092933374
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7_6 Write: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_6 Read: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_6 Execute:12463736-->28478944: 16015208
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374909637202 End: 1606374909637213
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161241093348583 End: 1161241093433083
+    read Events --> Start: 1161241093979972 End: 1161241093993055
+PROFILE_TC 1,2,3,4,5,6,7_7 Write: 18445582832645097186-->18445582832645097186: 0
+PROFILE_TC 1,2,3,4,5,6,7_7 Read: 29525542-->29538625: 13083
+PROFILE_TC 1,2,3,4,5,6,7_7 Execute:28894153-->28978653: 84500
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 1
+ Preparing successor 2
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 1
+ Preparing successor 2
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 1 to local frontier for task component14
+setting arguments of kernel 1 pooling_1
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 12.286444 ms
+Created task component 14
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for14
+Processing local frontier of task component 14
+Adding kernel 2 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 1
+Processing local frontier of task component 14
+Adding kernel 3 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 14
+Adding kernel 4 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 14
+Adding kernel 5 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 14
+Adding kernel 6 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 14
+Adding kernel 7 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 14
+Adding kernel 8 to local frontier for task component14
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 14
+Setting callback for kernel 8 of task component 14
+TASKDAG CALLBACK initiated for kernel 8of task component 14
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 79
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  1 : pooling_1 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910710784 End: 1606374910711489
+    write events --> Start: 1161242141449847 End: 1161242142081097
+    ndrange events --> Start: 1161242143033621 End: 1161242143715369
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_1 Write: 0-->631250: 631250
+PROFILE_TC 1,2,3,4,5,6,7,8_1 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_1 Execute:1583774-->2265522: 681748
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910712060 End: 1606374910712076
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242143994749 End: 1161242147129084
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_2 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_2 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_2 Execute:2544902-->5679237: 3134335
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910712593 End: 1606374910712606
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242147366454 End: 1161242147690512
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_3 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_3 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_3 Execute:5916607-->6240665: 324058
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910712940 End: 1606374910712959
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242148063928 End: 1161242153152679
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_4 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_4 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_4 Execute:6614081-->11702832: 5088751
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910713306 End: 1606374910713321
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242153567731 End: 1161242153693853
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_5 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_5 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_5 Execute:12117884-->12244006: 126122
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910713862 End: 1606374910713878
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242154102919 End: 1161242170190779
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_6 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_6 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_6 Execute:12653072-->28740932: 16087860
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910714608 End: 1606374910714615
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242170744001 End: 1161242170829249
+    read Events --> Start: 0 End: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_7 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_7 Read: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_7 Execute:29294154-->29379402: 85248
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374910714767 End: 1606374910714772
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161242171368592 End: 1161242171427390
+    read Events --> Start: 1161242172192347 End: 1161242172210264
+PROFILE_TC 1,2,3,4,5,6,7,8_8 Write: 18445582831568101769-->18445582831568101769: 0
+PROFILE_TC 1,2,3,4,5,6,7,8_8 Read: 30742500-->30760417: 17917
+PROFILE_TC 1,2,3,4,5,6,7,8_8 Execute:29918745-->29977543: 58798
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 2 to local frontier for task component15
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+TIMER: Function Task Component Creation took 1.240899 ms
+Created task component 15
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for15
+Processing local frontier of task component 15
+Adding kernel 3 to local frontier for task component15
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 15
+Setting callback for kernel 3 of task component 15
+TASKDAG CALLBACK initiated for kernel 3of task component 15
+Updating number of completed kernels for kernel 3: pooling_3
+Updating number of finished parents for successors of current kernel  3: pooling_3
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 3: pooling_3
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)3: pooling_3
+Updated frontier with successors of current kernel 3: pooling_3
+Number of completed kernels: 81
+Updating Ready queue for kernel 3: pooling_3
+Updated Ready queue for kernel 3: pooling_3
+DAG CALLBACK finished for kernel 3: pooling_3
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374911778589 End: 1606374911778785
+    write events --> Start: 1161243206225597 End: 1161243206417180
+    ndrange events --> Start: 1161243207254953 End: 1161243210405289
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3_2 Write: 0-->191583: 191583
+PROFILE_TC 2,3_2 Read: 18445582830503326019-->18445582830503326019: 0
+PROFILE_TC 2,3_2 Execute:1029356-->4179692: 3150336
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374911779083 End: 1606374911779093
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161243210717628 End: 1161243211046653
+    read Events --> Start: 1161243211467180 End: 1161243211506722
+PROFILE_TC 2,3_3 Write: 18445582830503326019-->18445582830503326019: 0
+PROFILE_TC 2,3_3 Read: 5241583-->5281125: 39542
+PROFILE_TC 2,3_3 Execute:4492031-->4821056: 329025
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 2 to local frontier for task component16
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+TIMER: Function Task Component Creation took 2.916348 ms
+Created task component 16
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for16
+Processing local frontier of task component 16
+Adding kernel 3 to local frontier for task component16
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 16
+Adding kernel 4 to local frontier for task component16
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 16
+Setting callback for kernel 4 of task component 16
+TASKDAG CALLBACK initiated for kernel 4of task component 16
+Updating number of completed kernels for kernel 4: convolution_4
+Updating number of finished parents for successors of current kernel  4: convolution_4
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 4: convolution_4
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)4: convolution_4
+Updated frontier with successors of current kernel 4: convolution_4
+Number of completed kernels: 84
+Updating Ready queue for kernel 4: convolution_4
+Updated Ready queue for kernel 4: convolution_4
+DAG CALLBACK finished for kernel 4: convolution_4
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374912842499 End: 1606374912842685
+    write events --> Start: 1161244270450056 End: 1161244270632972
+    ndrange events --> Start: 1161244271476051 End: 1161244274620448
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4_2 Write: 0-->182916: 182916
+PROFILE_TC 2,3,4_2 Read: 18445582829439101560-->18445582829439101560: 0
+PROFILE_TC 2,3,4_2 Execute:1025995-->4170392: 3144397
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374912843048 End: 1606374912843057
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161244274930238 End: 1161244275262834
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4_3 Write: 18445582829439101560-->18445582829439101560: 0
+PROFILE_TC 2,3,4_3 Read: 18445582829439101560-->18445582829439101560: 0
+PROFILE_TC 2,3,4_3 Execute:4480182-->4812778: 332596
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374912843433 End: 1606374912843446
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161244275644245 End: 1161244280712009
+    read Events --> Start: 1161244281174722 End: 1161244281251472
+PROFILE_TC 2,3,4_4 Write: 18445582829439101560-->18445582829439101560: 0
+PROFILE_TC 2,3,4_4 Read: 10724666-->10801416: 76750
+PROFILE_TC 2,3,4_4 Execute:5194189-->10261953: 5067764
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 2 to local frontier for task component17
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+TIMER: Function Task Component Creation took 1.744825 ms
+Created task component 17
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for17
+Processing local frontier of task component 17
+Adding kernel 3 to local frontier for task component17
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 17
+Adding kernel 4 to local frontier for task component17
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 17
+Adding kernel 5 to local frontier for task component17
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 17
+Setting callback for kernel 5 of task component 17
+TASKDAG CALLBACK initiated for kernel 5of task component 17
+Updating number of completed kernels for kernel 5: pooling_5
+Updating number of finished parents for successors of current kernel  5: pooling_5
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 5: pooling_5
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)5: pooling_5
+Updated frontier with successors of current kernel 5: pooling_5
+Number of completed kernels: 88
+Updating Ready queue for kernel 5: pooling_5
+Updated Ready queue for kernel 5: pooling_5
+DAG CALLBACK finished for kernel 5: pooling_5
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374913904894 End: 1606374913905098
+    write events --> Start: 1161245333248347 End: 1161245333431014
+    ndrange events --> Start: 1161245334273905 End: 1161245337411967
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5_2 Write: 0-->182667: 182667
+PROFILE_TC 2,3,4,5_2 Read: 18445582828376303269-->18445582828376303269: 0
+PROFILE_TC 2,3,4,5_2 Execute:1025558-->4163620: 3138062
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374913905475 End: 1606374913905484
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161245337721261 End: 1161245338060796
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5_3 Write: 18445582828376303269-->18445582828376303269: 0
+PROFILE_TC 2,3,4,5_3 Read: 18445582828376303269-->18445582828376303269: 0
+PROFILE_TC 2,3,4,5_3 Execute:4472914-->4812449: 339535
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374913905883 End: 1606374913905896
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161245338352994 End: 1161245343421306
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5_4 Write: 18445582828376303269-->18445582828376303269: 0
+PROFILE_TC 2,3,4,5_4 Read: 18445582828376303269-->18445582828376303269: 0
+PROFILE_TC 2,3,4,5_4 Execute:5104647-->10172959: 5068312
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374913906246 End: 1606374913906257
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161245343736452 End: 1161245343872280
+    read Events --> Start: 1161245344306681 End: 1161245344375681
+PROFILE_TC 2,3,4,5_5 Write: 18445582828376303269-->18445582828376303269: 0
+PROFILE_TC 2,3,4,5_5 Read: 11058334-->11127334: 69000
+PROFILE_TC 2,3,4,5_5 Execute:10488105-->10623933: 135828
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 2 to local frontier for task component18
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+TIMER: Function Task Component Creation took 10.044275 ms
+Created task component 18
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for18
+Processing local frontier of task component 18
+Adding kernel 3 to local frontier for task component18
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 18
+Adding kernel 4 to local frontier for task component18
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 18
+Adding kernel 5 to local frontier for task component18
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 18
+Adding kernel 6 to local frontier for task component18
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 18
+Setting callback for kernel 6 of task component 18
+TASKDAG CALLBACK initiated for kernel 6of task component 18
+Updating number of completed kernels for kernel 6: linear_6
+Updating number of finished parents for successors of current kernel  6: linear_6
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 6: linear_6
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)6: linear_6
+Updated frontier with successors of current kernel 6: linear_6
+Number of completed kernels: 93
+Updating Ready queue for kernel 6: linear_6
+Updated Ready queue for kernel 6: linear_6
+DAG CALLBACK finished for kernel 6: linear_6
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374914978234 End: 1606374914978440
+    write events --> Start: 1161246407317931 End: 1161246407510139
+    ndrange events --> Start: 1161246408252423 End: 1161246411386869
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6_2 Write: 0-->192208: 192208
+PROFILE_TC 2,3,4,5,6_2 Read: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_2 Execute:934492-->4068938: 3134446
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374914978831 End: 1606374914978841
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161246411630605 End: 1161246411966152
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6_3 Write: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_3 Read: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_3 Execute:4312674-->4648221: 335547
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374914979395 End: 1606374914979409
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161246412191037 End: 1161246417212508
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6_4 Write: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_4 Read: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_4 Execute:4873106-->9894577: 5021471
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374914979670 End: 1606374914979680
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161246417437654 End: 1161246417564310
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6_5 Write: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_5 Read: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_5 Execute:10119723-->10246379: 126656
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374914979913 End: 1606374914979924
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161246418141705 End: 1161246434237297
+    read Events --> Start: 1161246434816097 End: 1161246434831764
+PROFILE_TC 2,3,4,5,6_6 Write: 18445582827302233685-->18445582827302233685: 0
+PROFILE_TC 2,3,4,5,6_6 Read: 27498166-->27513833: 15667
+PROFILE_TC 2,3,4,5,6_6 Execute:10823774-->26919366: 16095592
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 2 to local frontier for task component19
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 11.777849 ms
+Created task component 19
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for19
+Processing local frontier of task component 19
+Adding kernel 3 to local frontier for task component19
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 19
+Adding kernel 4 to local frontier for task component19
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 19
+Adding kernel 5 to local frontier for task component19
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 19
+Adding kernel 6 to local frontier for task component19
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 19
+Adding kernel 7 to local frontier for task component19
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 19
+Setting callback for kernel 7 of task component 19
+TASKDAG CALLBACK initiated for kernel 7of task component 19
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 99
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374916050565 End: 1606374916050877
+    write events --> Start: 1161247479459681 End: 1161247479648848
+    ndrange events --> Start: 1161247480593276 End: 1161247483734348
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7_2 Write: 0-->189167: 189167
+PROFILE_TC 2,3,4,5,6,7_2 Read: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_2 Execute:1133595-->4274667: 3141072
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374916051284 End: 1606374916051295
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161247484074387 End: 1161247484412952
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7_3 Write: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_3 Read: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_3 Execute:4614706-->4953271: 338565
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374916051702 End: 1606374916051713
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161247484684335 End: 1161247489715905
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7_4 Write: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_4 Read: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_4 Execute:5224654-->10256224: 5031570
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374916051961 End: 1606374916051971
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161247490028007 End: 1161247490165730
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7_5 Write: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_5 Read: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_5 Execute:10568326-->10706049: 137723
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374916052206 End: 1606374916052217
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161247490583304 End: 1161247506727190
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7_6 Write: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_6 Read: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_6 Execute:11123623-->27267509: 16143886
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374916052450 End: 1606374916052460
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161247507292751 End: 1161247507377996
+    read Events --> Start: 1161247508256473 End: 1161247508282056
+PROFILE_TC 2,3,4,5,6,7_7 Write: 18445582826230091935-->18445582826230091935: 0
+PROFILE_TC 2,3,4,5,6,7_7 Read: 28796792-->28822375: 25583
+PROFILE_TC 2,3,4,5,6,7_7 Execute:27833070-->27918315: 85245
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 2
+ Preparing successor 3
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 2
+ Preparing successor 3
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 2 to local frontier for task component20
+setting arguments of kernel 2 convolution_2
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 10.875750 ms
+Created task component 20
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for20
+Processing local frontier of task component 20
+Adding kernel 3 to local frontier for task component20
+Incrementing completed kernels of task component and dag for kernel 2
+Processing local frontier of task component 20
+Adding kernel 4 to local frontier for task component20
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 20
+Adding kernel 5 to local frontier for task component20
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 20
+Adding kernel 6 to local frontier for task component20
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 20
+Adding kernel 7 to local frontier for task component20
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 20
+Adding kernel 8 to local frontier for task component20
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 20
+Setting callback for kernel 8 of task component 20
+TASKDAG CALLBACK initiated for kernel 8of task component 20
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 106
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  2 : convolution_2 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917124200 End: 1606374917124563
+    write events --> Start: 1161248553631514 End: 1161248553793681
+    ndrange events --> Start: 1161248554337568 End: 1161248557472093
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7,8_2 Write: 0-->162167: 162167
+PROFILE_TC 2,3,4,5,6,7,8_2 Read: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_2 Execute:706054-->3840579: 3134525
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917124997 End: 1606374917125007
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161248557706644 End: 1161248558036528
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7,8_3 Write: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_3 Read: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_3 Execute:4075130-->4405014: 329884
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917125365 End: 1606374917125375
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161248558237210 End: 1161248563341865
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7,8_4 Write: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_4 Read: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_4 Execute:4605696-->9710351: 5104655
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917125617 End: 1606374917125626
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161248563657674 End: 1161248563783771
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7,8_5 Write: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_5 Read: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_5 Execute:10026160-->10152257: 126097
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917125860 End: 1606374917125872
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161248564153581 End: 1161248580558546
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7,8_6 Write: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_6 Read: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_6 Execute:10522067-->26927032: 16404965
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917126258 End: 1606374917126269
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161248580954797 End: 1161248581039513
+    read Events --> Start: 0 End: 0
+PROFILE_TC 2,3,4,5,6,7,8_7 Write: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_7 Read: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_7 Execute:27323283-->27407999: 84716
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374917126511 End: 1606374917126521
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161248581618481 End: 1161248581678682
+    read Events --> Start: 1161248582324681 End: 1161248582340389
+PROFILE_TC 2,3,4,5,6,7,8_8 Write: 18445582825155920102-->18445582825155920102: 0
+PROFILE_TC 2,3,4,5,6,7,8_8 Read: 28693167-->28708875: 15708
+PROFILE_TC 2,3,4,5,6,7,8_8 Execute:27986967-->28047168: 60201
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 3 to local frontier for task component21
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+TIMER: Function Task Component Creation took 1.327234 ms
+Created task component 21
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for21
+Processing local frontier of task component 21
+Adding kernel 4 to local frontier for task component21
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 21
+Setting callback for kernel 4 of task component 21
+TASKDAG CALLBACK initiated for kernel 4of task component 21
+Updating number of completed kernels for kernel 4: convolution_4
+Updating number of finished parents for successors of current kernel  4: convolution_4
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 4: convolution_4
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)4: convolution_4
+Updated frontier with successors of current kernel 4: convolution_4
+Number of completed kernels: 108
+Updating Ready queue for kernel 4: convolution_4
+Updated Ready queue for kernel 4: convolution_4
+DAG CALLBACK finished for kernel 4: convolution_4
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374918189886 End: 1606374918190160
+    write events --> Start: 1161249617444431 End: 1161249617801265
+    ndrange events --> Start: 1161249618843606 End: 1161249619173806
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4_3 Write: 0-->356834: 356834
+PROFILE_TC 3,4_3 Read: 18445582824092107185-->18445582824092107185: 0
+PROFILE_TC 3,4_3 Execute:1399175-->1729375: 330200
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374918190458 End: 1606374918190468
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161249619482997 End: 1161249624468009
+    read Events --> Start: 1161249624905431 End: 1161249625049681
+PROFILE_TC 3,4_4 Write: 18445582824092107185-->18445582824092107185: 0
+PROFILE_TC 3,4_4 Read: 7461000-->7605250: 144250
+PROFILE_TC 3,4_4 Execute:2038566-->7023578: 4985012
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 3 to local frontier for task component22
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+TIMER: Function Task Component Creation took 1.718783 ms
+Created task component 22
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for22
+Processing local frontier of task component 22
+Adding kernel 4 to local frontier for task component22
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 22
+Adding kernel 5 to local frontier for task component22
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 22
+Setting callback for kernel 5 of task component 22
+TASKDAG CALLBACK initiated for kernel 5of task component 22
+Updating number of completed kernels for kernel 5: pooling_5
+Updating number of finished parents for successors of current kernel  5: pooling_5
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 5: pooling_5
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)5: pooling_5
+Updated frontier with successors of current kernel 5: pooling_5
+Number of completed kernels: 111
+Updating Ready queue for kernel 5: pooling_5
+Updated Ready queue for kernel 5: pooling_5
+DAG CALLBACK finished for kernel 5: pooling_5
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374919254186 End: 1606374919254371
+    write events --> Start: 1161250682080848 End: 1161250682447015
+    ndrange events --> Start: 1161250683489957 End: 1161250683822503
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5_3 Write: 0-->366167: 366167
+PROFILE_TC 3,4,5_3 Read: 18445582823027470768-->18445582823027470768: 0
+PROFILE_TC 3,4,5_3 Execute:1409109-->1741655: 332546
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374919254648 End: 1606374919254659
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161250684130583 End: 1161250689227416
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5_4 Write: 18445582823027470768-->18445582823027470768: 0
+PROFILE_TC 3,4,5_4 Read: 18445582823027470768-->18445582823027470768: 0
+PROFILE_TC 3,4,5_4 Execute:2049735-->7146568: 5096833
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374919254926 End: 1606374919254936
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161250689523034 End: 1161250689657426
+    read Events --> Start: 1161250690213140 End: 1161250690250390
+PROFILE_TC 3,4,5_5 Write: 18445582823027470768-->18445582823027470768: 0
+PROFILE_TC 3,4,5_5 Read: 8132292-->8169542: 37250
+PROFILE_TC 3,4,5_5 Execute:7442186-->7576578: 134392
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 3 to local frontier for task component23
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+TIMER: Function Task Component Creation took 9.706226 ms
+Created task component 23
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for23
+Processing local frontier of task component 23
+Adding kernel 4 to local frontier for task component23
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 23
+Adding kernel 5 to local frontier for task component23
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 23
+Adding kernel 6 to local frontier for task component23
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 23
+Setting callback for kernel 6 of task component 23
+TASKDAG CALLBACK initiated for kernel 6of task component 23
+Updating number of completed kernels for kernel 6: linear_6
+Updating number of finished parents for successors of current kernel  6: linear_6
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 6: linear_6
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)6: linear_6
+Updated frontier with successors of current kernel 6: linear_6
+Number of completed kernels: 115
+Updating Ready queue for kernel 6: linear_6
+Updated Ready queue for kernel 6: linear_6
+DAG CALLBACK finished for kernel 6: linear_6
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374920324931 End: 1606374920325216
+    write events --> Start: 1161251754209640 End: 1161251754674265
+    ndrange events --> Start: 1161251757227388 End: 1161251757563899
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6_3 Write: 0-->464625: 464625
+PROFILE_TC 3,4,5,6_3 Read: 18445582821955341976-->18445582821955341976: 0
+PROFILE_TC 3,4,5,6_3 Execute:3017748-->3354259: 336511
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374920325741 End: 1606374920325757
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161251757990209 End: 1161251763252414
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6_4 Write: 18445582821955341976-->18445582821955341976: 0
+PROFILE_TC 3,4,5,6_4 Read: 18445582821955341976-->18445582821955341976: 0
+PROFILE_TC 3,4,5,6_4 Execute:3780569-->9042774: 5262205
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374920326482 End: 1606374920326497
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161251763478608 End: 1161251763605729
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6_5 Write: 18445582821955341976-->18445582821955341976: 0
+PROFILE_TC 3,4,5,6_5 Read: 18445582821955341976-->18445582821955341976: 0
+PROFILE_TC 3,4,5,6_5 Execute:9268968-->9396089: 127121
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374920326838 End: 1606374920326853
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161251763898127 End: 1161251780067199
+    read Events --> Start: 1161251780596015 End: 1161251780613640
+PROFILE_TC 3,4,5,6_6 Write: 18445582821955341976-->18445582821955341976: 0
+PROFILE_TC 3,4,5,6_6 Read: 26386375-->26404000: 17625
+PROFILE_TC 3,4,5,6_6 Execute:9688487-->25857559: 16169072
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 3 to local frontier for task component24
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 9.667643 ms
+Created task component 24
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for24
+Processing local frontier of task component 24
+Adding kernel 4 to local frontier for task component24
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 24
+Adding kernel 5 to local frontier for task component24
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 24
+Adding kernel 6 to local frontier for task component24
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 24
+Adding kernel 7 to local frontier for task component24
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 24
+Setting callback for kernel 7 of task component 24
+TASKDAG CALLBACK initiated for kernel 7of task component 24
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 120
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374921397687 End: 1606374921398184
+    write events --> Start: 1161252826421807 End: 1161252826781682
+    ndrange events --> Start: 1161252828028043 End: 1161252828359687
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7_3 Write: 0-->359875: 359875
+PROFILE_TC 3,4,5,6,7_3 Read: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_3 Execute:1606236-->1937880: 331644
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374921398581 End: 1606374921398592
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161252828682499 End: 1161252833740709
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7_4 Write: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_4 Read: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_4 Execute:2260692-->7318902: 5058210
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374921399030 End: 1606374921399040
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161252833937284 End: 1161252834072758
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7_5 Write: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_5 Read: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_5 Execute:7515477-->7650951: 135474
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374921399281 End: 1606374921399292
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161252834384210 End: 1161252850775160
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7_6 Write: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_6 Read: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_6 Execute:7962403-->24353353: 16390950
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374921399530 End: 1606374921399541
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161252851246554 End: 1161252851334634
+    read Events --> Start: 1161252852042723 End: 1161252852059765
+PROFILE_TC 3,4,5,6,7_7 Write: 18445582820883129809-->18445582820883129809: 0
+PROFILE_TC 3,4,5,6,7_7 Read: 25620916-->25637958: 17042
+PROFILE_TC 3,4,5,6,7_7 Execute:24824747-->24912827: 88080
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 3
+ Preparing successor 4
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 3
+ Preparing successor 4
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 3 to local frontier for task component25
+setting arguments of kernel 3 pooling_3
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 9.707685 ms
+Created task component 25
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for25
+Processing local frontier of task component 25
+Adding kernel 4 to local frontier for task component25
+Incrementing completed kernels of task component and dag for kernel 3
+Processing local frontier of task component 25
+Adding kernel 5 to local frontier for task component25
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 25
+Adding kernel 6 to local frontier for task component25
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 25
+Adding kernel 7 to local frontier for task component25
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 25
+Adding kernel 8 to local frontier for task component25
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 25
+Setting callback for kernel 8 of task component 25
+TASKDAG CALLBACK initiated for kernel 8of task component 25
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 126
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  3 : pooling_3 executing on platform 0 and device 0
+    host queued events --> Start: 1606374922471382 End: 1606374922471570
+    write events --> Start: 1161253900079973 End: 1161253900400557
+    ndrange events --> Start: 1161253901088556 End: 1161253901415698
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7,8_3 Write: 0-->320584: 320584
+PROFILE_TC 3,4,5,6,7,8_3 Read: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_3 Execute:1008583-->1335725: 327142
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374922471850 End: 1606374922471861
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161253901717129 End: 1161253906875781
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7,8_4 Write: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_4 Read: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_4 Execute:1637156-->6795808: 5158652
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374922472256 End: 1606374922472266
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161253907181611 End: 1161253907308084
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7,8_5 Write: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_5 Read: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_5 Execute:7101638-->7228111: 126473
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374922472507 End: 1606374922472519
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161253907796997 End: 1161253923996796
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7,8_6 Write: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_6 Read: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_6 Execute:7717024-->23916823: 16199799
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374922472760 End: 1606374922472771
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161253924451419 End: 1161253924535795
+    read Events --> Start: 0 End: 0
+PROFILE_TC 3,4,5,6,7,8_7 Write: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_7 Read: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_7 Execute:24371446-->24455822: 84376
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374922473007 End: 1606374922473016
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161253924987746 End: 1161253925046982
+    read Events --> Start: 1161253925580140 End: 1161253925597265
+PROFILE_TC 3,4,5,6,7,8_8 Write: 18445582819809471643-->18445582819809471643: 0
+PROFILE_TC 3,4,5,6,7,8_8 Read: 25500167-->25517292: 17125
+PROFILE_TC 3,4,5,6,7,8_8 Execute:24907773-->24967009: 59236
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 4 to local frontier for task component26
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+TIMER: Function Task Component Creation took 0.669804 ms
+Created task component 26
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for26
+Processing local frontier of task component 26
+Adding kernel 5 to local frontier for task component26
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 26
+Setting callback for kernel 5 of task component 26
+TASKDAG CALLBACK initiated for kernel 5of task component 26
+Updating number of completed kernels for kernel 5: pooling_5
+Updating number of finished parents for successors of current kernel  5: pooling_5
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 5: pooling_5
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)5: pooling_5
+Updated frontier with successors of current kernel 5: pooling_5
+Number of completed kernels: 128
+Updating Ready queue for kernel 5: pooling_5
+Updated Ready queue for kernel 5: pooling_5
+DAG CALLBACK finished for kernel 5: pooling_5
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374923535857 End: 1606374923536154
+    write events --> Start: 1161254964631307 End: 1161254964745557
+    ndrange events --> Start: 1161254965849141 End: 1161254970899955
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5_4 Write: 0-->114250: 114250
+PROFILE_TC 4,5_4 Read: 18445582818744920309-->18445582818744920309: 0
+PROFILE_TC 4,5_4 Execute:1217834-->6268648: 5050814
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374923536698 End: 1606374923536710
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161254971246490 End: 1161254971382582
+    read Events --> Start: 1161254972052765 End: 1161254972082390
+PROFILE_TC 4,5_5 Write: 18445582818744920309-->18445582818744920309: 0
+PROFILE_TC 4,5_5 Read: 7421458-->7451083: 29625
+PROFILE_TC 4,5_5 Execute:6615183-->6751275: 136092
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 4 to local frontier for task component27
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+TIMER: Function Task Component Creation took 10.102776 ms
+Created task component 27
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for27
+Processing local frontier of task component 27
+Adding kernel 5 to local frontier for task component27
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 27
+Adding kernel 6 to local frontier for task component27
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 27
+Setting callback for kernel 6 of task component 27
+TASKDAG CALLBACK initiated for kernel 6of task component 27
+Updating number of completed kernels for kernel 6: linear_6
+Updating number of finished parents for successors of current kernel  6: linear_6
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 6: linear_6
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)6: linear_6
+Updated frontier with successors of current kernel 6: linear_6
+Number of completed kernels: 131
+Updating Ready queue for kernel 6: linear_6
+Updated Ready queue for kernel 6: linear_6
+DAG CALLBACK finished for kernel 6: linear_6
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374924608311 End: 1606374924608647
+    write events --> Start: 1161256036980890 End: 1161256037099807
+    ndrange events --> Start: 1161256038710978 End: 1161256043740760
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6_4 Write: 0-->118917: 118917
+PROFILE_TC 4,5,6_4 Read: 18445582817672570726-->18445582817672570726: 0
+PROFILE_TC 4,5,6_4 Execute:1730088-->6759870: 5029782
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374924609067 End: 1606374924609079
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161256044124299 End: 1161256044255115
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6_5 Write: 18445582817672570726-->18445582817672570726: 0
+PROFILE_TC 4,5,6_5 Read: 18445582817672570726-->18445582817672570726: 0
+PROFILE_TC 4,5,6_5 Execute:7143409-->7274225: 130816
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374924609551 End: 1606374924609570
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161256044717087 End: 1161256060866226
+    read Events --> Start: 1161256061391849 End: 1161256061407724
+PROFILE_TC 4,5,6_6 Write: 18445582817672570726-->18445582817672570726: 0
+PROFILE_TC 4,5,6_6 Read: 24410959-->24426834: 15875
+PROFILE_TC 4,5,6_6 Execute:7736197-->23885336: 16149139
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 4 to local frontier for task component28
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 8.690166 ms
+Created task component 28
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for28
+Processing local frontier of task component 28
+Adding kernel 5 to local frontier for task component28
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 28
+Adding kernel 6 to local frontier for task component28
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 28
+Adding kernel 7 to local frontier for task component28
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 28
+Setting callback for kernel 7 of task component 28
+TASKDAG CALLBACK initiated for kernel 7of task component 28
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 135
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374925678742 End: 1606374925679046
+    write events --> Start: 1161257106868432 End: 1161257106966099
+    ndrange events --> Start: 1161257107878441 End: 1161257113054301
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7_4 Write: 0-->97667: 97667
+PROFILE_TC 4,5,6,7_4 Read: 18445582816602683184-->18445582816602683184: 0
+PROFILE_TC 4,5,6,7_4 Execute:1010009-->6185869: 5175860
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374925679444 End: 1606374925679452
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161257113380678 End: 1161257113520753
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7_5 Write: 18445582816602683184-->18445582816602683184: 0
+PROFILE_TC 4,5,6,7_5 Read: 18445582816602683184-->18445582816602683184: 0
+PROFILE_TC 4,5,6,7_5 Execute:6512246-->6652321: 140075
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374925679841 End: 1606374925679852
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161257113876753 End: 1161257130138444
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7_6 Write: 18445582816602683184-->18445582816602683184: 0
+PROFILE_TC 4,5,6,7_6 Read: 18445582816602683184-->18445582816602683184: 0
+PROFILE_TC 4,5,6,7_6 Execute:7008321-->23270012: 16261691
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374925680094 End: 1606374925680105
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161257130660577 End: 1161257130746146
+    read Events --> Start: 1161257131343432 End: 1161257131360099
+PROFILE_TC 4,5,6,7_7 Write: 18445582816602683184-->18445582816602683184: 0
+PROFILE_TC 4,5,6,7_7 Read: 24475000-->24491667: 16667
+PROFILE_TC 4,5,6,7_7 Execute:23792145-->23877714: 85569
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 4
+ Preparing successor 5
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 4
+ Preparing successor 5
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 4 to local frontier for task component29
+setting arguments of kernel 4 convolution_4
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 9.021255 ms
+Created task component 29
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for29
+Processing local frontier of task component 29
+Adding kernel 5 to local frontier for task component29
+Incrementing completed kernels of task component and dag for kernel 4
+Processing local frontier of task component 29
+Adding kernel 6 to local frontier for task component29
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 29
+Adding kernel 7 to local frontier for task component29
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 29
+Adding kernel 8 to local frontier for task component29
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 29
+Setting callback for kernel 8 of task component 29
+TASKDAG CALLBACK initiated for kernel 8of task component 29
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 140
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  4 : convolution_4 executing on platform 0 and device 0
+    host queued events --> Start: 1606374926748390 End: 1606374926748595
+    write events --> Start: 1161258176741432 End: 1161258176835266
+    ndrange events --> Start: 1161258177836084 End: 1161258182904075
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7,8_4 Write: 0-->93834: 93834
+PROFILE_TC 4,5,6,7,8_4 Read: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_4 Execute:1094652-->6162643: 5067991
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374926748975 End: 1606374926748984
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161258183220213 End: 1161258183348294
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7,8_5 Write: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_5 Read: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_5 Execute:6478781-->6606862: 128081
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374926749376 End: 1606374926749386
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161258183717168 End: 1161258199854410
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7,8_6 Write: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_6 Read: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_6 Execute:6975736-->23112978: 16137242
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374926749633 End: 1606374926749644
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161258200378268 End: 1161258200463409
+    read Events --> Start: 0 End: 0
+PROFILE_TC 4,5,6,7,8_7 Write: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_7 Read: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_7 Execute:23636836-->23721977: 85141
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374926749879 End: 1606374926749889
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161258200965031 End: 1161258201024733
+    read Events --> Start: 1161258201627349 End: 1161258201642474
+PROFILE_TC 4,5,6,7,8_8 Write: 18445582815532810184-->18445582815532810184: 0
+PROFILE_TC 4,5,6,7,8_8 Read: 24885917-->24901042: 15125
+PROFILE_TC 4,5,6,7,8_8 Execute:24223599-->24283301: 59702
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 5 to local frontier for task component30
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+TIMER: Function Task Component Creation took 9.219634 ms
+Created task component 30
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for30
+Processing local frontier of task component 30
+Adding kernel 6 to local frontier for task component30
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 30
+Setting callback for kernel 6 of task component 30
+TASKDAG CALLBACK initiated for kernel 6of task component 30
+Updating number of completed kernels for kernel 6: linear_6
+Updating number of finished parents for successors of current kernel  6: linear_6
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 6: linear_6
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)6: linear_6
+Updated frontier with successors of current kernel 6: linear_6
+Number of completed kernels: 142
+Updating Ready queue for kernel 6: linear_6
+Updated Ready queue for kernel 6: linear_6
+DAG CALLBACK finished for kernel 6: linear_6
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374927819838 End: 1606374927820274
+    write events --> Start: 1161259248319307 End: 1161259248553724
+    ndrange events --> Start: 1161259250444411 End: 1161259250584200
+    read Events --> Start: 0 End: 0
+PROFILE_TC 5,6_5 Write: 0-->234417: 234417
+PROFILE_TC 5,6_5 Read: 18445582814461232309-->18445582814461232309: 0
+PROFILE_TC 5,6_5 Execute:2125104-->2264893: 139789
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374927820867 End: 1606374927820880
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161259251571498 End: 1161259267799917
+    read Events --> Start: 1161259268386057 End: 1161259268404807
+PROFILE_TC 5,6_6 Write: 18445582814461232309-->18445582814461232309: 0
+PROFILE_TC 5,6_6 Read: 20066750-->20085500: 18750
+PROFILE_TC 5,6_6 Execute:3252191-->19480610: 16228419
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 5 to local frontier for task component31
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 7.828483 ms
+Created task component 31
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for31
+Processing local frontier of task component 31
+Adding kernel 6 to local frontier for task component31
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 31
+Adding kernel 7 to local frontier for task component31
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 31
+Setting callback for kernel 7 of task component 31
+TASKDAG CALLBACK initiated for kernel 7of task component 31
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 145
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374928890595 End: 1606374928890925
+    write events --> Start: 1161260318602099 End: 1161260318774016
+    ndrange events --> Start: 1161260319465066 End: 1161260319592698
+    read Events --> Start: 0 End: 0
+PROFILE_TC 5,6,7_5 Write: 0-->171917: 171917
+PROFILE_TC 5,6,7_5 Read: 18445582813390949517-->18445582813390949517: 0
+PROFILE_TC 5,6,7_5 Execute:862967-->990599: 127632
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374928891386 End: 1606374928891396
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161260319890209 End: 1161260336228830
+    read Events --> Start: 0 End: 0
+PROFILE_TC 5,6,7_6 Write: 18445582813390949517-->18445582813390949517: 0
+PROFILE_TC 5,6,7_6 Read: 18445582813390949517-->18445582813390949517: 0
+PROFILE_TC 5,6,7_6 Execute:1288110-->17626731: 16338621
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374928891756 End: 1606374928891768
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161260336544997 End: 1161260336628782
+    read Events --> Start: 1161260337272057 End: 1161260337288974
+PROFILE_TC 5,6,7_7 Write: 18445582813390949517-->18445582813390949517: 0
+PROFILE_TC 5,6,7_7 Read: 18669958-->18686875: 16917
+PROFILE_TC 5,6,7_7 Execute:17942898-->18026683: 83785
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 5
+ Preparing successor 6
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 5
+ Preparing successor 6
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 5 to local frontier for task component32
+setting arguments of kernel 5 pooling_5
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 9.977815 ms
+Created task component 32
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for32
+Processing local frontier of task component 32
+Adding kernel 6 to local frontier for task component32
+Incrementing completed kernels of task component and dag for kernel 5
+Processing local frontier of task component 32
+Adding kernel 7 to local frontier for task component32
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 32
+Adding kernel 8 to local frontier for task component32
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 32
+Setting callback for kernel 8 of task component 32
+TASKDAG CALLBACK initiated for kernel 8of task component 32
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 149
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  5 : pooling_5 executing on platform 0 and device 0
+    host queued events --> Start: 1606374929964716 End: 1606374929964967
+    write events --> Start: 1161261393847599 End: 1161261394058808
+    ndrange events --> Start: 1161261394686268 End: 1161261394824650
+    read Events --> Start: 0 End: 0
+PROFILE_TC 5,6,7,8_5 Write: 0-->211209: 211209
+PROFILE_TC 5,6,7,8_5 Read: 18445582812315704017-->18445582812315704017: 0
+PROFILE_TC 5,6,7,8_5 Execute:838669-->977051: 138382
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374929965448 End: 1606374929965462
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161261395171880 End: 1161261411383936
+    read Events --> Start: 0 End: 0
+PROFILE_TC 5,6,7,8_6 Write: 18445582812315704017-->18445582812315704017: 0
+PROFILE_TC 5,6,7,8_6 Read: 18445582812315704017-->18445582812315704017: 0
+PROFILE_TC 5,6,7,8_6 Execute:1324281-->17536337: 16212056
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374929966147 End: 1606374929966163
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161261411832495 End: 1161261411916570
+    read Events --> Start: 0 End: 0
+PROFILE_TC 5,6,7,8_7 Write: 18445582812315704017-->18445582812315704017: 0
+PROFILE_TC 5,6,7,8_7 Read: 18445582812315704017-->18445582812315704017: 0
+PROFILE_TC 5,6,7,8_7 Execute:17984896-->18068971: 84075
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374929966520 End: 1606374929966535
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161261412321467 End: 1161261412380737
+    read Events --> Start: 1161261412915058 End: 1161261412930974
+PROFILE_TC 5,6,7,8_8 Write: 18445582812315704017-->18445582812315704017: 0
+PROFILE_TC 5,6,7,8_8 Read: 19067459-->19083375: 15916
+PROFILE_TC 5,6,7,8_8 Execute:18473868-->18533138: 59270
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Kernel and successor are not part of the same component
+Obtained source buffer
+Set buffer flags of source_buffer
+Prepared kernels
+Initliazling local frontier
+Adding kernel 6 to local frontier for task component33
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+TIMER: Function Task Component Creation took 7.769898 ms
+Created task component 33
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for33
+Processing local frontier of task component 33
+Adding kernel 7 to local frontier for task component33
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 33
+Setting callback for kernel 7 of task component 33
+TASKDAG CALLBACK initiated for kernel 7of task component 33
+Updating number of completed kernels for kernel 7: linear_7
+Updating number of finished parents for successors of current kernel  7: linear_7
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 7: linear_7
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)7: linear_7
+Updated frontier with successors of current kernel 7: linear_7
+Number of completed kernels: 151
+Updating Ready queue for kernel 7: linear_7
+Updated Ready queue for kernel 7: linear_7
+DAG CALLBACK finished for kernel 7: linear_7
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374931036606 End: 1606374931036810
+    write events --> Start: 1161262464101183 End: 1161262464157016
+    ndrange events --> Start: 1161262464833457 End: 1161262481085792
+    read Events --> Start: 0 End: 0
+PROFILE_TC 6,7_6 Write: 0-->55833: 55833
+PROFILE_TC 6,7_6 Read: 18445582811245450433-->18445582811245450433: 0
+PROFILE_TC 6,7_6 Execute:732274-->16984609: 16252335
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374931037239 End: 1606374931037249
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161262481426685 End: 1161262481511222
+    read Events --> Start: 1161262482011599 End: 1161262482027058
+PROFILE_TC 6,7_7 Write: 18445582811245450433-->18445582811245450433: 0
+PROFILE_TC 6,7_7 Read: 17910416-->17925875: 15459
+PROFILE_TC 6,7_7 Execute:17325502-->17410039: 84537
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 6
+ Preparing successor 7
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 6
+ Preparing successor 7
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 6 to local frontier for task component34
+setting arguments of kernel 6 linear_6
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 7.806732 ms
+Created task component 34
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for34
+Processing local frontier of task component 34
+Adding kernel 7 to local frontier for task component34
+Incrementing completed kernels of task component and dag for kernel 6
+Processing local frontier of task component 34
+Adding kernel 8 to local frontier for task component34
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 34
+Setting callback for kernel 8 of task component 34
+TASKDAG CALLBACK initiated for kernel 8of task component 34
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 154
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  6 : linear_6 executing on platform 0 and device 0
+    host queued events --> Start: 1606374932106584 End: 1606374932106837
+    write events --> Start: 1161263534804266 End: 1161263534863433
+    ndrange events --> Start: 1161263535973870 End: 1161263552163545
+    read Events --> Start: 0 End: 0
+PROFILE_TC 6,7,8_6 Write: 0-->59167: 59167
+PROFILE_TC 6,7,8_6 Read: 18445582810174747350-->18445582810174747350: 0
+PROFILE_TC 6,7,8_6 Execute:1169604-->17359279: 16189675
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374932107249 End: 1606374932107263
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161263552597353 End: 1161263552683625
+    read Events --> Start: 0 End: 0
+PROFILE_TC 6,7,8_7 Write: 18445582810174747350-->18445582810174747350: 0
+PROFILE_TC 6,7,8_7 Read: 18445582810174747350-->18445582810174747350: 0
+PROFILE_TC 6,7,8_7 Execute:17793087-->17879359: 86272
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374932107752 End: 1606374932107766
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161263553121815 End: 1161263553181332
+    read Events --> Start: 1161263553901933 End: 1161263553917725
+PROFILE_TC 6,7,8_8 Write: 18445582810174747350-->18445582810174747350: 0
+PROFILE_TC 6,7,8_8 Read: 19097667-->19113459: 15792
+PROFILE_TC 6,7,8_8 Execute:18317549-->18377066: 59517
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Preparing internal dependents of kernel 7
+ Preparing successor 8
+ Obtained successor kernel pointer
+Kernel and successor are part of same component
+Obtained source buffer
+Obtained destination buffer
+Preparing external dependents of kernel 7
+ Preparing successor 8
+Preparing internal dependents of kernel 8
+Preparing external dependents of kernel 8
+Prepared kernels
+Initliazling local frontier
+Adding kernel 7 to local frontier for task component35
+setting arguments of kernel 7 linear_7
+setting arguments of kernel 8 softmax_8
+TIMER: Function Task Component Creation took 0.071459 ms
+Created task component 35
+Running scheduler thread 1190028352 on core 3 
+Dispatch single called for35
+Processing local frontier of task component 35
+Adding kernel 8 to local frontier for task component35
+Incrementing completed kernels of task component and dag for kernel 7
+Processing local frontier of task component 35
+Setting callback for kernel 8 of task component 35
+TASKDAG CALLBACK initiated for kernel 8of task component 35
+Updating number of completed kernels for kernel 8: softmax_8
+Updating number of finished parents for successors of current kernel  8: softmax_8
+Updated number of finished parents for successors of current kernel (only if successor belongs to a separate task component) 8: softmax_8
+Updating frontier with successors of current kernel (that have not been dispatched as part of some task component)8: softmax_8
+Updated frontier with successors of current kernel 8: softmax_8
+Number of completed kernels: 156
+Updating Ready queue for kernel 8: softmax_8
+Updated Ready queue for kernel 8: softmax_8
+DAG CALLBACK finished for kernel 8: softmax_8
+Waiting for tc to be finished
+Running callback thread 2806244416 on core 3 
+Kernel Callback initiated
+Profiling
+  7 : linear_7 executing on platform 0 and device 0
+    host queued events --> Start: 1606374933167285 End: 1606374933167541
+    write events --> Start: 1161264594953725 End: 1161264594966891
+    ndrange events --> Start: 1161264596504825 End: 1161264596589166
+    read Events --> Start: 0 End: 0
+PROFILE_TC 7,8_7 Write: 0-->13166: 13166
+PROFILE_TC 7,8_7 Read: 18445582809114597891-->18445582809114597891: 0
+PROFILE_TC 7,8_7 Execute:1551100-->1635441: 84341
+  8 : softmax_8 executing on platform 0 and device 0
+    host queued events --> Start: 1606374933167932 End: 1606374933167944
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1161264597189348 End: 1161264597249161
+    read Events --> Start: 1161264597934933 End: 1161264597939266
+PROFILE_TC 7,8_8 Write: 18445582809114597891-->18445582809114597891: 0
+PROFILE_TC 7,8_8 Read: 2981208-->2985541: 4333
+PROFILE_TC 7,8_8 Execute:2235623-->2295436: 59813
+Main finished

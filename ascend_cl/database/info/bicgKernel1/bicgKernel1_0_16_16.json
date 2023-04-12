@@ -1,0 +1,42 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "16"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "16"
+    }
+  ], 
+  "partition": 0, 
+  "name": "bicgKernel1", 
+  "src": "bicg.cl", 
+  "globalWorkSize": "[16]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "16"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "16"
+    }
+  ]
+}

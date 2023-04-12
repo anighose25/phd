@@ -1,0 +1,510 @@
+{
+  "conv0": 
+  [
+    {
+      "input_channels": 3, 
+      "output_channels": 96, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ], 
+  "relu0": 
+  [
+    {
+      "slope": 0 
+    }
+  ],
+  "maxpool0": 
+  [
+    {
+      "kernel_size": 2,
+      "stride": 2,
+      "padding":0  
+    }
+  ], 
+
+
+
+
+
+  "conv1": 
+  [
+    {
+      "input_channels": 96, 
+      "output_channels": 16, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu1": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv2": 
+  [
+    {
+      "input_channels": 16, 
+      "output_channels": 64, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv3": 
+  [
+    {
+      "input_channels": 16, 
+      "output_channels": 64, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat0": 
+  [
+    {
+      "output_channels": 128
+    }
+  ],
+  "relu2": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+
+
+
+  "conv4": 
+  [
+    {
+      "input_channels": 128, 
+      "output_channels": 16, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu3": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv5": 
+  [
+    {
+      "input_channels": 16, 
+      "output_channels": 64, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv6": 
+  [
+    {
+      "input_channels": 16, 
+      "output_channels": 64, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat1": 
+  [
+    {
+      "output_channels": 128
+    }
+  ],
+  "relu4": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+
+
+
+
+
+
+  "conv7": 
+  [
+    {
+      "input_channels": 128, 
+      "output_channels": 32, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu5": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv8": 
+  [
+    {
+      "input_channels": 32, 
+      "output_channels": 128, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv9": 
+  [
+    {
+      "input_channels": 32, 
+      "output_channels": 128, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat2": 
+  [
+    {
+      "output_channels": 256
+    }
+  ],
+  "relu6": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+
+
+
+
+  "maxpool1": 
+  [
+    {
+      "kernel_size": 2,
+      "stride": 2,
+      "padding":0  
+    }
+  ],
+
+
+
+
+
+
+
+  "conv10": 
+  [
+    {
+      "input_channels": 256, 
+      "output_channels": 32, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu7": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv11": 
+  [
+    {
+      "input_channels": 32, 
+      "output_channels": 128, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv12": 
+  [
+    {
+      "input_channels": 32, 
+      "output_channels": 128, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat3": 
+  [
+    {
+      "output_channels": 256
+    }
+  ],
+  "relu8": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+
+  
+
+
+
+
+
+
+  "conv13": 
+  [
+    {
+      "input_channels": 256, 
+      "output_channels": 48, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu9": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv14": 
+  [
+    {
+      "input_channels": 48, 
+      "output_channels": 192, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv15": 
+  [
+    {
+      "input_channels": 48, 
+      "output_channels": 192, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat4": 
+  [
+    {
+      "output_channels": 384
+    }
+  ],
+  "relu10": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+
+
+  
+
+
+
+
+  "conv16": 
+  [
+    {
+      "input_channels": 384, 
+      "output_channels": 48, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu11": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv17": 
+  [
+    {
+      "input_channels": 48, 
+      "output_channels": 192, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv18": 
+  [
+    {
+      "input_channels": 48, 
+      "output_channels": 192, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat5": 
+  [
+    {
+      "output_channels": 384
+    }
+  ],
+  "relu12": 
+  [
+    {
+      "slope": 0
+    }
+  ],  
+
+
+
+
+
+  "conv19": 
+  [
+    {
+      "input_channels": 384, 
+      "output_channels": 64, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu13": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv20": 
+  [
+    {
+      "input_channels": 64, 
+      "output_channels": 256, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv21": 
+  [
+    {
+      "input_channels": 64, 
+      "output_channels": 256, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat6": 
+  [
+    {
+      "output_channels": 512
+    }
+  ],
+  "relu14": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  
+  
+
+
+
+  "maxpool2": 
+  [
+    {
+      "kernel_size": 2,
+      "stride": 2,
+      "padding":0  
+    }
+  ],
+
+
+
+
+
+
+
+  "conv22": 
+  [
+    {
+      "input_channels": 512, 
+      "output_channels": 64, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "relu15": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+  "conv23": 
+  [
+    {
+      "input_channels": 64, 
+      "output_channels": 256, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+  "conv24": 
+  [
+    {
+      "input_channels": 64, 
+      "output_channels": 256, 
+      "kernel_size": 3, 
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "concat7": 
+  [
+    {
+      "output_channels": 512
+    }
+  ],
+  "relu16": 
+  [
+    {
+      "slope": 0
+    }
+  ],
+
+
+
+
+
+  "conv25": 
+  [
+    {
+      "input_channels": 512, 
+      "output_channels": 10, 
+      "kernel_size": 1, 
+      "stride": 1,
+      "padding": 0
+    }
+  ],
+
+
+  "avgpool0": 
+  [
+    {
+      "kernel_size": 4,
+      "stride": 4,
+      "padding":0  
+    }
+  ]
+
+
+}

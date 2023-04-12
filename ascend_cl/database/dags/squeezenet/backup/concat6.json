@@ -1,0 +1,46 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 0,
+      "size": "16384"
+    },
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 1,
+      "size": "16384"
+    }
+  ],
+  "name": "concat",
+  "src": "concat.cl",
+  "globalWorkSize": "[64]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 3,
+      "size": "32768"
+    }
+  ],
+  "workDimension": 1,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "256"
+    },
+    {
+      "type": "int",
+      "pos": 4,
+      "value": "8"
+    },
+    {
+      "type": "int",
+      "pos": 5,
+      "value": "8"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "1"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "256"
+    }
+  ], 
+  "partition": 10, 
+  "name": "fdtd_kernel2", 
+  "src": "fdtd2d.cl", 
+  "globalWorkSize": "[16, 16]", 
+  "outputBuffers": [], 
+  "workDimension": 2, 
+  "ioBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "15"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "15"
+    }
+  ]
+}

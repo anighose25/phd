@@ -1,0 +1,62 @@
+{
+  "src": "edlenet_8_S_8_1.cl", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 52988538195525, 
+      "device_end": 52988538268566
+    }, 
+    "write": {
+      "host_queued_start": 1624423375397428, 
+      "device_start": 0, 
+      "host_queued_end": 1624423375397452, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "name": "softmax_8", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "persistence": 0, 
+      "size": "16"
+    }
+  ], 
+  "globalWorkSize": "[2,1,1]", 
+  "workDimension": 1, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "persistence": 0, 
+      "size": "16"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 52986971246233, 
+      "device_end": 52986971261024
+    }, 
+    "ndrange": {
+      "device_start": 52986970566243, 
+      "device_end": 52986970627284
+    }, 
+    "write": {
+      "host_queued_start": 1624423373812989, 
+      "device_start": 52986967590941, 
+      "host_queued_end": 1624423373813879, 
+      "device_end": 52986967628858, 
+      "device_queued": 52986952590608
+    }, 
+    "device_id": 0
+  }
+}

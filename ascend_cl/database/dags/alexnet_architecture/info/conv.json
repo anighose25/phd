@@ -1,0 +1,103 @@
+{
+    "inputBuffers": [
+      {
+        "break": 1, 
+        "type": "float", 
+        "pos": 1, 
+        "size": "I_height*I_width*I_channel"
+      }, 
+      {
+        "break": 0, 
+        "type": "float", 
+        "pos": 5, 
+        "size": "K_height*K_width*I_channel*K_number"
+      },
+      {
+        "break": 0, 
+        "type": "float", 
+        "pos": 6, 
+        "size": "K_number"
+      }
+    ], 
+    "name": "dm_conv_local", 
+    "src": "convolution.cl",
+    "globalWorkSize": "[global_wgs,K_number]",
+    "localWorkSize" : "[local_wgs]", 
+    "outputBuffers": [
+      {
+        "break": 0, 
+        "type": "float", 
+        "pos": 14, 
+        "size": "O_height*O_width*K_number"
+      }
+    ], 
+    "workDimension": 2, 
+    "ioBuffers": [], 
+    "varArguments": [
+      {
+        "type": "int", 
+        "pos": 0, 
+        "value": "0"
+      }, 
+      {
+        "type": "int", 
+        "pos": 2, 
+        "value": "I_width"
+      }, 
+      {
+        "type": "int", 
+        "pos": 3, 
+        "value": "I_height"
+      }, 
+      {
+        "type": "int", 
+        "pos": 4, 
+        "value": "I_channel"
+      }, 
+      {
+        "type": "int", 
+        "pos": 7, 
+        "value": "K_width"
+      }, 
+      {
+        "type": "int", 
+        "pos": 8, 
+        "value": "K_height"
+      }, 
+      {
+        "type": "int", 
+        "pos": 9, 
+        "value": "K_number"
+      }, 
+      {
+        "type": "int", 
+        "pos": 10, 
+        "value": "stride_w"
+      }, 
+      {
+        "type": "int", 
+        "pos": 11, 
+        "value": "stride_h"
+      }, 
+      {
+        "type": "int", 
+        "pos": 12, 
+        "value": "pad_w"
+      }, 
+      {
+        "type": "int", 
+        "pos": 13, 
+        "value": "pad_h"
+      }, 
+      {
+        "type": "int", 
+        "pos": 15, 
+        "value": "O_height"
+      }, 
+      {
+        "type": "int", 
+        "pos": 16, 
+        "value": "O_width"
+      }
+    ]
+  }

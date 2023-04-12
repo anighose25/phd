@@ -1,0 +1,48 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "262144"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "262144"
+    }
+  ], 
+  "name": "MatVecMulCoalesced2", 
+  "globalWorkSize": "[512]", 
+  "partition": 0, 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 4, 
+      "size": "512"
+    }
+  ], 
+  "workDimension": 1, 
+  "localArguments": [
+    {
+      "type": "float", 
+      "pos": 5, 
+      "size": "512"
+    }
+  ], 
+  "src": "oclMatVecMul.cl", 
+  "varArguments": [
+    {
+      "type": "uint", 
+      "pos": 2, 
+      "value": "512"
+    }, 
+    {
+      "type": "uint", 
+      "pos": 3, 
+      "value": "512"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+    "inputBuffers": [
+      {
+        "break": 0,
+        "type": "float",
+        "pos": 0,
+        "size": "I_height*I_width*I_channel"
+      }
+    ],
+    "name": "lrn_layer",
+    "src": "local_response_norm.cl",
+    "globalWorkSize": "[I_height, I_width, I_channel]",
+    "outputBuffers": [
+      {
+        "break": 0,
+        "type": "float",
+        "pos": 8,
+        "size": "I_height*I_width*I_channel"
+      }
+    ],
+    "workDimension": 3,
+    "ioBuffers": [],
+    "varArguments": [
+      {
+        "type": "int",
+        "pos": 1,
+        "value": "I_width"
+      },
+      {
+        "type": "int",
+        "pos": 2,
+        "value": "I_height"
+      },
+      {
+        "type": "int",
+        "pos": 3,
+        "value": "I_channel"
+      },
+      {
+        "type": "float",
+        "pos": 4,
+        "value": "alpha"
+      },
+      {
+        "type": "float",
+        "pos": 5,
+        "value": "beta"
+      },
+      {
+        "type": "int",
+        "pos": 6,
+        "value": "N"
+      },
+      {
+        "type": "int",
+        "pos": 7,
+        "value": "K"
+      }
+    ]
+}

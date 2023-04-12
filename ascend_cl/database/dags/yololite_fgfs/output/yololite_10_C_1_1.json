@@ -1,0 +1,76 @@
+{
+  "src": "yololite_10_C_1_1.cl", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 148474450107366, 
+      "device_end": 148474460569699
+    }, 
+    "write": {
+      "host_queued_start": 1616582343340319, 
+      "device_start": 0, 
+      "host_queued_end": 1616582343340355, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "name": "convolution_10", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "persistence": 0, 
+      "size": "8192"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "persistence": 1, 
+      "size": "294912"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "persistence": 1, 
+      "size": "256"
+    }
+  ], 
+  "globalWorkSize": "[16384,1,1]", 
+  "workDimension": 1, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 3, 
+      "persistence": 0, 
+      "size": "16384"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 148473583290866, 
+      "device_end": 148473583337699
+    }, 
+    "ndrange": {
+      "device_start": 148473582631855, 
+      "device_end": 148473582913434
+    }, 
+    "write": {
+      "host_queued_start": 1616582342934938, 
+      "device_start": 148473581150157, 
+      "host_queued_end": 1616582342935485, 
+      "device_end": 148473581212574, 
+      "device_queued": 148473579496991
+    }, 
+    "device_id": 0
+  }
+}

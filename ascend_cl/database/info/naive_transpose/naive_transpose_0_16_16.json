@@ -1,0 +1,32 @@
+{
+  "localWorkSize": "[32, 32]", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }
+  ], 
+  "name": "naive_transpose", 
+  "globalWorkSize": "[16, 16]", 
+  "partition": 0, 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "256"
+    }
+  ], 
+  "workDimension": 2, 
+  "src": "transpose.cl", 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "16"
+    }
+  ]
+}

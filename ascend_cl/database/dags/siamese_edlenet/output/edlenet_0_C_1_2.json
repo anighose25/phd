@@ -1,0 +1,76 @@
+{
+  "src": "edlenet_0_C_1_2.cl", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 53218069467677, 
+      "device_end": 53218077691844
+    }, 
+    "write": {
+      "host_queued_start": 1624423604933312, 
+      "device_start": 0, 
+      "host_queued_end": 1624423604933337, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "name": "convolution_0", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "persistence": 0, 
+      "size": "65536"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "persistence": 1, 
+      "size": "288"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "persistence": 1, 
+      "size": "32"
+    }
+  ], 
+  "globalWorkSize": "[1048576,1,1]", 
+  "workDimension": 1, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 3, 
+      "persistence": 0, 
+      "size": "2097152"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 53217521853302, 
+      "device_end": 53217525698177
+    }, 
+    "ndrange": {
+      "device_start": 53217520104461, 
+      "device_end": 53217521547996
+    }, 
+    "write": {
+      "host_queued_start": 1624423604383769, 
+      "device_start": 53217519210802, 
+      "host_queued_end": 1624423604384086, 
+      "device_end": 53217519561885, 
+      "device_queued": 53217518330427
+    }, 
+    "device_id": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+ "name": "softmax_8",
+ "src": "edlenet_8_S_4_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[4,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "16",
+    "pos": 0,
+    "persistence": 0
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "16",
+    "pos": 1,
+    "persistence": 0
+  }
+ ]
+}

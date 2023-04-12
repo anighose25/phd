@@ -1,0 +1,57 @@
+{
+  "src": "empty.cl", 
+  "partition": 5, 
+  "name": "empty", 
+  "globalWorkSize": "[1]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 428825879786994, 
+      "device_end": 428825879844161
+    }, 
+    "write": {
+      "host_queued_start": 1618290341626259, 
+      "device_start": 0, 
+      "host_queued_end": 1618290341626267, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "varArguments": [], 
+  "outputBuffers": [], 
+  "workDimension": 1, 
+  "inputBuffers": [], 
+  "ioBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "65536"
+    }
+  ], 
+  "id": 1, 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 428825536957369, 
+      "device_end": 428825537092744
+    }, 
+    "ndrange": {
+      "device_start": 428825536492992, 
+      "device_end": 428825536494077
+    }, 
+    "write": {
+      "host_queued_start": 1618290341281756, 
+      "device_start": 428825535543869, 
+      "host_queued_end": 1618290341282062, 
+      "device_end": 428825535919453, 
+      "device_queued": 428825535005203
+    }, 
+    "device_id": 0
+  }
+}

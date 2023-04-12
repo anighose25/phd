@@ -1,0 +1,44 @@
+{
+  "localWorkSize": "[32, 32]", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "m1*n1"
+    }
+  ], 
+  "name": "coalesced_transpose", 
+  "globalWorkSize": "[n1,m1]", 
+  "partition": 1, 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "n1*m1"
+    }
+  ], 
+  "workDimension": 2, 
+  "localArguments": [
+    {
+      "type": "float", 
+      "pos": 2, 
+      "size": "1056"
+    }
+  ], 
+  "src": "transpose.cl", 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "m1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "n1"
+    }
+  ]
+}

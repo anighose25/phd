@@ -1,0 +1,52 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 1,
+      "size": "4096"
+    },
+    {
+      "type": "float",
+      "pos": 3,
+      "size": "40960",
+      "file_name": "alexnet_weights/fc2_weight.txt"
+    },
+    {
+      "type": "float",
+      "pos": 4,
+      "size": "10",
+      "file_name": "alexnet_weights/fc2_bias.txt"
+    }
+  ],
+  "name": "fc_base",
+  "src": "fc.cl",
+  "globalWorkSize": "[10]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 5,
+      "size": "10"
+    }
+  ],
+  "workDimension": 1,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 0,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "4096"
+    },
+    {
+      "type": "int",
+      "pos": 6,
+      "value": "10"
+    }
+  ]
+}

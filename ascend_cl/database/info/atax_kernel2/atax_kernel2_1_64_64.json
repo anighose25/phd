@@ -1,0 +1,42 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "4096"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "64"
+    }
+  ], 
+  "partition": 1, 
+  "name": "atax_kernel2", 
+  "src": "atax.cl", 
+  "globalWorkSize": "[64]", 
+  "outputBuffers": [], 
+  "workDimension": 1, 
+  "ioBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "64"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "64"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "64"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "localWorkSize": "[8, 8]", 
+  "src": "FFC.cl", 
+  "partition": 5, 
+  "name": "FFC_sans_bias", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "16384"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "16384"
+    }
+  ], 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 428827355365120, 
+      "device_end": 428827360838161
+    }, 
+    "write": {
+      "host_queued_start": 1618290343101775, 
+      "device_start": 0, 
+      "host_queued_end": 1618290343101785, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "16384"
+    }
+  ], 
+  "workDimension": 2, 
+  "globalWorkSize": "[128, 128]", 
+  "id": 1, 
+  "macros_values": {
+    "WPT": "1", 
+    "TS": "8"
+  }, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "128"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "128"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "128"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 428826971121120, 
+      "device_end": 428826971157745
+    }, 
+    "ndrange": {
+      "device_start": 428826968000687, 
+      "device_end": 428826970820903
+    }, 
+    "write": {
+      "host_queued_start": 1618290342713378, 
+      "device_start": 428826967397911, 
+      "host_queued_end": 1618290342713698, 
+      "device_end": 428826967635495, 
+      "device_queued": 428826966572161
+    }, 
+    "device_id": 0
+  }
+}

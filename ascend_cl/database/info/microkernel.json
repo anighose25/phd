@@ -1,0 +1,31 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 0,
+      "size": "8192"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 1,
+      "size": "8192"
+    }
+
+  ],
+  "name": "micro_kernel",
+  "src": "micro_kernel.cl",
+  "globalWorkSize": "[8192]",
+  "workDimension": 1,
+  "outputBuffers": [
+
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 2,
+      "size": "8192"
+    }
+  ]
+  
+}

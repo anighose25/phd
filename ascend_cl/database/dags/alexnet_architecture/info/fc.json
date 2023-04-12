@@ -1,0 +1,50 @@
+{
+    "inputBuffers": [
+      {
+        "break": 0,
+        "type": "float",
+        "pos": 1,
+        "size": "input"
+      },
+      {
+        "type": "float",
+        "pos": 3,
+        "size": "input*output"
+      },
+      {
+        "type": "float",
+        "pos": 4,
+        "size": "output"
+      }
+    ],
+    "name": "fc_base",
+    "src": "fc.cl",
+    "globalWorkSize": "[output]",
+    "outputBuffers": [
+      {
+        "break": 0,
+        "type": "float",
+        "pos": 5,
+        "size": "output"
+      }
+    ],
+    "workDimension": 1,
+    "ioBuffers": [],
+    "varArguments": [
+      {
+        "type": "int",
+        "pos": 0,
+        "value": "0"
+      },
+      {
+        "type": "int",
+        "pos": 2,
+        "value": "input"
+      },
+      {
+        "type": "int",
+        "pos": 6,
+        "value": "output"
+      }
+    ]
+  }

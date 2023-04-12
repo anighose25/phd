@@ -1,0 +1,53 @@
+{
+	"src": "gemm_vectorized.cl",
+	"name": "mm",
+	"inputBuffers": [{
+		"break": 1,
+		"type": "float",
+		"pos": 0,
+		"size": "65536"
+	},
+  {
+    "break": 0,
+    "type": "float",
+    "pos": 1,
+    "size": "65536"
+	}
+
+  ],
+	"varArguments": [
+	{
+		"type": "int",
+		"pos": 3,
+		"value": "256"
+	},
+	{
+		"type": "int",
+		"pos": 4,
+		"value": "256"
+	},
+	{
+		"type": "int",
+		"pos": 5,
+		"value": "256"
+	}
+  ],
+	"partition":5,
+	"workDimension": 2,
+	"globalWorkSize": "[64,64]",
+	"id": 1,
+  "outputBuffers": [
+      {
+          "break": 1,
+          "pos": 2,
+          "size": "65536",
+          "type": "float"
+      }
+  ],
+	"ioBuffers":[],
+	"macros_values":
+      {
+					  "WPT": "wpt",
+						"TS":"TS"
+			}
+}

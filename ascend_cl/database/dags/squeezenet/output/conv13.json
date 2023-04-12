@@ -1,0 +1,143 @@
+{
+  "localWorkSize": "[128]", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "16384"
+    }, 
+    {
+      "break": 0, 
+      "file_name": "weights/fire6_conv1.txt", 
+      "type": "float", 
+      "pos": 5, 
+      "size": "12288"
+    }, 
+    {
+      "break": 0, 
+      "file_name": "weights/fire6_bias1.txt", 
+      "type": "float", 
+      "pos": 6, 
+      "size": "48"
+    }
+  ], 
+  "name": "dm_conv_local", 
+  "globalWorkSize": "[128, 48]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 62941376907753, 
+      "device_end": 62941380649753
+    }, 
+    "write": {
+      "host_queued_start": 1614056340486371, 
+      "device_start": 0, 
+      "host_queued_end": 1614056340486395, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 0, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "8"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "8"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "256"
+    }, 
+    {
+      "type": "int", 
+      "pos": 7, 
+      "value": "1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 8, 
+      "value": "1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 9, 
+      "value": "48"
+    }, 
+    {
+      "type": "int", 
+      "pos": 10, 
+      "value": "1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 11, 
+      "value": "1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 12, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 13, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 15, 
+      "value": "8"
+    }, 
+    {
+      "type": "int", 
+      "pos": 16, 
+      "value": "8"
+    }
+  ], 
+  "workDimension": 2, 
+  "src": "convolution.cl", 
+  "ioBuffers": [], 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 14, 
+      "size": "3072"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 62940848214628, 
+      "device_end": 62940848226419
+    }, 
+    "ndrange": {
+      "device_start": 62940846955460, 
+      "device_end": 62940847917208
+    }, 
+    "write": {
+      "host_queued_start": 1614056339953949, 
+      "device_start": 62940846219461, 
+      "host_queued_end": 1614056339955078, 
+      "device_end": 62940846491628, 
+      "device_queued": 62940844040003
+    }, 
+    "device_id": 0
+  }
+}

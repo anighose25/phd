@@ -1,0 +1,36 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "4096"
+    }
+  ], 
+  "partition": 0, 
+  "name": "covar_kernel", 
+  "src": "covariance.cl", 
+  "globalWorkSize": "[64]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "4096"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "63"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "63"
+    }
+  ]
+}

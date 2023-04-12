@@ -1,0 +1,81 @@
+{
+  "localWorkSize": "[8, 8]", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "65536"
+    }
+  ], 
+  "name": "coalesced_transpose", 
+  "globalWorkSize": "[256, 256]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 428826598372870, 
+      "device_end": 428826598923453
+    }, 
+    "write": {
+      "host_queued_start": 1618290342344704, 
+      "device_start": 0, 
+      "host_queued_end": 1618290342344712, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "65536"
+    }
+  ], 
+  "workDimension": 2, 
+  "localArguments": [
+    {
+      "type": "float", 
+      "pos": 2, 
+      "size": "1056"
+    }
+  ], 
+  "src": "transpose.cl", 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "256"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "256"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 428826241641120, 
+      "device_end": 428826241815328
+    }, 
+    "ndrange": {
+      "device_start": 428826241119763, 
+      "device_end": 428826241388819
+    }, 
+    "write": {
+      "host_queued_start": 1618290341986127, 
+      "device_start": 428826240194120, 
+      "host_queued_end": 1618290341986406, 
+      "device_end": 428826240613745, 
+      "device_queued": 428826239340661
+    }, 
+    "device_id": 0
+  }
+}

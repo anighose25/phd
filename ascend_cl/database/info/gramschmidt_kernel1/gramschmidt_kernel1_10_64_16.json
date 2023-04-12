@@ -1,0 +1,48 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "4096"
+    }
+  ], 
+  "partition": 10, 
+  "name": "gramschmidt_kernel1", 
+  "src": "gramschmidt.cl", 
+  "globalWorkSize": "[64]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "4096"
+    }
+  ], 
+  "workDimension": 1, 
+  "ioBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "1"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "64"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "64"
+    }
+  ]
+}

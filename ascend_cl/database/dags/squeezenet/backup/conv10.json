@@ -1,0 +1,105 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 1,
+      "size": "16384"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 5,
+      "size": "8192",
+      "file_name" : "weights/fire5_conv1.txt"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 6,
+      "size": "32",
+      "file_name" : "weights/fire5_bias1.txt"
+    }
+  ],
+  "name": "dm_conv_local",
+  "src": "convolution.cl",
+  "globalWorkSize": "[128, 32]",
+  "localWorkSize": "[128]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 14,
+      "size": "2048"
+    }
+  ],
+  "workDimension": 2,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 0,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "8"
+    },
+    {
+      "type": "int",
+      "pos": 3,
+      "value": "8"
+    },
+    {
+      "type": "int",
+      "pos": 4,
+      "value": "256"
+    },
+    {
+      "type": "int",
+      "pos": 7,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 8,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 9,
+      "value": "32"
+    },
+    {
+      "type": "int",
+      "pos": 10,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 11,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 12,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 13,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 15,
+      "value": "8"
+    },
+    {
+      "type": "int",
+      "pos": 16,
+      "value": "8"
+    }
+  ]
+}

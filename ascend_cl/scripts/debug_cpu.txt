@@ -1,0 +1,375 @@
+Instatiating ScheduleEngine
+0 3-->1 0
+1 1-->2 0
+2 3-->3 0
+3 1-->4 0
+4 3-->5 0
+5 1-->6 0
+6 2-->7 0
+7 2-->8 0
+0: 
+1: 0 
+2: 1 
+3: 2 
+4: 3 
+5: 4 
+6: 5 
+7: 6 
+8: 7 
+Setting up interference kernel
+Building kernels of all DAGs
+Setting up DAGs
+Copying persistent buffers
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.096918 ms
+Created task component 0
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324006768148 End: 1606324006768181
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110339185996321 End: 1110339189656529
+    read Events --> Start: 0 End: 0
+Device time:3660208
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324006768905 End: 1606324006768919
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110339190124654 End: 1110339190614237
+    read Events --> Start: 0 End: 0
+Device time:489583
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.064792 ms
+Created task component 1
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324007794929 End: 1606324007794945
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110340212153154 End: 1110340216057737
+    read Events --> Start: 0 End: 0
+Device time:3904583
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324007795538 End: 1606324007795548
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110340243609862 End: 1110340243853196
+    read Events --> Start: 0 End: 0
+Device time:243334
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324007795385 End: 1606324007795397
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110340216510862 End: 1110340243510737
+    read Events --> Start: 0 End: 0
+Device time:26999875
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.079168 ms
+Created task component 2
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324008818508 End: 1606324008818521
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110341235635779 End: 1110341240616071
+    read Events --> Start: 0 End: 0
+Device time:4980292
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324008819077 End: 1606324008819085
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110341242101071 End: 1110341242555946
+    read Events --> Start: 0 End: 0
+Device time:454875
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324008819199 End: 1606324008819210
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110341242668987 End: 1110341270986279
+    read Events --> Start: 0 End: 0
+Device time:28317292
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606324008818937 End: 1606324008818946
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110341240950237 End: 1110341241725571
+    read Events --> Start: 0 End: 0
+Device time:775334
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.092293 ms
+Created task component 3
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324009841757 End: 1606324009841770
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110342259106738 End: 1110342262846654
+    read Events --> Start: 0 End: 0
+Device time:3739916
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324009842499 End: 1606324009842508
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110342288550613 End: 1110342288819029
+    read Events --> Start: 0 End: 0
+Device time:268416
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324009842629 End: 1606324009842639
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110342288888654 End: 1110342312895696
+    read Events --> Start: 0 End: 0
+Device time:24007042
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606324009842758 End: 1606324009842768
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110342312971321 End: 1110342313167238
+    read Events --> Start: 0 End: 0
+Device time:195917
+  4 : convolution_4 executing on platform 1 and device 0
+    host queued events --> Start: 1606324009842276 End: 1606324009842287
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110342263293071 End: 1110342288459196
+    read Events --> Start: 0 End: 0
+Device time:25166125
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.101502 ms
+Created task component 4
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324010863972 End: 1606324010863985
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110343281291904 End: 1110343285568738
+    read Events --> Start: 0 End: 0
+Device time:4276834
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324010865879 End: 1606324010865888
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110343286410154 End: 1110343287135071
+    read Events --> Start: 0 End: 0
+Device time:724917
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324010866752 End: 1606324010866760
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110343287285029 End: 1110343312517571
+    read Events --> Start: 0 End: 0
+Device time:25232542
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606324010866841 End: 1606324010866847
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110343312602863 End: 1110343312826154
+    read Events --> Start: 0 End: 0
+Device time:223291
+  4 : convolution_4 executing on platform 1 and device 0
+    host queued events --> Start: 1606324010867396 End: 1606324010867404
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110343312902571 End: 1110343334129654
+    read Events --> Start: 0 End: 0
+Device time:21227083
+  5 : pooling_5 executing on platform 1 and device 0
+    host queued events --> Start: 1606324010864663 End: 1606324010864672
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110343286008779 End: 1110343286248279
+    read Events --> Start: 0 End: 0
+Device time:239500
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.111710 ms
+Created task component 5
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011888511 End: 1606324011888523
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344305589279 End: 1110344311189696
+    read Events --> Start: 0 End: 0
+Device time:5600417
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011889039 End: 1606324011889047
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344315320113 End: 1110344315852238
+    read Events --> Start: 0 End: 0
+Device time:532125
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011889167 End: 1606324011889176
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344315972946 End: 1110344341336529
+    read Events --> Start: 0 End: 0
+Device time:25363583
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011889349 End: 1606324011889358
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344341450738 End: 1110344341671238
+    read Events --> Start: 0 End: 0
+Device time:220500
+  4 : convolution_4 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011889471 End: 1606324011889481
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344341770113 End: 1110344365452738
+    read Events --> Start: 0 End: 0
+Device time:23682625
+  5 : pooling_5 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011889593 End: 1606324011889603
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344365531196 End: 1110344365661863
+    read Events --> Start: 0 End: 0
+Device time:130667
+  6 : linear_6 executing on platform 1 and device 0
+    host queued events --> Start: 1606324011888896 End: 1606324011888907
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110344311553904 End: 1110344315070321
+    read Events --> Start: 0 End: 0
+Device time:3516417
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.128086 ms
+Created task component 6
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2081412160 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012912613 End: 1606324012912626
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345329678488 End: 1110345333988446
+    read Events --> Start: 0 End: 0
+Device time:4309958
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012913131 End: 1606324012913139
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345334534571 End: 1110345335389655
+    read Events --> Start: 0 End: 0
+Device time:855084
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012913316 End: 1606324012913325
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345335541321 End: 1110345363293196
+    read Events --> Start: 0 End: 0
+Device time:27751875
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012913449 End: 1606324012913457
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345363388738 End: 1110345363565946
+    read Events --> Start: 0 End: 0
+Device time:177208
+  4 : convolution_4 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012913565 End: 1606324012913575
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345363653071 End: 1110345387286696
+    read Events --> Start: 0 End: 0
+Device time:23633625
+  5 : pooling_5 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012913687 End: 1606324012913695
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345387362196 End: 1110345387533780
+    read Events --> Start: 0 End: 0
+Device time:171584
+  6 : linear_6 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012913803 End: 1606324012913814
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345387644113 End: 1110345414358905
+    read Events --> Start: 0 End: 0
+Device time:26714792
+  7 : linear_7 executing on platform 1 and device 0
+    host queued events --> Start: 1606324012912989 End: 1606324012912998
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110345334354196 End: 1110345334441530
+    read Events --> Start: 0 End: 0
+Device time:87334
+Initializing buffer flags
+Initialized buffer flags
+Preparing kernels
+Prepared kernels
+Initliazling local frontier
+TIMER: Function Task Component Creation took 0.125711 ms
+Created task component 7
+Running scheduler thread 1191076928 on core 3 
+Running callback thread 2106586176 on core 3 
+Waiting for tc to be finished
+Profiling
+  0 : convolution_0 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013938792 End: 1606324013938806
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346355833946 End: 1110346360811280
+    read Events --> Start: 0 End: 0
+Device time:4977334
+  1 : pooling_1 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939300 End: 1606324013939308
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346361821363 End: 1110346364559405
+    read Events --> Start: 0 End: 0
+Device time:2738042
+  2 : convolution_2 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939485 End: 1606324013939496
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346364744821 End: 1110346402882196
+    read Events --> Start: 0 End: 0
+Device time:38137375
+  3 : pooling_3 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939615 End: 1606324013939624
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346402985946 End: 1110346403293155
+    read Events --> Start: 0 End: 0
+Device time:307209
+  4 : convolution_4 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939737 End: 1606324013939747
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346403372405 End: 1110346433724488
+    read Events --> Start: 0 End: 0
+Device time:30352083
+  5 : pooling_5 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939859 End: 1606324013939867
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346433840905 End: 1110346433986071
+    read Events --> Start: 0 End: 0
+Device time:145166
+  6 : linear_6 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939974 End: 1606324013939983
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346434076571 End: 1110346454850696
+    read Events --> Start: 0 End: 0
+Device time:20774125
+  7 : linear_7 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013940097 End: 1606324013940106
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346455099405 End: 1110346455223280
+    read Events --> Start: 0 End: 0
+Device time:123875
+  8 : softmax_8 executing on platform 1 and device 0
+    host queued events --> Start: 1606324013939167 End: 1606324013939175
+    write events --> Start: 0 End: 0
+    ndrange events --> Start: 1110346361653905 End: 1110346361751655
+    read Events --> Start: 0 End: 0
+Device time:97750
+Main finished

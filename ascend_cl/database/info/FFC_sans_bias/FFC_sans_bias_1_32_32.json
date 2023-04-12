@@ -1,0 +1,53 @@
+{
+  "localWorkSize": "[32, 32]", 
+  "src": "FFC.cl", 
+  "name": "FFC_sans_bias", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "1024"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "1024"
+    }
+  ], 
+  "partition": 1, 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "32"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "32"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "32"
+    }
+  ], 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "1024"
+    }
+  ], 
+  "workDimension": 2, 
+  "globalWorkSize": "[32, 32]", 
+  "macros_values": {
+    "WPT": "1", 
+    "TS": "32"
+  }, 
+  "ioBuffers": [], 
+  "id": 1
+}

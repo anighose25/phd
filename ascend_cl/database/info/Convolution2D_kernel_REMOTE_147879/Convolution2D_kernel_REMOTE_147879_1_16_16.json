@@ -1,0 +1,36 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "16"
+    }
+  ], 
+  "partition": 1, 
+  "name": "Convolution2D_kernel", 
+  "src": "2DConvolution.cl", 
+  "globalWorkSize": "[16, 16]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "16"
+    }
+  ], 
+  "workDimension": 2, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "16"
+    }
+  ]
+}

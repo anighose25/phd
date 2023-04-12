@@ -1,0 +1,37 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "", 
+      "pos": 0, 
+      "size": "1024"
+    }, 
+    {
+      "break": 0, 
+      "type": "", 
+      "pos": 2, 
+      "size": "32"
+    }
+  ], 
+  "partition": 10, 
+  "name": "mvt_kernel1", 
+  "src": "mvt.cl", 
+  "globalWorkSize": "[32]", 
+  "outputBuffers": [], 
+  "workDimension": 1, 
+  "ioBuffers": [
+    {
+      "break": 0, 
+      "type": "", 
+      "pos": 1, 
+      "size": "32"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "32"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "inputBuffers": [
+      {
+        "break": 1, 
+        "type": "float", 
+        "pos": 0, 
+        "size": "I_size"
+      }
+    ], 
+    "name": "softmax", 
+    "src": "softmax.cl", 
+    "globalWorkSize": "[I_size]", 
+    "outputBuffers": [
+      {
+        "break": 0, 
+        "type": "float", 
+        "pos": 1, 
+        "size": "I_size"
+      }
+    ], 
+    "workDimension": 1, 
+    "ioBuffers": [], 
+    "varArguments": [
+      {
+        "type": "int", 
+        "pos": 2, 
+        "value": "num_classes"
+      }
+    ]
+  }

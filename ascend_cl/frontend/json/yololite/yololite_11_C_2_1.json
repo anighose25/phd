@@ -1,0 +1,34 @@
+{
+ "name": "convolution_11",
+ "src": "yololite_11_C_2_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[62,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "256",
+    "pos": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "288000",
+    "pos": 1
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "125",
+    "pos": 2
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "125",
+    "pos": 3
+  }
+ ]
+}

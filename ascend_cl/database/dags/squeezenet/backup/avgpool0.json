@@ -1,0 +1,86 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 0,
+      "size": "160",
+      "read": "0"
+    }
+  ],
+  "name": "dm_avepool",
+  "src": "pooling.cl",
+  "globalWorkSize": "[1, 1, 10]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 10,
+      "size": "10"
+    }
+  ],
+  "workDimension": 3,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 1,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 3,
+      "value": "10"
+    },
+    {
+      "type": "int",
+      "pos": 4,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 5,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 6,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 7,
+      "value": "4"
+    },
+    {
+      "type": "int",
+      "pos": 8,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 9,
+      "value": "0"
+    },
+    {
+      "type": "int",
+      "pos": 11,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 12,
+      "value": "1"
+    },
+    {
+      "type": "int",
+      "pos": 13,
+      "value": "1"
+    }
+  ]
+}

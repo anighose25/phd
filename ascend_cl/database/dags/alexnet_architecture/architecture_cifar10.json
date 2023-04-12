@@ -1,0 +1,129 @@
+{
+  "conv0": [
+    {
+      "input_channels": 3,
+      "output_channels": 96,
+      "kernel_size": 3,
+      "stride": 2,
+      "padding": 1
+    }
+  ],
+  "relu0": [
+    {}
+  ],
+  "lr_norm0": [
+    {
+      "alpha": 0.0001,
+      "beta": 0.75,
+      "N": 5,
+      "K": 2
+    }
+  ],
+  "maxpool0": [
+    {
+      "kernel_size": 2,
+      "stride": 2,
+      "padding": 0
+    }
+  ],
+  "conv1": [
+    {
+      "input_channels": 96,
+      "output_channels": 256,
+      "kernel_size": 3,
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "relu1": [
+    {}
+  ],
+  "lr_norm1": [
+    {
+      "alpha": 0.0001,
+      "beta": 0.75,
+      "N": 5,
+      "K": 2
+    }
+  ],
+  "maxpool1": [
+    {
+      "kernel_size": 2,
+      "stride": 2,
+      "padding": 0
+    }
+  ],
+  "conv2": [
+    {
+      "input_channels": 256,
+      "output_channels": 384,
+      "kernel_size": 3,
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "relu2": [
+    {}
+  ],
+  "conv3": [
+    {
+      "input_channels": 384,
+      "output_channels": 384,
+      "kernel_size": 3,
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "relu3": [
+    {}
+  ],
+  "conv4": [
+    {
+      "input_channels": 384,
+      "output_channels": 256,
+      "kernel_size": 3,
+      "stride": 1,
+      "padding": 1
+    }
+  ],
+  "relu4": [
+    {}
+  ],
+  "maxpool2": [
+    {
+      "kernel_size": 2,
+      "stride": 2,
+      "padding": 0
+    }
+  ],
+  "fc0": [
+    {
+      "input": 1024,
+      "output": 4096
+    }
+  ],
+  "relu_fc0": [
+    {}
+  ],
+  "fc1": [
+    {
+      "input": 4096,
+      "output": 4096
+    }
+  ],
+  "relu_fc1": [
+    {}
+  ],
+  "fc2": [
+    {
+      "input": 4096,
+      "output": 10
+    }
+  ],
+  "softmax0": [
+    {
+      "input": 10,
+      "num_classes": 10
+    }
+  ]
+}

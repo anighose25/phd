@@ -1,0 +1,34 @@
+{
+ "name": "convolution_6",
+ "src": "yololite_6_C_1_8.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[256,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "1024",
+    "pos": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "73728",
+    "pos": 1
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "128",
+    "pos": 2
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2048",
+    "pos": 3
+  }
+ ]
+}

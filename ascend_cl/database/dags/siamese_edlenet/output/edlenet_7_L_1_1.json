@@ -1,0 +1,69 @@
+{
+  "src": "edlenet_7_L_1_1.cl", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 52971512796856, 
+      "device_end": 52971512900397
+    }, 
+    "write": {
+      "host_queued_start": 1624423358371422, 
+      "device_start": 0, 
+      "host_queued_end": 1624423358371456, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "name": "linear_7", 
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 0, 
+      "persistence": 0, 
+      "size": "128"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "persistence": 1, 
+      "size": "2048"
+    }
+  ], 
+  "globalWorkSize": "[16,1,1]", 
+  "workDimension": 1, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "persistence": 0, 
+      "size": "16"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 52969549138564, 
+      "device_end": 52969549148522
+    }, 
+    "ndrange": {
+      "device_start": 52969547921078, 
+      "device_end": 52969548665597
+    }, 
+    "write": {
+      "host_queued_start": 1624423356390204, 
+      "device_start": 52969546600022, 
+      "host_queued_end": 1624423356390766, 
+      "device_end": 52969546606439, 
+      "device_queued": 52969529818647
+    }, 
+    "device_id": 0
+  }
+}

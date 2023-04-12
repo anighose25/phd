@@ -1,0 +1,7 @@
+
+3 conv1.json {"I_height":128,"I_width":128,"I_channel":96,"K_height":1,"K_width":1,"K_number":16,"O_height":128,"O_width":128,"stride_w":1,"stride_h":1,"pad_w":0,"pad_h":0}
+4 relu1.json {"I_height":128,"I_width":128,"I_channel":16,"slope":0}
+5 conv2.json {"I_height":128,"I_width":128,"I_channel":16,"K_height":1,"K_width":1,"K_number":64,"O_height":128,"O_width":128,"stride_w":1,"stride_h":1,"pad_w":0,"pad_h":0}
+6 conv3.json {"I_height":128,"I_width":128,"I_channel":16,"K_height":3,"K_width":3,"K_number":64,"O_height":128,"O_width":128,"stride_w":1,"stride_h":1,"pad_w":1,"pad_h":1}
+7 concat0.json {"I_height":128,"I_width":128,"I_channel":64,}
+8 relu2.json {"I_height":128,"I_width":128,"I_channel":128,"slope":0}

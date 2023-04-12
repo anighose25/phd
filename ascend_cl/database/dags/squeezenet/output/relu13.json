@@ -1,0 +1,73 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "4096"
+    }
+  ], 
+  "name": "activate_relu", 
+  "globalWorkSize": "[4096]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 62964722540297, 
+      "device_end": 62964722642755
+    }, 
+    "write": {
+      "host_queued_start": 1614056363831747, 
+      "device_start": 0, 
+      "host_queued_end": 1614056363831778, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 0, 
+      "value": "4096"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "0"
+    }
+  ], 
+  "workDimension": 1, 
+  "src": "activation.cl", 
+  "ioBuffers": [], 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "4096"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 62964333184255, 
+      "device_end": 62964333196339
+    }, 
+    "ndrange": {
+      "device_start": 62964332833719, 
+      "device_end": 62964332846280
+    }, 
+    "write": {
+      "host_queued_start": 1614056363441638, 
+      "device_start": 62964332403172, 
+      "host_queued_end": 1614056363442383, 
+      "device_end": 62964332432964, 
+      "device_queued": 62964331251505
+    }, 
+    "device_id": 0
+  }
+}

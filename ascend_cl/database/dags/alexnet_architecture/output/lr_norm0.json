@@ -1,0 +1,60 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 0,
+      "size": "24576"
+    }
+  ],
+  "name": "lrn_layer",
+  "src": "local_response_norm.cl",
+  "globalWorkSize": "[16, 16, 96]",
+  "outputBuffers": [
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 8,
+      "size": "24576"
+    }
+  ],
+  "workDimension": 3,
+  "ioBuffers": [],
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 1,
+      "value": "16"
+    },
+    {
+      "type": "int",
+      "pos": 2,
+      "value": "16"
+    },
+    {
+      "type": "int",
+      "pos": 3,
+      "value": "96"
+    },
+    {
+      "type": "float",
+      "pos": 4,
+      "value": "0.0001"
+    },
+    {
+      "type": "float",
+      "pos": 5,
+      "value": "0.75"
+    },
+    {
+      "type": "int",
+      "pos": 6,
+      "value": "5"
+    },
+    {
+      "type": "int",
+      "pos": 7,
+      "value": "2"
+    }
+  ]
+}

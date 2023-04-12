@@ -1,0 +1,68 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "65536"
+    }
+  ], 
+  "name": "softmax", 
+  "globalWorkSize": "[256]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 428824477990369, 
+      "device_end": 428824480422494
+    }, 
+    "write": {
+      "host_queued_start": 1618290340224308, 
+      "device_start": 0, 
+      "host_queued_end": 1618290340224316, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "65536"
+    }
+  ], 
+  "workDimension": 1, 
+  "src": "softmax.cl", 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "256"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 428824121233994, 
+      "device_end": 428824121362078
+    }, 
+    "ndrange": {
+      "device_start": 428824120203639, 
+      "device_end": 428824120988402
+    }, 
+    "write": {
+      "host_queued_start": 1618290339865441, 
+      "device_start": 428824119434369, 
+      "host_queued_end": 1618290339865706, 
+      "device_end": 428824119776119, 
+      "device_queued": 428824118683578
+    }, 
+    "device_id": 0
+  }
+}

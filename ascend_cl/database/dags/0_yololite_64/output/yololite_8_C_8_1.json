@@ -1,0 +1,38 @@
+{
+ "name": "convolution_8",
+ "src": "yololite_8_C_8_1.cl",
+ "workDimension": 1,
+ "globalWorkSize": "[256,1,1]",
+ "inputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2048",
+    "pos": 0,
+    "persistence": 0
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "147456",
+    "pos": 1,
+    "persistence": 1
+  },
+  {
+    "break": 0,
+    "type": "float",
+    "size": "128",
+    "pos": 2,
+    "persistence": 1
+  }
+ ],
+ "outputBuffers": [
+  {
+    "break": 0,
+    "type": "float",
+    "size": "2048",
+    "pos": 3,
+    "persistence": 0
+  }
+ ]
+}

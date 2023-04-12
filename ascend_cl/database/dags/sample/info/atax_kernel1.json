@@ -1,0 +1,46 @@
+{
+  "cpu_profile":{"dev_type":1,"device_id":0,"ndrange":{"device_end":9731403198910,"device_start":9731400637701},"read":{"device_end":0,"device_start":0},"write":{"device_end":0,"device_queued":0,"device_start":0,"host_queued_end":1601737263742184,"host_queued_start":1601737263742181}},
+  "gpu_profile":{"dev_type":0,"device_id":0,"ndrange":{"device_end":102662837398429,"device_start":102662836669385},"read":{"device_end":102662837965029,"device_start":102662837949821},"write":{"device_end":102662834655821,"device_queued":102662829103321,"device_start":102662829747321,"host_queued_end":1601830197026727,"host_queued_start":1601830197026428}},
+  "inputBuffers": [
+    {
+      "break": 1,
+      "type": "float",
+      "pos": 0,
+      "size": "dataset*dataset"
+    },
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 1,
+      "size": "dataset"
+    }
+
+  ],
+  "name": "atax_kernel1",
+  "src": "atax.cl",
+  "globalWorkSize": "[dataset]",
+  "outputBuffers": [],
+  "workDimension": 1,
+  "ioBuffers": [
+
+    {
+      "break": 0,
+      "type": "float",
+      "pos": 2,
+      "size": "dataset"
+    }
+  ],
+
+  "varArguments": [
+    {
+      "type": "int",
+      "pos": 3,
+      "value": "dataset"
+    },
+    {
+      "type": "int",
+      "pos": 4,
+      "value": "dataset"
+    }
+  ]
+}

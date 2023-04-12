@@ -1,0 +1,90 @@
+{
+  "src": "gemm_vectorized.cl", 
+  "partition": 5, 
+  "name": "mm", 
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "65536"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "65536"
+    }
+  ], 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 428825192049994, 
+      "device_end": 428825199049536
+    }, 
+    "write": {
+      "host_queued_start": 1618290340938471, 
+      "device_start": 0, 
+      "host_queued_end": 1618290340938481, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "256"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "256"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "256"
+    }
+  ], 
+  "outputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "65536"
+    }
+  ], 
+  "workDimension": 2, 
+  "globalWorkSize": "[64, 64]", 
+  "macros_values": {
+    "WPT": "1", 
+    "TS": "8"
+  }, 
+  "ioBuffers": [], 
+  "id": 1, 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 428824840381869, 
+      "device_end": 428824840507869
+    }, 
+    "ndrange": {
+      "device_start": 428824839174746, 
+      "device_end": 428824840104712
+    }, 
+    "write": {
+      "host_queued_start": 1618290340583670, 
+      "device_start": 428824837542994, 
+      "host_queued_end": 1618290340584024, 
+      "device_end": 428824838454786, 
+      "device_queued": 428824836932411
+    }, 
+    "device_id": 0
+  }
+}

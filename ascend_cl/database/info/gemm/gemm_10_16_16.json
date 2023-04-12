@@ -1,0 +1,57 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 0, 
+      "size": "256"
+    }, 
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 1, 
+      "size": "256"
+    }
+  ], 
+  "partition": 10, 
+  "name": "gemm", 
+  "src": "gemm.cl", 
+  "globalWorkSize": "[16, 16]", 
+  "outputBuffers": [], 
+  "workDimension": 2, 
+  "ioBuffers": [
+    {
+      "break": 1, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "256"
+    }
+  ], 
+  "varArguments": [
+    {
+      "type": "float", 
+      "pos": 3, 
+      "value": "1"
+    }, 
+    {
+      "type": "float", 
+      "pos": 4, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 6, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 7, 
+      "value": "16"
+    }
+  ]
+}

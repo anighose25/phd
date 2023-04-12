@@ -1,0 +1,124 @@
+{
+  "inputBuffers": [
+    {
+      "break": 1, 
+      "read": "0", 
+      "type": "float", 
+      "pos": 0, 
+      "size": "65536"
+    }
+  ], 
+  "name": "dm_maxpool", 
+  "globalWorkSize": "[8, 8, 256]", 
+  "cpu_profile": {
+    "dev_type": 1, 
+    "read": {
+      "device_start": 0, 
+      "device_end": 0
+    }, 
+    "ndrange": {
+      "device_start": 62980882844466, 
+      "device_end": 62980883668257
+    }, 
+    "write": {
+      "host_queued_start": 1614056379993001, 
+      "device_start": 0, 
+      "host_queued_end": 1614056379993023, 
+      "device_end": 0, 
+      "device_queued": 0
+    }, 
+    "device_id": 0
+  }, 
+  "varArguments": [
+    {
+      "type": "int", 
+      "pos": 1, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 2, 
+      "value": "16"
+    }, 
+    {
+      "type": "int", 
+      "pos": 3, 
+      "value": "256"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "2"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "2"
+    }, 
+    {
+      "type": "int", 
+      "pos": 6, 
+      "value": "2"
+    }, 
+    {
+      "type": "int", 
+      "pos": 7, 
+      "value": "2"
+    }, 
+    {
+      "type": "int", 
+      "pos": 8, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 9, 
+      "value": "0"
+    }, 
+    {
+      "type": "int", 
+      "pos": 11, 
+      "value": "8"
+    }, 
+    {
+      "type": "int", 
+      "pos": 12, 
+      "value": "8"
+    }, 
+    {
+      "type": "int", 
+      "pos": 13, 
+      "value": "1"
+    }
+  ], 
+  "workDimension": 3, 
+  "src": "pooling.cl", 
+  "ioBuffers": [], 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 10, 
+      "size": "16384"
+    }
+  ], 
+  "gpu_profile": {
+    "dev_type": 0, 
+    "read": {
+      "device_start": 62980376319299, 
+      "device_end": 62980376370966
+    }, 
+    "ndrange": {
+      "device_start": 62980375603767, 
+      "device_end": 62980375957819
+    }, 
+    "write": {
+      "host_queued_start": 1614056379482617, 
+      "device_start": 62980374354924, 
+      "host_queued_end": 1614056379483754, 
+      "device_end": 62980374846507, 
+      "device_queued": 62980372173424
+    }, 
+    "device_id": 0
+  }
+}

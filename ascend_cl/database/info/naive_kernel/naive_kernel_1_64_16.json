@@ -1,0 +1,51 @@
+{
+  "inputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 2, 
+      "size": "262144"
+    }
+  ], 
+  "partition": 1, 
+  "name": "naive_kernel", 
+  "src": "stencil.cl", 
+  "globalWorkSize": "[64, 64, 64]", 
+  "outputBuffers": [
+    {
+      "break": 0, 
+      "type": "float", 
+      "pos": 3, 
+      "size": "262144"
+    }
+  ], 
+  "workDimension": 3, 
+  "ioBuffers": [], 
+  "varArguments": [
+    {
+      "type": "float", 
+      "pos": 0, 
+      "value": "0.1"
+    }, 
+    {
+      "type": "float", 
+      "pos": 1, 
+      "value": "0.1"
+    }, 
+    {
+      "type": "int", 
+      "pos": 4, 
+      "value": "63"
+    }, 
+    {
+      "type": "int", 
+      "pos": 5, 
+      "value": "63"
+    }, 
+    {
+      "type": "int", 
+      "pos": 6, 
+      "value": "63"
+    }
+  ]
+}
