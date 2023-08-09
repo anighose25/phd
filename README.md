@@ -7,3 +7,6 @@ Research works related to PhD
 4. [coarsening_code_generation](./coarsening_code_generation/code): Scripts for CNN pipeline generation
 5. [rlschedsim](./rlschedsim): Scripts for RL assisted simulation
 6. [ascend_cl](./ascend_cl): Low Level Scheduler for Periodic OpenCL applications
+
+
+Details related to above folders and scripts are discussed [here](./AnirbanPhDThesisAppendix.pdf)
